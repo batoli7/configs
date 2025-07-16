@@ -1,0 +1,65 @@
+// Config 15: SL=2.0 ATR | TP=4.0 ATR | BE trigger=2.0 ATR
+{
+  // ========= Core Risk Settings =========
+  "risk_per_trade_usd": 100,
+  "sl_mul": 2.0,
+  "tp_mul": 4.0,
+
+  // ========= Execution Control =========
+  "cooldown_sec": 5,
+  "max_pos_per_symbol": 1,
+  "atr_period": 14,
+
+  // ========= Breakeven Logic =========
+  "enable_breakeven_sl": true,
+  "breakeven_trigger_atr": 2.0,
+  "breakeven_offset_atr": 0.05,
+
+  // ========= Trailing‑Stop Parameters (disabled) =========
+  "enable_trailing_sl": false,
+  "trailing_start_atr": 1.5,
+  "trailing_offset_atr": 1.0,
+
+  // --- Dynamic trailing variant (disabled) ---
+  "enable_dynamic_trailing": false,
+  "trailing_offset_base_atr": 1.0,
+  "trailing_offset_max_atr": 2.5,
+  "trailing_offset_step_atr": 0.25,
+  "trailing_step_trigger_atr": 1.0,
+  "trailing_backoff_atr": 0.25,
+  "trailing_sl_update_cooldown_sec": 10,
+
+  // ========= Signal Strength / Polling =========
+  "strength_threshold": 50,
+  "poll_interval_ms": 100,
+
+  // ========= Symbol Universe =========
+  "symbols": ["DE40", "US30", "US500", "US2000", "USTEC", "EURUSD", "GBPUSD", "USDJPY", "AUDUSD", "NZDUSD", "USDCAD", "USDCHF", "EURGBP", "EURCHF", "AUDJPY", "BTCUSD", "XTIUSD", "XAUUSD"],
+
+  // ========= Reversal Logic =========
+  "enable_reversals": true,
+  "max_reversals_per_min": 2,
+
+  // ========= No‑Trade‑Zone =========
+  "enable_no_trade_zone": false,
+  "no_trade_zone_duration_sec": 60,
+  "no_trade_zone_distance_atr": 0.5,
+
+  // ========= Time‑Window Filter =========
+  "enable_time_filtering": true,
+  "trading_hours": [
+      ["07:00", "18:00"]
+  ],
+
+  // ========= MT5 Connection =========
+  "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
+  "mt5_login": {
+      "login": 52429614,
+      "password": "95b@2NyqythECN",
+      "server": "ICMarketsEU-Demo"
+  },
+
+  // ========= Database Storage =========
+  "decisions_db": "C:/Tradingsystem/data/decisions.db",
+  "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw"
+}
