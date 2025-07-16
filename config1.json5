@@ -1,7 +1,7 @@
 // Config 1: SL=1.0 ATR | TP=0.5 ATR | BE trigger=0.5 ATR
 {
   // ========= Core Risk Settings =========
-  "risk_per_trade_usd": 10,
+  "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
   "tp_mul": 0.5,
 
