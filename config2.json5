@@ -1,4 +1,4 @@
-// Config 2: Strength 40 (easier entry)
+// Config 2: MaxPos=1 | Strength=40
 {
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,

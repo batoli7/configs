@@ -1,10 +1,10 @@
-// Config 13: Reversals 1/min (conservative)
+// Config 13: MaxPos=3 | Strength=50
 {
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
   "tp_mul": 0.5,
   "cooldown_sec": 5,
-  "max_pos_per_symbol": 1,
+  "max_pos_per_symbol": 3,
   "atr_period": 14,
   "enable_breakeven_sl": true,
   "breakeven_trigger_atr": 0.5,
@@ -42,7 +42,7 @@
     "XAUUSD"
   ],
   "enable_reversals": true,
-  "max_reversals_per_min": 1,
+  "max_reversals_per_min": 2,
   "enable_no_trade_zone": false,
   "no_trade_zone_duration_sec": 60,
   "no_trade_zone_distance_atr": 0.5,

@@ -1,10 +1,10 @@
-// Config 15: Strength 45 (mid‑low)
+// Config 15: MaxPos=3 | Strength=70
 {
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
   "tp_mul": 0.5,
   "cooldown_sec": 5,
-  "max_pos_per_symbol": 1,
+  "max_pos_per_symbol": 3,
   "atr_period": 14,
   "enable_breakeven_sl": true,
   "breakeven_trigger_atr": 0.5,
@@ -19,7 +19,7 @@
   "trailing_step_trigger_atr": 1.0,
   "trailing_backoff_atr": 0.25,
   "trailing_sl_update_cooldown_sec": 10,
-  "strength_threshold": 45,
+  "strength_threshold": 70,
   "poll_interval_ms": 100,
   "symbols": [
     "DE40",
