@@ -1,10 +1,10 @@
-// Config 16: MaxPos=4 | Strength=40
-{
+        // Config 16: MaxPos=5, Strength=40
+        {
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
   "tp_mul": 0.5,
   "cooldown_sec": 5,
-  "max_pos_per_symbol": 4,
+  "max_pos_per_symbol": 5,
   "atr_period": 14,
   "enable_breakeven_sl": true,
   "breakeven_trigger_atr": 0.5,
@@ -31,12 +31,6 @@
     "GBPUSD",
     "USDJPY",
     "AUDUSD",
-    "NZDUSD",
-    "USDCAD",
-    "USDCHF",
-    "EURGBP",
-    "EURCHF",
-    "AUDJPY",
     "BTCUSD",
     "XTIUSD",
     "XAUUSD"
@@ -54,11 +48,11 @@
     ]
   ],
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
-  "decisions_db": "C:/Tradingsystem/data/decisions.db",
-  "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw",
   "mt5_login": {
     "login": 52429615,
     "password": "$vwdli@5@Rlu04",
     "server": "ICMarketsEU-Demo"
-  }
+  },
+  "decisions_db": "C:/Tradingsystem/data/decisions.db",
+  "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw"
 }
