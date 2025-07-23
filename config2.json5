@@ -1,10 +1,10 @@
-        // Config 2: MaxPos=2, Strength=50
-        {
+// Config 2: MaxPos=1, Strength=50
+{
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
   "tp_mul": 0.5,
   "cooldown_sec": 5,
-  "max_pos_per_symbol": 2,
+  "max_pos_per_symbol": 1,
   "atr_period": 14,
   "enable_breakeven_sl": true,
   "breakeven_trigger_atr": 0.5,
