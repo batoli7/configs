@@ -1,17 +1,7 @@
-// Config 19: ATR=14, Strength=90
 {
   "risk_per_trade_usd": 100,
-  "sl_mul": 1.0,
-  "tp_mul": 0.5,
   "cooldown_sec": 5,
   "max_pos_per_symbol": 1,
-  "atr_period": 14,
-  "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.5,
-  "breakeven_offset_atr": 0.05,
-  "enable_trailing_sl": false,
-  "trailing_start_atr": 1.5,
-  "trailing_offset_atr": 1.0,
   "enable_dynamic_trailing": false,
   "trailing_offset_base_atr": 1.0,
   "trailing_offset_max_atr": 2.5,
@@ -19,7 +9,7 @@
   "trailing_step_trigger_atr": 1.0,
   "trailing_backoff_atr": 0.25,
   "trailing_sl_update_cooldown_sec": 10,
-  "strength_threshold": 90,
+  "strength_threshold": 60,
   "poll_interval_ms": 100,
   "symbols": [
     "DE40",
@@ -48,11 +38,20 @@
     ]
   ],
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
+  "decisions_db": "C:/Tradingsystem/data/decisions.db",
+  "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw",
+  "sl_mul": 1.0,
+  "tp_mul": 2.0,
+  "atr_period": 14,
+  "enable_breakeven_sl": false,
+  "enable_trailing_sl": true,
+  "breakeven_trigger_atr": 0.5,
+  "breakeven_offset_atr": 0.05,
+  "trailing_start_atr": 1.0,
+  "trailing_offset_atr": 1.0,
   "mt5_login": {
     "login": 52443425,
     "password": "w7!sxoQ87dBVbe",
     "server": "ICMarketsEU-Demo"
-  },
-  "decisions_db": "C:/Tradingsystem/data/decisions.db",
-  "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw"
+  }
 }
