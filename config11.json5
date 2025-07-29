@@ -1,7 +1,26 @@
+// Config 11: 3 positions · ATR=7 · SL=1.0ATR · TP=0.6ATR · BE=0.4ATR · Strength=10
 {
+  // --- Core Risk ---
   "risk_per_trade_usd": 100,
+  "sl_mul": 1.0,
+  "tp_mul": 0.6,
+
+  // --- Execution ---
   "cooldown_sec": 5,
-  "max_pos_per_symbol": 1,
+  "max_pos_per_symbol": 3,
+  "atr_period": 7,
+
+  // --- Breakeven ---
+  "enable_breakeven_sl": true,
+  "breakeven_trigger_atr": 0.4,
+  "breakeven_offset_atr": 0.05,
+
+  // --- Trailing stops (off) ---
+  "enable_trailing_sl": false,
+  "trailing_start_atr": 1.5,
+  "trailing_offset_atr": 1.0,
+
+  // --- Dynamic trailing (off) ---
   "enable_dynamic_trailing": false,
   "trailing_offset_base_atr": 1.0,
   "trailing_offset_max_atr": 2.5,
@@ -9,49 +28,49 @@
   "trailing_step_trigger_atr": 1.0,
   "trailing_backoff_atr": 0.25,
   "trailing_sl_update_cooldown_sec": 10,
-  "strength_threshold": 60,
+
+  // --- Signal / Poll ---
+  "strength_threshold": 10,
   "poll_interval_ms": 100,
+
+  // --- Symbols ---
   "symbols": [
-    "DE40",
-    "US30",
-    "US500",
-    "US2000",
-    "USTEC",
-    "EURUSD",
-    "GBPUSD",
-    "USDJPY",
-    "AUDUSD",
-    "BTCUSD",
-    "XTIUSD",
-    "XAUUSD"
-  ],
+  "DE40",
+  "US30",
+  "US500",
+  "US2000",
+  "USTEC",
+  "EURUSD",
+  "GBPUSD",
+  "USDJPY",
+  "AUDUSD",
+  "BTCUSD",
+  "XTIUSD",
+  "XAUUSD"
+],
+
+  // --- Reversals ---
   "enable_reversals": true,
   "max_reversals_per_min": 2,
+
+  // --- No‑Trade‑Zone (off) ---
   "enable_no_trade_zone": false,
   "no_trade_zone_duration_sec": 60,
   "no_trade_zone_distance_atr": 0.5,
+
+  // --- Time Filtering ---
   "enable_time_filtering": true,
-  "trading_hours": [
-    [
-      "07:00",
-      "18:00"
-    ]
-  ],
+  "trading_hours": [["07:00","18:00"]],
+
+  // --- MT5 ---
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
-  "decisions_db": "C:/Tradingsystem/data/decisions.db",
-  "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw",
-  "sl_mul": 1.0,
-  "tp_mul": 0.5,
-  "atr_period": 14,
-  "enable_breakeven_sl": false,
-  "enable_trailing_sl": false,
-  "breakeven_trigger_atr": 0.5,
-  "breakeven_offset_atr": 0.05,
-  "trailing_start_atr": 1.5,
-  "trailing_offset_atr": 1.0,
   "mt5_login": {
     "login": 52443412,
     "password": "peVXjt8A$aAAeG",
     "server": "ICMarketsEU-Demo"
-  }
+  },
+
+  // --- DB Paths ---
+  "decisions_db": "C:/Tradingsystem/data/decisions.db",
+  "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw"
 }
