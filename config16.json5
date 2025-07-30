@@ -35,18 +35,18 @@
 
   // --- Symbols ---
   "symbols": [
-  "DE40",
-  "US30",
-  "US500",
-  "US2000",
-  "USTEC",
-  "EURUSD",
-  "GBPUSD",
-  "USDJPY",
-  "AUDUSD",
-  "BTCUSD",
-  "XTIUSD",
-  "XAUUSD"
+    "DE40",
+    "US30",
+    "US500",
+    "US2000",
+    "USTEC",
+    "EURUSD",
+    "GBPUSD",
+    "USDJPY",
+    "AUDUSD",
+    "BTCUSD",
+    "XTIUSD",
+    "XAUUSD"
 ],
 
   // --- Reversals ---

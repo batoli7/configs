@@ -1,4 +1,4 @@
-// Config 2: 2 positions · ATR=7 · SL=1.0ATR · TP=0.6ATR · BE=0.4ATR · Strength=10
+// Config 2: 1 positions · ATR=7 · SL=1.0ATR · TP=0.6ATR · BE=0.4ATR · Strength=40
 {
   // --- Core Risk ---
   "risk_per_trade_usd": 100,
@@ -7,7 +7,7 @@
 
   // --- Execution ---
   "cooldown_sec": 5,
-  "max_pos_per_symbol": 2,
+  "max_pos_per_symbol": 1,
   "atr_period": 7,
 
   // --- Breakeven ---
@@ -30,23 +30,23 @@
   "trailing_sl_update_cooldown_sec": 10,
 
   // --- Signal / Poll ---
-  "strength_threshold": 10,
+  "strength_threshold": 40,
   "poll_interval_ms": 100,
 
   // --- Symbols ---
   "symbols": [
-  "DE40",
-  "US30",
-  "US500",
-  "US2000",
-  "USTEC",
-  "EURUSD",
-  "GBPUSD",
-  "USDJPY",
-  "AUDUSD",
-  "BTCUSD",
-  "XTIUSD",
-  "XAUUSD"
+    "DE40",
+    "US30",
+    "US500",
+    "US2000",
+    "USTEC",
+    "EURUSD",
+    "GBPUSD",
+    "USDJPY",
+    "AUDUSD",
+    "BTCUSD",
+    "XTIUSD",
+    "XAUUSD"
 ],
 
   // --- Reversals ---
