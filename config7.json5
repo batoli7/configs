@@ -1,26 +1,26 @@
-// Config 7: 1 positions · ATR=7 · SL=1.0ATR · TP=0.6ATR · BE=0.4ATR · Strength=90
+// Config 7: Strength=70 · max_pos=3 · ATR=7 · SL=1.0ATR · TP=0.9ATR · BE trigger=0.7ATR
 {
-  // --- Core Risk ---
-  "risk_per_trade_usd": 100,
-  "sl_mul": 1.0,
-  "tp_mul": 0.6,
+  // ========= Core Risk Settings =========
+  "risk_per_trade_usd": 100,               // fixed dollar risk per trade
+  "sl_mul": 1.0,                           // stop‑loss distance (in ATR)
+  "tp_mul": 0.9,                      // take‑profit distance (in ATR)
 
-  // --- Execution ---
-  "cooldown_sec": 5,
-  "max_pos_per_symbol": 1,
-  "atr_period": 7,
+  // ========= Execution Control =========
+  "cooldown_sec": 5,                       // seconds between new trades per symbol
+  "max_pos_per_symbol": 3,                 // allowed concurrent positions per symbol
+  "atr_period": 7,                         // ATR look‑back length
 
-  // --- Breakeven ---
+  // ========= Breakeven Logic =========
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.4,
-  "breakeven_offset_atr": 0.05,
+  "breakeven_trigger_atr": 0.7,    // move SL to BE after this many ATRs in profit
+  "breakeven_offset_atr": 0.05,             // small cushion
 
-  // --- Trailing stops (off) ---
+  // ========= Trailing‑Stop Parameters (disabled) =========
   "enable_trailing_sl": false,
   "trailing_start_atr": 1.5,
   "trailing_offset_atr": 1.0,
 
-  // --- Dynamic trailing (off) ---
+  // --- Dynamic trailing (disabled) ---
   "enable_dynamic_trailing": false,
   "trailing_offset_base_atr": 1.0,
   "trailing_offset_max_atr": 2.5,
@@ -29,11 +29,11 @@
   "trailing_backoff_atr": 0.25,
   "trailing_sl_update_cooldown_sec": 10,
 
-  // --- Signal / Poll ---
-  "strength_threshold": 90,
+  // ========= Signal Strength / Polling =========
+  "strength_threshold": 70,
   "poll_interval_ms": 100,
 
-  // --- Symbols ---
+  // ========= Symbol Universe =========
   "symbols": [
     "DE40",
     "US30",
@@ -49,20 +49,22 @@
     "XAUUSD"
 ],
 
-  // --- Reversals ---
+  // ========= Reversal Logic =========
   "enable_reversals": true,
   "max_reversals_per_min": 2,
 
-  // --- No‑Trade‑Zone (off) ---
+  // ========= No‑Trade‑Zone (disabled) =========
   "enable_no_trade_zone": false,
   "no_trade_zone_duration_sec": 60,
   "no_trade_zone_distance_atr": 0.5,
 
-  // --- Time Filtering ---
+  // ========= Time‑Window Filter =========
   "enable_time_filtering": true,
-  "trading_hours": [["07:00","18:00"]],
+  "trading_hours": [
+    ["07:00", "18:00"]
+  ],
 
-  // --- MT5 ---
+  // ========= MT5 Connection =========
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
     "login": 52443407,
@@ -70,7 +72,7 @@
     "server": "ICMarketsEU-Demo"
   },
 
-  // --- DB Paths ---
+  // ========= Database Storage =========
   "decisions_db": "C:/Tradingsystem/data/decisions.db",
   "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw"
 }
