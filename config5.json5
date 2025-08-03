@@ -1,19 +1,19 @@
-// Config 5: Strength=70 · max_pos=3 · ATR=7 · SL=1.0ATR · TP=0.7ATR · BE trigger=0.49999999999999994ATR
+// Config5: Strength=80 · max_pos=2 · ATR=5 · SL=1.0ATR · TP=0.4ATR · BE trigger=0.2ATR
 {
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,               // fixed dollar risk per trade
   "sl_mul": 1.0,                           // stop‑loss distance (in ATR)
-  "tp_mul": 0.7,                      // take‑profit distance (in ATR)
+  "tp_mul": 0.4,                     // take‑profit distance (in ATR)
 
   // ========= Execution Control =========
   "cooldown_sec": 5,                       // seconds between new trades per symbol
-  "max_pos_per_symbol": 3,                 // allowed concurrent positions per symbol
-  "atr_period": 7,                         // ATR look‑back length
+  "max_pos_per_symbol": 2,                 // pyramid up to 2 positions
+  "atr_period": 5,                         // volatility look‑back window
 
   // ========= Breakeven Logic =========
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.49999999999999994,    // move SL to BE after this many ATRs in profit
-  "breakeven_offset_atr": 0.05,             // small cushion
+  "breakeven_trigger_atr": 0.2,  // move SL to BE after this many ATR profit
+  "breakeven_offset_atr": 0.05,           // cushion beyond entry
 
   // ========= Trailing‑Stop Parameters (disabled) =========
   "enable_trailing_sl": false,
@@ -30,24 +30,15 @@
   "trailing_sl_update_cooldown_sec": 10,
 
   // ========= Signal Strength / Polling =========
-  "strength_threshold": 70,
+  "strength_threshold": 80,
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
   "symbols": [
-    "DE40",
-    "US30",
-    "US500",
-    "US2000",
-    "USTEC",
-    "EURUSD",
-    "GBPUSD",
-    "USDJPY",
-    "AUDUSD",
-    "BTCUSD",
-    "XTIUSD",
-    "XAUUSD"
-],
+    "DE40", "US30", "US500", "US2000", "USTEC",
+    "EURUSD", "GBPUSD", "USDJPY", "AUDUSD",
+    "BTCUSD", "XTIUSD", "XAUUSD"
+  ],
 
   // ========= Reversal Logic =========
   "enable_reversals": true,
@@ -60,9 +51,21 @@
 
   // ========= Time‑Window Filter =========
   "enable_time_filtering": true,
-  "trading_hours": [
-    ["07:00", "18:00"]
-  ],
+  "trading_hours": [["07:00", "18:00"]],
+
+  // ========= Shadow-Trading Module =========
+  "shadow_trading_enabled": true,          // turn virtual trading on/off
+  "live_trading_enabled": false,           // ShadowTrader can switch this to true
+  "force_live_trading": false,             // override gate (testing mode)
+
+  "activation_rules": {
+    "min_net_r": 1.0,                      // cumulative R
+    "min_win_rate": 0.45,                  // 45 % or higher
+    "min_trades": 1,                       // activate after 1 virtual trade
+    "cooldown_minutes": 1                  // pause length after de-activation
+  },
+
+  "shadow_log_interval_sec": 900,          // write virtual-PnL line every 15 min
 
   // ========= MT5 Connection =========
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",

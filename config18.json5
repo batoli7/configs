@@ -1,19 +1,19 @@
-// Config 18: Strength=90 · max_pos=3 · ATR=7 · SL=1.0ATR · TP=0.8ATR · BE trigger=0.6000000000000001ATR
+// Config18: Strength=90 · max_pos=2 · ATR=5 · SL=1.0ATR · TP=0.5ATR · BE trigger=0.3ATR
 {
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,               // fixed dollar risk per trade
   "sl_mul": 1.0,                           // stop‑loss distance (in ATR)
-  "tp_mul": 0.8,                      // take‑profit distance (in ATR)
+  "tp_mul": 0.5,                     // take‑profit distance (in ATR)
 
   // ========= Execution Control =========
   "cooldown_sec": 5,                       // seconds between new trades per symbol
-  "max_pos_per_symbol": 3,                 // allowed concurrent positions per symbol
-  "atr_period": 7,                         // ATR look‑back length
+  "max_pos_per_symbol": 2,                 // pyramid up to 2 positions
+  "atr_period": 5,                         // volatility look‑back window
 
   // ========= Breakeven Logic =========
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.6000000000000001,    // move SL to BE after this many ATRs in profit
-  "breakeven_offset_atr": 0.05,             // small cushion
+  "breakeven_trigger_atr": 0.3,  // move SL to BE after this many ATR profit
+  "breakeven_offset_atr": 0.05,           // cushion beyond entry
 
   // ========= Trailing‑Stop Parameters (disabled) =========
   "enable_trailing_sl": false,
@@ -35,19 +35,10 @@
 
   // ========= Symbol Universe =========
   "symbols": [
-    "DE40",
-    "US30",
-    "US500",
-    "US2000",
-    "USTEC",
-    "EURUSD",
-    "GBPUSD",
-    "USDJPY",
-    "AUDUSD",
-    "BTCUSD",
-    "XTIUSD",
-    "XAUUSD"
-],
+    "DE40", "US30", "US500", "US2000", "USTEC",
+    "EURUSD", "GBPUSD", "USDJPY", "AUDUSD",
+    "BTCUSD", "XTIUSD", "XAUUSD"
+  ],
 
   // ========= Reversal Logic =========
   "enable_reversals": true,
@@ -60,9 +51,7 @@
 
   // ========= Time‑Window Filter =========
   "enable_time_filtering": true,
-  "trading_hours": [
-    ["07:00", "18:00"]
-  ],
+  "trading_hours": [["07:00", "18:00"]],
 
   // ========= MT5 Connection =========
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
