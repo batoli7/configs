@@ -1,19 +1,19 @@
-// Config17: Strength=90 · max_pos=2 · ATR=5 · SL=1.0ATR · TP=0.4ATR · BE trigger=0.2ATR
+// Config17: Strength=90 · max_pos=2 · ATR=5 · SL=1.0ATR · TP=0.5ATR · BE trigger=0.33ATR
 {
   // ========= Core Risk Settings =========
-  "risk_per_trade_usd": 100,               // fixed dollar risk per trade
-  "sl_mul": 1.0,                           // stop‑loss distance (in ATR)
-  "tp_mul": 0.4,                     // take‑profit distance (in ATR)
+  "risk_per_trade_usd": 100,
+  "sl_mul": 1.0,
+  "tp_mul": 0.5,
 
   // ========= Execution Control =========
-  "cooldown_sec": 5,                       // seconds between new trades per symbol
-  "max_pos_per_symbol": 2,                 // pyramid up to 2 positions
-  "atr_period": 5,                         // volatility look‑back window
+  "cooldown_sec": 5,
+  "max_pos_per_symbol": 2,
+  "atr_period": 5,
 
   // ========= Breakeven Logic =========
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.2,  // move SL to BE after this many ATR profit
-  "breakeven_offset_atr": 0.05,           // cushion beyond entry
+  "breakeven_trigger_atr": 0.33,
+  "breakeven_offset_atr": 0.05,
 
   // ========= Trailing‑Stop Parameters (disabled) =========
   "enable_trailing_sl": false,
