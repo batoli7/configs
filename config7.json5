@@ -1,5 +1,22 @@
-// Config7: Strength=90 · max_pos=2 · ATR=5 · SL=1.0ATR · TP=0.45ATR · BE trigger=0.3ATR
+// Config7: Strength = 90 · max_pos = 1 · ATR = 5 · SL = 1.0 ATR · TP = 0.45 ATR · ShadowTrader hybrid rolling window
 {
+  // ========= ShadowTrader / Live-Trading Switches =========
+  "shadow_trading_enabled": true,
+  "live_trading_enabled":   true,
+  "force_live_trading":     false,
+
+ "activation_rules": {
+    "min_net_r":    0.1,
+    "min_win_rate": 0.00,
+    "min_trades":   1,
+    "cooldown_minutes": 0.1
+  },
+
+  "rolling_window": {
+    "max_trades":  5,
+    "max_minutes": 15
+  },
+
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
@@ -7,7 +24,7 @@
 
   // ========= Execution Control =========
   "cooldown_sec": 5,
-  "max_pos_per_symbol": 2,
+  "max_pos_per_symbol": 1,
   "atr_period": 5,
 
   // ========= Breakeven Logic =========
@@ -15,7 +32,7 @@
   "breakeven_trigger_atr": 0.3,
   "breakeven_offset_atr": 0.05,
 
-  // ========= Trailing‑Stop Parameters (disabled) =========
+  // ========= Trailing-Stop Parameters (disabled) =========
   "enable_trailing_sl": false,
   "trailing_start_atr": 1.5,
   "trailing_offset_atr": 1.0,
@@ -35,21 +52,21 @@
 
   // ========= Symbol Universe =========
   "symbols": [
-    "DE40", "US30", "US500", "US2000", "USTEC",
-    "EURUSD", "GBPUSD", "USDJPY", "AUDUSD",
-    "BTCUSD", "XTIUSD", "XAUUSD"
+    "DE40","US30","US500","US2000","USTEC",
+    "EURUSD","GBPUSD","USDJPY","AUDUSD",
+    "BTCUSD","XTIUSD","XAUUSD"
   ],
 
   // ========= Reversal Logic =========
   "enable_reversals": true,
   "max_reversals_per_min": 2,
 
-  // ========= No‑Trade‑Zone (disabled) =========
+  // ========= No-Trade-Zone (disabled) =========
   "enable_no_trade_zone": false,
   "no_trade_zone_duration_sec": 60,
   "no_trade_zone_distance_atr": 0.5,
 
-  // ========= Time‑Window Filter =========
+  // ========= Time-Window Filter =========
   "enable_time_filtering": true,
   "trading_hours": [["07:00", "18:00"]],
 
