@@ -1,9 +1,9 @@
 // Config9: Strength = 90 · max_pos = 1 · ATR = 5 · SL = 1.0 ATR · TP = 0.55 ATR · ShadowTrader hybrid rolling window
 {
   // ========= ShadowTrader / Live-Trading Switches =========
-  "shadow_trading_enabled": true,
+  "shadow_trading_enabled": false,
   "live_trading_enabled":   true,
-  "force_live_trading":     false,
+  "force_live_trading":     true,
 
   "activation_rules": {
     "min_net_r":    0.1,
