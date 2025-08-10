@@ -1,5 +1,22 @@
-// Config17: Strength=90 · max_pos=1 · ATR=5 · SL=1.0ATR · TP=0.5ATR · BE trigger=0.33ATR
+// config17: Strength = 90 · max_pos = 1 · ATR = 5 · SL = 1.0 ATR · TP = 0.5 ATR · ShadowTrader hybrid rolling window
 {
+  // ========= ShadowTrader / Live-Trading Switches =========
+  "shadow_trading_enabled": false,
+  "live_trading_enabled":   true,
+  "force_live_trading":     true,
+
+  "activation_rules": {
+    "min_net_r":    0.1,
+    "min_win_rate": 0.0,
+    "min_trades":   1,
+    "cooldown_minutes": 0.1
+  },
+
+  "rolling_window": {
+    "max_trades":  5,
+    "max_minutes": 15
+  },
+
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
@@ -12,22 +29,11 @@
 
   // ========= Breakeven Logic =========
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.33,
+  "breakeven_trigger_atr": 0.4,
   "breakeven_offset_atr": 0.05,
 
-  // ========= Trailing‑Stop Parameters (disabled) =========
-  "enable_trailing_sl": false,
-  "trailing_start_atr": 1.5,
-  "trailing_offset_atr": 1.0,
-
-  // --- Dynamic trailing (disabled) ---
-  "enable_dynamic_trailing": false,
-  "trailing_offset_base_atr": 1.0,
-  "trailing_offset_max_atr": 2.5,
-  "trailing_offset_step_atr": 0.25,
-  "trailing_step_trigger_atr": 1.0,
-  "trailing_backoff_atr": 0.25,
-  "trailing_sl_update_cooldown_sec": 10,
+  // ========= Trailing-Stop Parameters (disabled) =========
+"enable_trailing_sl": false,
 
   // ========= Signal Strength / Polling =========
   "strength_threshold": 90,
@@ -35,26 +41,26 @@
 
   // ========= Symbol Universe =========
   "symbols": [
-    "DE40", "US30", "US500", "US2000", "USTEC",
-    "EURUSD", "GBPUSD", "USDJPY", "AUDUSD",
-    "BTCUSD", "XTIUSD", "XAUUSD"
+    "DE40","US30","US500","US2000","USTEC",
+    "EURUSD","GBPUSD","USDJPY","AUDUSD",
+    "BTCUSD","XTIUSD","XAUUSD"
   ],
 
   // ========= Reversal Logic =========
   "enable_reversals": true,
   "max_reversals_per_min": 2,
 
-  // ========= No‑Trade‑Zone (disabled) =========
+  // ========= No-Trade-Zone (may be disabled) =========
   "enable_no_trade_zone": false,
   "no_trade_zone_duration_sec": 60,
   "no_trade_zone_distance_atr": 0.5,
 
-  // ========= Time‑Window Filter =========
+  // ========= Time-Window Filter =========
   "enable_time_filtering": true,
-  "trading_hours": [["07:00", "18:00"]],
+  "trading_hours": [['07:00', '18:00']],
 
   // ========= MT5 Connection =========
-  "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
+  "mt5_path": "C:\MT5\IC1\terminal64.exe",
   "mt5_login": {
     "login": 52443422,
     "password": "k25vnUGw!vmOTm",
