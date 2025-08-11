@@ -32,12 +32,13 @@
   "breakeven_trigger_atr": 0.5,
   "breakeven_offset_atr": 0.05,
 
+  
   // ========= Trailing-Stop Parameters (enabled) =========
-"enable_trailing_sl": true,
-"trailing_start_atr": 0.7,
-"trailing_step_atr": 0.25,
-"trailing_backoff_atr": 0.1,
-"trailing_sl_update_cooldown_sec": 1,
+  "enable_trailing_sl": true,
+  "trailing_start_atr": 0.7,
+  "trailing_step_atr": 0.25,
+  "trailing_backoff_atr": 0.1,
+  "trailing_sl_update_cooldown_sec": 1,
 
   // ========= Signal Strength / Polling =========
   "strength_threshold": 70,
@@ -64,7 +65,7 @@
   "trading_hours": [['07:00', '18:00']],
 
   // ========= MT5 Connection =========
-  "mt5_path": "C:\MT5\IC1\terminal64.exe",
+  "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
     "login": 52443415,
     "password": "bO&Ct@at9w4F$K",
