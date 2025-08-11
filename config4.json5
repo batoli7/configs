@@ -1,4 +1,4 @@
-// config4: Strength = 40 · max_pos = 1 · ATR = 5 · SL = 1.0 ATR · TP = 9.99 ATR · ShadowTrader hybrid rolling window
+// config4: Strength = 50 · max_pos = 2 · ATR = 5 · SL = 1.0 ATR · TP = 0.6 ATR · ShadowTrader hybrid rolling window
 {
   // ========= ShadowTrader / Live-Trading Switches =========
   "shadow_trading_enabled": false,
@@ -20,36 +20,27 @@
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
-  "tp_mul": 9.99,
+  "tp_mul": 0.6,
 
   // ========= Execution Control =========
-  "cooldown_sec": 5,
-  "max_pos_per_symbol": 1,
+  "cooldown_sec": 10,
+  "max_pos_per_symbol": 2,
   "atr_period": 5,
 
   // ========= Breakeven Logic =========
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.5,
-  "breakeven_offset_atr": 0.05,
+  "breakeven_trigger_atr": 0.45,
+  "breakeven_offset_atr": 0.03,
 
-  
-  // ========= Trailing-Stop Parameters (enabled) =========
-  "enable_trailing_sl": true,
-  "trailing_start_atr": 0.7,
-  "trailing_step_atr": 0.25,
-  "trailing_backoff_atr": 0.1,
-  "trailing_sl_update_cooldown_sec": 1,
+  // ========= Trailing-Stop Parameters (disabled) =========
+  "enable_trailing_sl": false,
 
   // ========= Signal Strength / Polling =========
-  "strength_threshold": 40,
+  "strength_threshold": 50,
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
-  "symbols": [
-    "DE40","US30","US500","US2000","USTEC",
-    "EURUSD","GBPUSD","USDJPY","AUDUSD",
-    "BTCUSD","XTIUSD","XAUUSD"
-  ],
+  "symbols": ['DE40', 'US30', 'US500', 'US2000', 'USTEC', 'EURUSD', 'GBPUSD', 'USDJPY', 'AUDUSD', 'BTCUSD', 'XTIUSD', 'XAUUSD'],
 
   // ========= Reversal Logic =========
   "enable_reversals": true,
