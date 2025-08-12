@@ -1,4 +1,4 @@
-// config17: Strength = 70 · max_pos = 2 · ATR = 5 · SL = 1.0 ATR · TP = 0.8 ATR · ShadowTrader hybrid rolling window
+// config17:  Strength: 80   SL: 1.0   TP: 0.8   max_pos: 2 
 {
   // ========= ShadowTrader / Live-Trading Switches =========
   "shadow_trading_enabled": false,
@@ -36,7 +36,7 @@
   "enable_trailing_sl": false,
 
   // ========= Signal Strength / Polling =========
-  "strength_threshold": 70,
+  "strength_threshold": 80,
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
