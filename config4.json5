@@ -1,26 +1,26 @@
-// config4:  Strength: 50   SL: 1.0   TP: 0.6   max_pos: 2 
+// config4:  Strength: 50   SL: 1.0   TP: 0.9   max_pos: 2 
 {
   // ========= ShadowTrader / Live-Trading Switches =========
-  "shadow_trading_enabled": false,
+  "shadow_trading_enabled": true,
   "live_trading_enabled":   true,
-  "force_live_trading":     true,
+  "force_live_trading":     false,
 
   "activation_rules": {
-    "min_net_r":    0.1,
+    "min_net_r":    0.01,
     "min_win_rate": 0.0,
     "min_trades":   1,
-    "cooldown_minutes": 0.1
+    "cooldown_minutes": 0
   },
 
   "rolling_window": {
-    "max_trades":  5,
-    "max_minutes": 15
+    "max_trades":  1,
+    "max_minutes": 0
   },
 
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
-  "tp_mul": 0.6,
+  "tp_mul": 0.9,
 
   // ========= Execution Control =========
   "cooldown_sec": 10,
@@ -29,8 +29,8 @@
 
   // ========= Breakeven Logic =========
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.45,
-  "breakeven_offset_atr": 0.03,
+  "breakeven_trigger_atr": 0.72,
+  "breakeven_offset_atr": 0.05,
 
   // ========= Trailing-Stop Parameters (disabled) =========
   "enable_trailing_sl": false,

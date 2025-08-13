@@ -1,4 +1,4 @@
-// config18:  Strength: 70   SL: 1.0   TP: 1.0   max_pos: 2 
+// config18:  Strength: 70   SL: 1.0   TP: 0.7   max_pos: 2 
 {
   // ========= ShadowTrader / Live-Trading Switches =========
   "shadow_trading_enabled": false,
@@ -20,7 +20,7 @@
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
-  "tp_mul": 1.0,
+  "tp_mul": 0.7,
 
   // ========= Execution Control =========
   "cooldown_sec": 10,
@@ -29,8 +29,8 @@
 
   // ========= Breakeven Logic =========
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.7,
-  "breakeven_offset_atr": 0.05,
+  "breakeven_trigger_atr": 0.56,
+  "breakeven_offset_atr": 0.03,
 
   // ========= Trailing-Stop Parameters (disabled) =========
   "enable_trailing_sl": false,
