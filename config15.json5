@@ -1,4 +1,4 @@
-// config15:  Strength: 80   SL: 1.0   TP: 0.5   max_pos: 2 
+// config15:  Strength: 70   SL: 1.0   TP: 0.5   max_pos: 2 
 {
   // ========= ShadowTrader / Live-Trading Switches =========
   "shadow_trading_enabled": false,
@@ -36,11 +36,11 @@
   "enable_trailing_sl": false,
 
   // ========= Signal Strength / Polling =========
-  "strength_threshold": 80,
+  "strength_threshold": 70,
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
-  "symbols": ['DE40', 'US30', 'US500', 'US2000', 'USTEC', 'EURUSD', 'GBPUSD', 'USDJPY', 'AUDUSD', 'BTCUSD', 'XTIUSD', 'XAUUSD'],
+  "symbols": ['DE40', 'US30', 'US500', 'USTEC', 'US2000', 'BTCUSD', 'EURUSD', 'USDJPY', 'XTIUSD', 'XNGUSD', 'XAUUSD', 'XAGUSD'],
 
   // ========= Reversal Logic =========
   "enable_reversals": true,
