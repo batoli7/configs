@@ -6,7 +6,7 @@
   "force_live_trading":     false,
 
   "activation_rules": {
-    "min_net_r":    0.01,
+    "min_net_r":    -0.02,
     "min_win_rate": 0.0,
     "min_trades":   1,
     "cooldown_minutes": 0
