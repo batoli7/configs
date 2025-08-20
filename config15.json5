@@ -32,7 +32,7 @@
   "breakeven_trigger_atr": 0.56,
   "breakeven_offset_atr": 0.03,
 
-  // ========= Trailing-Stop Parameters (disabled) =========
+  // ========= Trailing-Stop Parameters =========
   "enable_trailing_sl": false,
 
   // ========= Signal Strength / Polling =========

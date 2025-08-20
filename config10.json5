@@ -1,9 +1,9 @@
 // config10:  Strength: 70   SL: 1.0   TP: 0.9   max_pos: 2 
 {
   // ========= ShadowTrader / Live-Trading Switches =========
-  "shadow_trading_enabled": true,
+  "shadow_trading_enabled": false,
   "live_trading_enabled":   true,
-  "force_live_trading":     false,
+  "force_live_trading":     true,
 
   "activation_rules": {
     "min_net_r":    -0.02,
@@ -32,7 +32,7 @@
   "breakeven_trigger_atr": 0.72,
   "breakeven_offset_atr": 0.05,
 
-  // ========= Trailing-Stop Parameters (disabled) =========
+  // ========= Trailing-Stop Parameters =========
   "enable_trailing_sl": false,
 
   // ========= Signal Strength / Polling =========
