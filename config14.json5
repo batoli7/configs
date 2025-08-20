@@ -1,5 +1,22 @@
 // config14:  Strength: 60   SL: 1.0   TP: 0.5   max_pos: 2 
 {
+  // ========= ShadowTrader / Live-Trading Switches =========
+  "shadow_trading_enabled": false,
+  "live_trading_enabled":   true,
+  "force_live_trading":     true,
+
+  "activation_rules": {
+    "min_net_r":    0.1,
+    "min_win_rate": 0.0,
+    "min_trades":   1,
+    "cooldown_minutes": 0.1
+  },
+
+  "rolling_window": {
+    "max_trades":  5,
+    "max_minutes": 15
+  },
+
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
