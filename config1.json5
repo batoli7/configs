@@ -1,57 +1,69 @@
+// config1:  Strength: 50   SL: 1.0   TP: 0.5   max_pos: 2 
 {
+  // ========= ShadowTrader / Live-Trading Switches =========
+  "shadow_trading_enabled": true,
+  "live_trading_enabled":   true,
+  "force_live_trading":     false,
+
+  "activation_rules": {
+    "min_net_r":    -0.02,
+    "min_win_rate": 0.0,
+    "min_trades":   1,
+    "cooldown_minutes": 0
+  },
+
+  "rolling_window": {
+    "max_trades":  1,
+    "max_minutes": 0
+  },
+
+  // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
-  "cooldown_sec": 5,
-  "max_pos_per_symbol": 1,
-  "enable_dynamic_trailing": false,
-  "trailing_offset_base_atr": 1.0,
-  "trailing_offset_max_atr": 2.5,
-  "trailing_offset_step_atr": 0.25,
-  "trailing_step_trigger_atr": 1.0,
-  "trailing_backoff_atr": 0.25,
-  "trailing_sl_update_cooldown_sec": 10,
-  "strength_threshold": 60,
+  "sl_mul": 1.0,
+  "tp_mul": 0.5,
+
+  // ========= Execution Control =========
+  "cooldown_sec": 10,
+  "max_pos_per_symbol": 2,
+  "atr_period": 5,
+
+  // ========= Breakeven Logic =========
+  "enable_breakeven_sl": true,
+  "breakeven_trigger_atr": 0.4,
+  "breakeven_offset_atr": 0.02,
+
+  // ========= Trailing-Stop Parameters (disabled) =========
+  "enable_trailing_sl": false,
+
+  // ========= Signal Strength / Polling =========
+  "strength_threshold": 50,
   "poll_interval_ms": 100,
-  "symbols": [
-    "DE40",
-    "US30",
-    "US500",
-    "US2000",
-    "USTEC",
-    "EURUSD",
-    "GBPUSD",
-    "USDJPY",
-    "AUDUSD",
-    "BTCUSD",
-    "XTIUSD",
-    "XAUUSD"
-  ],
+
+  // ========= Symbol Universe =========
+  "symbols": ['DE40', 'US30', 'US500', 'USTEC', 'US2000', 'BTCUSD', 'EURUSD', 'USDJPY', 'XTIUSD', 'XNGUSD', 'XAUUSD', 'XAGUSD'],
+
+  // ========= Reversal Logic =========
   "enable_reversals": true,
   "max_reversals_per_min": 2,
+
+  // ========= No-Trade-Zone (may be disabled) =========
   "enable_no_trade_zone": false,
   "no_trade_zone_duration_sec": 60,
   "no_trade_zone_distance_atr": 0.5,
+
+  // ========= Time-Window Filter =========
   "enable_time_filtering": true,
-  "trading_hours": [
-    [
-      "07:00",
-      "18:00"
-    ]
-  ],
+  "trading_hours": [['07:00', '18:00']],
+
+  // ========= MT5 Connection =========
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
-  "decisions_db": "C:/Tradingsystem/data/decisions.db",
-  "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw",
-  "sl_mul": 1.0,
-  "tp_mul": 1.0,
-  "atr_period": 7,
-  "enable_breakeven_sl": false,
-  "enable_trailing_sl": false,
-  "breakeven_trigger_atr": 0.5,
-  "breakeven_offset_atr": 0.05,
-  "trailing_start_atr": 1.5,
-  "trailing_offset_atr": 1.0,
   "mt5_login": {
     "login": 52443400,
     "password": "E&bAhYXp1GEC1f",
     "server": "ICMarketsEU-Demo"
-  }
+  },
+
+  // ========= Database Storage =========
+  "decisions_db": "C:/Tradingsystem/data/decisions.db",
+  "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw"
 }
