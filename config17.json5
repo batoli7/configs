@@ -1,31 +1,35 @@
 // config17:  Strength: 70   SL: 1.0   TP: 0.5   max_pos: 2 
 {
-  // ========= ShadowTrader / Live-Trading Switches =========
-  "shadow_trading_enabled": false,
-  "live_trading_enabled":   true,
-  "force_live_trading":     true,
+  // ========= Live Trading Switches =========
+  "live_trading_enabled":   true,   // honor strength + time filter, etc.
+  "force_live_trading":     false,   // if true, always allow entries (still respects trading_hours) 
 
-  "activation_rules": {
-    "min_net_r":    0.1,
-    "min_win_rate": 0.0,
-    "min_trades":   1,
-    "cooldown_minutes": 0.1
-  },
-
-  "rolling_window": {
-    "max_trades":  5,
-    "max_minutes": 15
+  // ========= Sizing Governor =========
+  // Binary sizing: after a LOSS → small size; after a WIN → full size.
+  "sizing_governor": {
+    "enabled": true,
+    "per_symbol": true,              // track sizing per symbol
+    "small_fraction": 0.1,          // 10% of base risk after a loss
+    "min_fraction": 0.05,            // never below 5% of base risk
+    "max_fraction": 1.0,            // cap at 100% of base risk
+    "be_counts_as": "win",           // "win" | "loss" | "ignore" for |PnL| <= tolerance
+    "be_pnl_usd_tolerance": 2.0,     // USD band around breakeven
+    "floor_policy": "min_volume",    // "min_volume" (floor to broker min) | "skip_entry"
+    "state_path": "C:/Tradingsystem/data/governor_state.json"
   },
 
   // ========= Core Risk Settings =========
-  "risk_per_trade_usd": 100,
+  "risk_per_trade_usd": 100,         // base risk; governor scales this
   "sl_mul": 1.0,
   "tp_mul": 0.5,
+  "cat_sl_factor": 3,                // stored in DB for reference
 
   // ========= Execution Control =========
   "cooldown_sec": 10,
-  "max_pos_per_symbol": 2,
+  "max_pos_per_symbol": 2,           // per side (buy/sell) capacity
   "atr_period": 5,
+  "order_workers": 4,                // parallel order senders
+  "guardian_poll_ms": 200,           // management heartbeat (close on SL/TP, etc.)
 
   // ========= Breakeven Logic =========
   "enable_breakeven_sl": true,
@@ -34,6 +38,14 @@
 
   // ========= Trailing-Stop Parameters (disabled) =========
   "enable_trailing_sl": false,
+  // Optional advanced trailing (only used if enable_trailing_sl = true)
+  "enable_dynamic_trailing": false,
+  "trailing_offset_base_atr": 1.0,
+  "trailing_offset_max_atr": 2.5,
+  "trailing_offset_step_atr": 0.25,
+  "trailing_step_trigger_atr": 1.0,
+  "trailing_backoff_atr": 0.25,
+  "trailing_sl_update_cooldown_sec": 10,
 
   // ========= Signal Strength / Polling =========
   "strength_threshold": 70,
@@ -42,14 +54,9 @@
   // ========= Symbol Universe =========
   "symbols": ['DE40', 'US30', 'US500', 'USTEC', 'US2000', 'BTCUSD', 'EURUSD', 'USDJPY', 'XTIUSD', 'XNGUSD', 'XAUUSD', 'XAGUSD'],
 
-  // ========= Reversal Logic =========
-  "enable_reversals": true,
-  "max_reversals_per_min": 2,
-
-  // ========= No-Trade-Zone (may be disabled) =========
-  "enable_no_trade_zone": false,
-  "no_trade_zone_duration_sec": 60,
-  "no_trade_zone_distance_atr": 0.5,
+  // ========= Reversal Logic (live) =========
+  "enable_reversals": true,          // first-close opposite, then enter new side
+  "max_reversals_per_min": 2,        // throttle per symbol
 
   // ========= Time-Window Filter =========
   "enable_time_filtering": true,
