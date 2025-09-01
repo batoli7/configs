@@ -1,36 +1,36 @@
-// config14:  Strength: 60   SL: 1.0   TP: 0.5   max_pos: 2 
-// MainBrain v3.20 – no ShadowTrader, with Sizing Governor
+// config14:  Strength: 60   TP: 0.5   max_pos: 2   BG: P5 
+// MainBrain v3.21 – adds BurstGuardian MVP
 {
   // ========= Live Trading Switches =========
-  "live_trading_enabled":   true,   // honor strength + time filter, etc.
-  "force_live_trading":     false,   // if true, always allow entries (still respects trading_hours) 
+  "live_trading_enabled":   true,
+  "force_live_trading":     false,
 
   // ========= Sizing Governor =========
-  // Binary sizing: after a LOSS → small size; after a WIN → full size.
-  "sizing_governor": {
+  // Disabled for first pass to isolate BurstGuardian effect
+    "sizing_governor": {
     "enabled": false,
-    "per_symbol": true,              // track sizing per symbol
-    "small_fraction": 0.10,          // 10% of base risk after a loss
-    "min_fraction": 0.05,            // never below 5% of base risk
-    "max_fraction": 1.00,            // cap at 100% of base risk
-    "be_counts_as": "win",           // "win" | "loss" | "ignore" for |PnL| <= tolerance
-    "be_pnl_usd_tolerance": 2.0,     // USD band around breakeven
-    "floor_policy": "min_volume",    // "min_volume" (floor to broker min) | "skip_entry"
+    "per_symbol": true,
+    "small_fraction": 0.10,
+    "min_fraction": 0.05,
+    "max_fraction": 1.00,
+    "be_counts_as": "win",
+    "be_pnl_usd_tolerance": 2.0,
+    "floor_policy": "min_volume",
     "state_path": "C:/Tradingsystem/data/governor_state.json"
   },
 
   // ========= Core Risk Settings =========
-  "risk_per_trade_usd": 100,         // base risk; governor scales this
+  "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
   "tp_mul": 0.5,
-  "cat_sl_factor": 3,                // stored in DB for reference
+  "cat_sl_factor": 3,
 
   // ========= Execution Control =========
   "cooldown_sec": 10,
-  "max_pos_per_symbol": 2,           // per side (buy/sell) capacity
+  "max_pos_per_symbol": 2,
   "atr_period": 5,
-  "order_workers": 4,                // parallel order senders
-  "guardian_poll_ms": 200,           // management heartbeat (close on SL/TP, etc.)
+  "order_workers": 4,
+  "guardian_poll_ms": 200,
 
   // ========= Breakeven Logic =========
   "enable_breakeven_sl": true,
@@ -39,7 +39,6 @@
 
   // ========= Trailing-Stop Parameters (disabled) =========
   "enable_trailing_sl": false,
-  // Optional advanced trailing (only used if enable_trailing_sl = true)
   "enable_dynamic_trailing": false,
   "trailing_offset_base_atr": 1.0,
   "trailing_offset_max_atr": 2.5,
@@ -53,15 +52,42 @@
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
-  "symbols": ['DE40', 'US30', 'US500', 'USTEC', 'US2000', 'BTCUSD', 'EURUSD', 'USDJPY', 'XTIUSD', 'XNGUSD', 'XAUUSD', 'XAGUSD'],
+  "symbols": ["DE40", "US30", "US500", "USTEC", "US2000", "BTCUSD", "EURUSD", "USDJPY", "XTIUSD", "XNGUSD", "XAUUSD", "XAGUSD"],
 
   // ========= Reversal Logic (live) =========
-  "enable_reversals": true,          // first-close opposite, then enter new side
-  "max_reversals_per_min": 2,        // throttle per symbol
+  "enable_reversals": true,
+  "max_reversals_per_min": 2,
 
   // ========= Time-Window Filter =========
   "enable_time_filtering": true,
   "trading_hours": [['07:00', '18:00']],
+
+  // ========= BurstGuardian (MVP) =========
+  // Global thresholds for all symbols (simple first run).
+  "burst_guardian": {
+    // PreRunGuard (price moved BEFORE signal)
+    "pre_window_ms": 1200,
+    "pre_max_move_ticks": 4,
+    "pre_max_move_atr_frac": 0.14,
+
+    // JumpGuard (AFTER signal, just before placing the order)
+    "max_lag_ms": 1200,
+    "max_move_ticks": 5,
+    "max_move_atr_frac": 0.16,
+    "max_spread_mult": 1.9,
+
+    // Retrace entry (after a block)
+    "retrace_frac": 0.45,
+    "retrace_window_s": 7.0,
+
+    // No-Progress killer (post-fill)
+    "timeout_s": 4.0,
+    "min_net_ticks": 2,
+    "min_mfe_ticks": 4,
+
+    // Max slippage guard (post-fill immediate)
+    "max_slippage_ticks": 2
+  },
 
   // ========= MT5 Connection =========
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",

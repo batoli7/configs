@@ -1,20 +1,20 @@
-// config4:  Strength: 60   TP: 0.9   max_pos: 2   BE: win 
-// MainBrain v3.20 – no ShadowTrader, with Sizing Governor
+// config4:  Strength: 60   TP: 0.9   max_pos: 2   BG: P1 
+// MainBrain v3.21 – adds BurstGuardian MVP
 {
   // ========= Live Trading Switches =========
   "live_trading_enabled":   true,
   "force_live_trading":     false,
 
   // ========= Sizing Governor =========
-  // Binary sizing: after a LOSS → broker min size; after a WIN → full $100 risk.
-  "sizing_governor": {
-    "enabled": true,
+  // Disabled for first pass to isolate BurstGuardian effect
+    "sizing_governor": {
+    "enabled": false,
     "per_symbol": true,
-    "small_fraction": 0.0,
-    "min_fraction": 0.0,
+    "small_fraction": 0.10,
+    "min_fraction": 0.05,
     "max_fraction": 1.00,
     "be_counts_as": "win",
-    "be_pnl_usd_tolerance": 0.5,
+    "be_pnl_usd_tolerance": 2.0,
     "floor_policy": "min_volume",
     "state_path": "C:/Tradingsystem/data/governor_state.json"
   },
@@ -52,7 +52,7 @@
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
-  "symbols": ['DE40', 'US30', 'US500', 'USTEC', 'US2000', 'BTCUSD', 'EURUSD', 'USDJPY', 'XTIUSD', 'XNGUSD', 'XAUUSD', 'XAGUSD'],
+  "symbols": ["DE40", "US30", "US500", "USTEC", "US2000", "BTCUSD", "EURUSD", "USDJPY", "XTIUSD", "XNGUSD", "XAUUSD", "XAGUSD"],
 
   // ========= Reversal Logic (live) =========
   "enable_reversals": true,
@@ -61,6 +61,33 @@
   // ========= Time-Window Filter =========
   "enable_time_filtering": true,
   "trading_hours": [['07:00', '18:00']],
+
+  // ========= BurstGuardian (MVP) =========
+  // Global thresholds for all symbols (simple first run).
+  "burst_guardian": {
+    // PreRunGuard (price moved BEFORE signal)
+    "pre_window_ms": 700,
+    "pre_max_move_ticks": 6,
+    "pre_max_move_atr_frac": 0.22,
+
+    // JumpGuard (AFTER signal, just before placing the order)
+    "max_lag_ms": 2000,
+    "max_move_ticks": 8,
+    "max_move_atr_frac": 0.26,
+    "max_spread_mult": 2.5,
+
+    // Retrace entry (after a block)
+    "retrace_frac": 0.33,
+    "retrace_window_s": 5.0,
+
+    // No-Progress killer (post-fill)
+    "timeout_s": 6.0,
+    "min_net_ticks": 1,
+    "min_mfe_ticks": 2,
+
+    // Max slippage guard (post-fill immediate)
+    "max_slippage_ticks": 3
+  },
 
   // ========= MT5 Connection =========
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
