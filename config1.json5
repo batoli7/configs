@@ -1,59 +1,69 @@
-// config1:  Strength: 50   SL: 1.0   TP: 0.5   max_pos: 2 
+// config1:  Strength: 60   TP: 0.5   max_pos: 2   BG: disabled
+// MainBrain v3.21 – adds BurstGuardian MVP
 {
-  // ========= ShadowTrader / Live-Trading Switches =========
-  "shadow_trading_enabled": true,
+  // ========= Live Trading Switches =========
   "live_trading_enabled":   true,
   "force_live_trading":     false,
 
-  "activation_rules": {
-    "min_net_r":    -0.02,
-    "min_win_rate": 0.0,
-    "min_trades":   1,
-    "cooldown_minutes": 0
-  },
-
-  "rolling_window": {
-    "max_trades":  1,
-    "max_minutes": 0
+  // ========= Sizing Governor =========
+  // Disabled for first BurstGuardian trial run
+  "sizing_governor": {
+    "enabled": false,
+    "per_symbol": true,
+    "small_fraction": 0.10,
+    "min_fraction": 0.05,
+    "max_fraction": 1.00,
+    "be_counts_as": "win",
+    "be_pnl_usd_tolerance": 2.0,
+    "floor_policy": "min_volume",
+    "state_path": "C:/Tradingsystem/data/governor_state.json"
   },
 
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
   "tp_mul": 0.5,
+  "cat_sl_factor": 3,
 
   // ========= Execution Control =========
   "cooldown_sec": 10,
   "max_pos_per_symbol": 2,
   "atr_period": 5,
+  "order_workers": 4,
+  "guardian_poll_ms": 200,
 
   // ========= Breakeven Logic =========
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.4,
+  "breakeven_trigger_atr": 0.40,
   "breakeven_offset_atr": 0.02,
 
   // ========= Trailing-Stop Parameters (disabled) =========
   "enable_trailing_sl": false,
+  "enable_dynamic_trailing": false,
+  "trailing_offset_base_atr": 1.0,
+  "trailing_offset_max_atr": 2.5,
+  "trailing_offset_step_atr": 0.25,
+  "trailing_step_trigger_atr": 1.0,
+  "trailing_backoff_atr": 0.25,
+  "trailing_sl_update_cooldown_sec": 10,
 
   // ========= Signal Strength / Polling =========
-  "strength_threshold": 50,
+  "strength_threshold": 60,
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
-  "symbols": ['DE40', 'US30', 'US500', 'USTEC', 'US2000', 'BTCUSD', 'EURUSD', 'USDJPY', 'XTIUSD', 'XNGUSD', 'XAUUSD', 'XAGUSD'],
+  "symbols": ["DE40","US30","US500","USTEC","US2000","BTCUSD","EURUSD","USDJPY","XTIUSD","XNGUSD","XAUUSD","XAGUSD"],
 
-  // ========= Reversal Logic =========
+  // ========= Reversal Logic (live) =========
   "enable_reversals": true,
   "max_reversals_per_min": 2,
 
-  // ========= No-Trade-Zone (may be disabled) =========
-  "enable_no_trade_zone": false,
-  "no_trade_zone_duration_sec": 60,
-  "no_trade_zone_distance_atr": 0.5,
-
   // ========= Time-Window Filter =========
   "enable_time_filtering": true,
-  "trading_hours": [['07:00', '18:00']],
+  "trading_hours": [["07:00","18:00"]],
+
+  // ========= BurstGuardian (disabled) =========
+  // Omitted intentionally to disable the feature for this config.
 
   // ========= MT5 Connection =========
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
