@@ -1,5 +1,5 @@
-// config16:  Strength: 60   TP: 0.9   max_pos: 2   BG: B3 
-// MainBrain v3.21 – adds BurstGuardian MVP
+// config16:  Strength: 60   TP: 0.9   max_pos: 2   BG: D4 
+// MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
   "live_trading_enabled":   true,
@@ -60,24 +60,34 @@
 
   // ========= Time-Window Filter =========
   "enable_time_filtering": true,
-  "trading_hours": [['07:00', '18:00']],
+  "trading_hours": [['07:00', '21:59']],
 
-  // ========= BurstGuardian (clean breakout profiles) =========
+  // ========= BurstGuardian (diagnostic) =========
   "burst_guardian": {
     "enabled": true,
-    "pre_window_ms": 1100,
-    "pre_max_move_ticks": 12,
-    "pre_max_move_atr_frac": 0.24,
-    "max_lag_ms": 2200,
-    "max_move_ticks": 16,
-    "max_move_atr_frac": 0.28,
+
+    // --- PreRun (ticks only; ATR gate off) ---
+    "pre_window_ms": 900,
+    "pre_max_move_ticks": 20,
+    "pre_max_move_atr_frac": 9000000000.0,
+
+    // --- Jump (ticks only; ATR gate off) ---
+    "max_lag_ms": 2500,
+    "max_move_ticks": 25,
+    "max_move_atr_frac": 9000000000.0,
     "max_spread_mult": 2.2,
-    "retrace_frac": 0.35,
-    "retrace_window_s": 8,
-    "timeout_s": 5,
-    "min_net_ticks": 2,
-    "min_mfe_ticks": 3,
-    "max_slippage_ticks": 2
+
+    // --- Retrace (re-entry) ---
+    "retrace_frac": 0.3,
+    "retrace_window_s": 10,
+
+    // --- No-Progress (relaxed) ---
+    "timeout_s": 15,
+    "min_net_ticks": 0,
+    "min_mfe_ticks": 0,
+
+    // --- Slippage ---
+    "max_slippage_ticks": 25
   },
 
   // ========= MT5 Connection =========
