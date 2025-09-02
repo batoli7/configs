@@ -1,4 +1,4 @@
-// config7:  Strength: 60   TP: 0.9   max_pos: 2   BG: P2 
+// config7:  Strength: 60   TP: 0.9   max_pos: 2   BG: B1 
 // MainBrain v3.21 – adds BurstGuardian MVP
 {
   // ========= Live Trading Switches =========
@@ -6,8 +6,8 @@
   "force_live_trading":     false,
 
   // ========= Sizing Governor =========
-  // Disabled for first pass to isolate BurstGuardian effect
-    "sizing_governor": {
+  // Disabled to isolate BurstGuardian behavior in this run.
+  "sizing_governor": {
     "enabled": false,
     "per_symbol": true,
     "small_fraction": 0.10,
@@ -62,31 +62,22 @@
   "enable_time_filtering": true,
   "trading_hours": [['07:00', '18:00']],
 
-  // ========= BurstGuardian (MVP) =========
-  // Global thresholds for all symbols (simple first run).
+  // ========= BurstGuardian (clean breakout profiles) =========
   "burst_guardian": {
-    // PreRunGuard (price moved BEFORE signal)
-    "pre_window_ms": 700,
-    "pre_max_move_ticks": 6,
-    "pre_max_move_atr_frac": 0.22,
-
-    // JumpGuard (AFTER signal, just before placing the order)
-    "max_lag_ms": 2000,
-    "max_move_ticks": 8,
-    "max_move_atr_frac": 0.26,
-    "max_spread_mult": 2.0,
-
-    // Retrace entry (after a block)
-    "retrace_frac": 0.33,
-    "retrace_window_s": 5.0,
-
-    // No-Progress killer (post-fill)
-    "timeout_s": 6.0,
+    "enabled": true,
+    "pre_window_ms": 900,
+    "pre_max_move_ticks": 20,
+    "pre_max_move_atr_frac": 0.3,
+    "max_lag_ms": 2500,
+    "max_move_ticks": 25,
+    "max_move_atr_frac": 0.35,
+    "max_spread_mult": 2.2,
+    "retrace_frac": 0.3,
+    "retrace_window_s": 10,
+    "timeout_s": 6,
     "min_net_ticks": 1,
     "min_mfe_ticks": 2,
-
-    // Max slippage guard (post-fill immediate)
-    "max_slippage_ticks": 2
+    "max_slippage_ticks": 3
   },
 
   // ========= MT5 Connection =========

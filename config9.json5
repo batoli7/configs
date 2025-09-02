@@ -1,4 +1,4 @@
-// config9:  Strength: 60   TP: 0.7   max_pos: 2   BG: P3 
+// config9:  Strength: 60   TP: 0.7   max_pos: 2   BG: B2 
 // MainBrain v3.21 – adds BurstGuardian MVP
 {
   // ========= Live Trading Switches =========
@@ -6,8 +6,8 @@
   "force_live_trading":     false,
 
   // ========= Sizing Governor =========
-  // Disabled for first pass to isolate BurstGuardian effect
-    "sizing_governor": {
+  // Disabled to isolate BurstGuardian behavior in this run.
+  "sizing_governor": {
     "enabled": false,
     "per_symbol": true,
     "small_fraction": 0.10,
@@ -62,30 +62,21 @@
   "enable_time_filtering": true,
   "trading_hours": [['07:00', '18:00']],
 
-  // ========= BurstGuardian (MVP) =========
-  // Global thresholds for all symbols (simple first run).
+  // ========= BurstGuardian (clean breakout profiles) =========
   "burst_guardian": {
-    // PreRunGuard (price moved BEFORE signal)
-    "pre_window_ms": 900,
-    "pre_max_move_ticks": 5,
-    "pre_max_move_atr_frac": 0.18,
-
-    // JumpGuard (AFTER signal, just before placing the order)
-    "max_lag_ms": 1500,
-    "max_move_ticks": 6,
-    "max_move_atr_frac": 0.2,
+    "enabled": true,
+    "pre_window_ms": 1000,
+    "pre_max_move_ticks": 16,
+    "pre_max_move_atr_frac": 0.26,
+    "max_lag_ms": 2400,
+    "max_move_ticks": 20,
+    "max_move_atr_frac": 0.3,
     "max_spread_mult": 2.2,
-
-    // Retrace entry (after a block)
-    "retrace_frac": 0.4,
-    "retrace_window_s": 6.0,
-
-    // No-Progress killer (post-fill)
-    "timeout_s": 5.0,
-    "min_net_ticks": 2,
-    "min_mfe_ticks": 3,
-
-    // Max slippage guard (post-fill immediate)
+    "retrace_frac": 0.33,
+    "retrace_window_s": 9,
+    "timeout_s": 5,
+    "min_net_ticks": 1,
+    "min_mfe_ticks": 2,
     "max_slippage_ticks": 2
   },
 
