@@ -88,7 +88,7 @@
 
     // --- Slippage ---
     "max_slippage_ticks": 25
-  },,
+  },
 
   // ========= MT5 Connection =========
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
