@@ -1,4 +1,4 @@
-// config6:  Strength: 60   TP: 0.7   max_pos: 2   BG: D1 
+// config6:  Strength: 60   TP: 0.7   max_pos: 2   BG: D4 
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -62,32 +62,32 @@
   "enable_time_filtering": true,
   "trading_hours": [['07:00', '21:59']],
 
-  // ========= BurstGuardian (diagnostic) =========
+  // ========= BurstGuardian (D4-focused sweep) =========
   "burst_guardian": {
     "enabled": true,
 
-    // --- PreRun (ticks only; ATR gate off) ---
+    // --- PreRun (ticks; ATR gate off) ---
     "pre_window_ms": 900,
     "pre_max_move_ticks": 20,
     "pre_max_move_atr_frac": 9000000000.0,
 
-    // --- Jump (ticks only; ATR gate off) ---
+    // --- Jump (ticks; ATR gate off) ---
     "max_lag_ms": 2500,
     "max_move_ticks": 25,
     "max_move_atr_frac": 9000000000.0,
     "max_spread_mult": 2.2,
 
-    // --- Retrace (re-entry) ---
+    // --- Retrace ---
     "retrace_frac": 0.3,
     "retrace_window_s": 10,
 
-    // --- No-Progress (relaxed) ---
-    "timeout_s": 12,
-    "min_net_ticks": 0.5,
-    "min_mfe_ticks": 1,
+    // --- No-Progress ---
+    "timeout_s": 15,
+    "min_net_ticks": 0,
+    "min_mfe_ticks": 0,
 
     // --- Slippage ---
-    "max_slippage_ticks": 9999
+    "max_slippage_ticks": 25
   },
 
   // ========= MT5 Connection =========
