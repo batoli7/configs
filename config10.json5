@@ -1,4 +1,4 @@
-// config10:  Strength: 60   TP: 0.9   max_pos: 2   BG: D4-slip50 
+// config10:  Strength: 60   TP: 0.9   max_pos: 2   BG: D4-slip35 
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -87,8 +87,8 @@
     "min_mfe_ticks": 0,
 
     // --- Slippage ---
-    "max_slippage_ticks": 50
-  },
+    "max_slippage_ticks": 35
+  },,
 
   // ========= MT5 Connection =========
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
