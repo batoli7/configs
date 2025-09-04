@@ -1,4 +1,4 @@
-// config4:  Strength: 60   TP: 0.9   max_pos: 2   BG: disabled 
+// config4:  TP: 0.9   BG: disabled 
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -52,9 +52,8 @@
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
-  "symbols": ["DE40", "US30", "US500", "USTEC", "US2000", "BTCUSD", "EURUSD", "USDJPY", "XTIUSD", "XNGUSD", "XAUUSD", "XAGUSD"],
-
-  // ========= Reversal Logic (live) =========
+"symbols": ["DE40", "US30", "US500", "USTEC", "US2000", "BTCUSD", "EURUSD", "USDJPY", "XTIUSD", "XAUUSD"],
+// ========= Reversal Logic (live) =========
   "enable_reversals": true,
   "max_reversals_per_min": 2,
 
