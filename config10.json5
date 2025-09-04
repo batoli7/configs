@@ -1,4 +1,4 @@
-// config10:  TP: 0.9   BG: D4-slip35-lag2000 
+// config10:  TP: 0.9   BG: D4-ticks40/60-slip75-r025-pre700 
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -52,8 +52,8 @@
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
-"symbols": ["DE40", "US30", "US500", "USTEC", "US2000", "BTCUSD", "EURUSD", "USDJPY", "XTIUSD", "XAUUSD"],
-// ========= Reversal Logic (live) =========
+  "symbols": ["DE40", "US30", "US500", "USTEC", "US2000", "BTCUSD", "EURUSD", "USDJPY", "XTIUSD", "XAUUSD"],
+  // ========= Reversal Logic (live) =========
   "enable_reversals": true,
   "max_reversals_per_min": 2,
 
@@ -66,18 +66,18 @@
     "enabled": true,
 
     // --- PreRun (ticks; ATR gate off) ---
-    "pre_window_ms": 900,
-    "pre_max_move_ticks": 20,
+    "pre_window_ms": 700,
+    "pre_max_move_ticks": 40,
     "pre_max_move_atr_frac": 9000000000,
 
     // --- Jump (ticks; ATR gate off) ---
-    "max_lag_ms": 2000,
-    "max_move_ticks": 25,
+    "max_lag_ms": 2500,
+    "max_move_ticks": 60,
     "max_move_atr_frac": 9000000000,
     "max_spread_mult": 2.2,
 
     // --- Retrace ---
-    "retrace_frac": 0.3,
+    "retrace_frac": 0.25,
     "retrace_window_s": 10,
 
     // --- No-Progress ---
@@ -86,7 +86,7 @@
     "min_mfe_ticks": 0,
 
     // --- Slippage ---
-    "max_slippage_ticks": 35
+    "max_slippage_ticks": 75
   },
 
   // ========= MT5 Connection =========

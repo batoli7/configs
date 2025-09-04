@@ -1,4 +1,4 @@
-// config15:  TP: 0.7   BG: D4-ticks60/80-slip100-r020-pre600 
+// config15:  TP: 0.7   BG: D4-ticksOFF-slip100-r020-pre700 
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -52,8 +52,8 @@
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
-"symbols": ["DE40", "US30", "US500", "USTEC", "US2000", "BTCUSD", "EURUSD", "USDJPY", "XTIUSD", "XAUUSD"],
-// ========= Reversal Logic (live) =========
+  "symbols": ["DE40", "US30", "US500", "USTEC", "US2000", "BTCUSD", "EURUSD", "USDJPY", "XTIUSD", "XAUUSD"],
+  // ========= Reversal Logic (live) =========
   "enable_reversals": true,
   "max_reversals_per_min": 2,
 
@@ -66,13 +66,13 @@
     "enabled": true,
 
     // --- PreRun (ticks; ATR gate off) ---
-    "pre_window_ms": 600,
-    "pre_max_move_ticks": 60,
+    "pre_window_ms": 700,
+    "pre_max_move_ticks": 9000000000,
     "pre_max_move_atr_frac": 9000000000,
 
     // --- Jump (ticks; ATR gate off) ---
     "max_lag_ms": 2500,
-    "max_move_ticks": 80,
+    "max_move_ticks": 9000000000,
     "max_move_atr_frac": 9000000000,
     "max_spread_mult": 2.2,
 
