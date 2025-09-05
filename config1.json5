@@ -1,11 +1,12 @@
-// config1:  Strength: 60   TP: 0.5   max_pos: 2   BG: effectively disabled
-// MainBrain v3.21 – adds BurstGuardian MVP (neutered)
+// config2:  TP: 0.5   BG: disabled 
+// MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
   "live_trading_enabled":   true,
   "force_live_trading":     false,
 
   // ========= Sizing Governor =========
+  // Disabled to isolate BurstGuardian behavior in this run.
   "sizing_governor": {
     "enabled": false,
     "per_symbol": true,
@@ -33,7 +34,7 @@
 
   // ========= Breakeven Logic =========
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.40,
+  "breakeven_trigger_atr": 0.4,
   "breakeven_offset_atr": 0.02,
 
   // ========= Trailing-Stop Parameters (disabled) =========
@@ -51,43 +52,48 @@
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
-  "symbols": ["DE40","US30","US500","USTEC","US2000","BTCUSD","EURUSD","USDJPY","XTIUSD","XNGUSD","XAUUSD","XAGUSD"],
-
+  "symbols": ["DE40", "US30", "US500", "USTEC", "US2000", "BTCUSD", "EURUSD", "USDJPY", "XTIUSD", "XAUUSD"],
   // ========= Reversal Logic (live) =========
   "enable_reversals": true,
   "max_reversals_per_min": 2,
 
   // ========= Time-Window Filter =========
   "enable_time_filtering": true,
-  "trading_hours": [["07:00","18:00"]],
+  "trading_hours": [['07:00', '21:59']],
 
-  // ========= BurstGuardian (neutered) =========
-  // NOTE: Code has no "enabled" flag yet, so we set thresholds so high it never blocks.
+  // ========= BurstGuardian (D4-focused sweep) =========
   "burst_guardian": {
-    "pre_window_ms": 1,              // tiny window
-    "pre_max_move_ticks": 1e12,      // effectively infinite
-    "pre_max_move_atr_frac": 1e6,
+    "enabled": false,
 
-    "max_lag_ms": 999999999,         // never STALED
-    "max_move_ticks": 1e12,
-    "max_move_atr_frac": 1e6,
-    "max_spread_mult": 1e6,
+    // --- PreRun (ticks; ATR gate off) ---
+    "pre_window_ms": 900,
+    "pre_max_move_ticks": 20,
+    "pre_max_move_atr_frac": 9000000000.0,
 
-    "retrace_frac": 0.99,            // retrace path effectively unused
-    "retrace_window_s": 0.1,
+    // --- Jump (ticks; ATR gate off) ---
+    "max_lag_ms": 2500,
+    "max_move_ticks": 25,
+    "max_move_atr_frac": 9000000000.0,
+    "max_spread_mult": 2.2,
 
-    "timeout_s": 999999,             // no No-Progress kills
+    // --- Retrace ---
+    "retrace_frac": 0.3,
+    "retrace_window_s": 10,
+
+    // --- No-Progress ---
+    "timeout_s": 15,
     "min_net_ticks": 0,
     "min_mfe_ticks": 0,
 
-    "max_slippage_ticks": 1e9        // never slippage-flatten
+    // --- Slippage ---
+    "max_slippage_ticks": 25
   },
 
   // ========= MT5 Connection =========
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
-    "login": 52443400,
-    "password": "E&bAhYXp1GEC1f",
+    "login": 52443402,
+    "password": "&jsm5qDB$3K6vU",
     "server": "ICMarketsEU-Demo"
   },
 
