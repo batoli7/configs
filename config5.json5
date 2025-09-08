@@ -1,4 +1,4 @@
-// config5:  TP: 0.5   BG: D4 
+// config5:  TP: 0.7   BG: D4
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -8,13 +8,13 @@
   // ========= Sizing Governor =========
   // Disabled to isolate BurstGuardian behavior in this run.
   "sizing_governor": {
-    "enabled": false,
+    "enabled": true,
     "per_symbol": true,
-    "small_fraction": 0.10,
-    "min_fraction": 0.05,
-    "max_fraction": 1.00,
-    "be_counts_as": "win",
-    "be_pnl_usd_tolerance": 2.0,
+    "small_fraction": 0.0,
+    "min_fraction": 0.0,
+    "max_fraction": 1.0,
+    "be_counts_as": "loss",
+    "be_pnl_usd_tolerance": 0.5,
     "floor_policy": "min_volume",
     "state_path": "C:/Tradingsystem/data/governor_state.json"
   },
@@ -22,7 +22,7 @@
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
-  "tp_mul": 0.5,
+  "tp_mul": 0.7,
   "cat_sl_factor": 3,
 
   // ========= Execution Control =========
@@ -34,8 +34,8 @@
 
   // ========= Breakeven Logic =========
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.4,
-  "breakeven_offset_atr": 0.02,
+  "breakeven_trigger_atr": 0.56,
+  "breakeven_offset_atr": 0.03,
 
   // ========= Trailing-Stop Parameters (disabled) =========
   "enable_trailing_sl": false,

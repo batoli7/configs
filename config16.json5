@@ -1,4 +1,4 @@
-// config16:  TP: 0.9   BG: D4-ticksOFF-slip100-r020-pre700 
+// config16:  TP: 0.7   BG: D4-slip35-lag2000
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -8,13 +8,13 @@
   // ========= Sizing Governor =========
   // Disabled to isolate BurstGuardian behavior in this run.
   "sizing_governor": {
-    "enabled": false,
+    "enabled": true,
     "per_symbol": true,
-    "small_fraction": 0.10,
-    "min_fraction": 0.05,
-    "max_fraction": 1.00,
-    "be_counts_as": "win",
-    "be_pnl_usd_tolerance": 2.0,
+    "small_fraction": 0.0,
+    "min_fraction": 0.0,
+    "max_fraction": 1.0,
+    "be_counts_as": "loss",
+    "be_pnl_usd_tolerance": 0.5,
     "floor_policy": "min_volume",
     "state_path": "C:/Tradingsystem/data/governor_state.json"
   },
@@ -22,7 +22,7 @@
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
-  "tp_mul": 0.9,
+  "tp_mul": 0.7,
   "cat_sl_factor": 3,
 
   // ========= Execution Control =========
@@ -34,8 +34,8 @@
 
   // ========= Breakeven Logic =========
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.72,
-  "breakeven_offset_atr": 0.05,
+  "breakeven_trigger_atr": 0.56,
+  "breakeven_offset_atr": 0.03,
 
   // ========= Trailing-Stop Parameters (disabled) =========
   "enable_trailing_sl": false,
@@ -66,18 +66,18 @@
     "enabled": true,
 
     // --- PreRun (ticks; ATR gate off) ---
-    "pre_window_ms": 700,
-    "pre_max_move_ticks": 9000000000,
-    "pre_max_move_atr_frac": 9000000000,
+    "pre_window_ms": 900,
+    "pre_max_move_ticks": 20,
+    "pre_max_move_atr_frac": 9000000000.0,
 
     // --- Jump (ticks; ATR gate off) ---
-    "max_lag_ms": 2500,
+    "max_lag_ms": 2000,
     "max_move_ticks": 9000000000,
     "max_move_atr_frac": 9000000000,
     "max_spread_mult": 2.2,
 
     // --- Retrace ---
-    "retrace_frac": 0.2,
+    "retrace_frac": 0.3,
     "retrace_window_s": 10,
 
     // --- No-Progress ---
@@ -86,7 +86,7 @@
     "min_mfe_ticks": 0,
 
     // --- Slippage ---
-    "max_slippage_ticks": 100
+    "max_slippage_ticks": 35
   },
 
   // ========= MT5 Connection =========

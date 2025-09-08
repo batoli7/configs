@@ -1,4 +1,4 @@
-// config10:  TP: 0.9   BG: D4-ticks40/60-slip75-r025-pre700 
+// config10:  TP: 0.7   BG: D4-slip40-lag2000
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -22,7 +22,7 @@
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
-  "tp_mul": 0.9,
+  "tp_mul": 0.7,
   "cat_sl_factor": 3,
 
   // ========= Execution Control =========
@@ -34,8 +34,8 @@
 
   // ========= Breakeven Logic =========
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.72,
-  "breakeven_offset_atr": 0.05,
+  "breakeven_trigger_atr": 0.56,
+  "breakeven_offset_atr": 0.03,
 
   // ========= Trailing-Stop Parameters (disabled) =========
   "enable_trailing_sl": false,
@@ -66,18 +66,18 @@
     "enabled": true,
 
     // --- PreRun (ticks; ATR gate off) ---
-    "pre_window_ms": 700,
-    "pre_max_move_ticks": 40,
-    "pre_max_move_atr_frac": 9000000000,
+    "pre_window_ms": 900,
+    "pre_max_move_ticks": 20,
+    "pre_max_move_atr_frac": 9000000000.0,
 
     // --- Jump (ticks; ATR gate off) ---
-    "max_lag_ms": 2500,
+    "max_lag_ms": 2000,
     "max_move_ticks": 60,
     "max_move_atr_frac": 9000000000,
     "max_spread_mult": 2.2,
 
     // --- Retrace ---
-    "retrace_frac": 0.25,
+    "retrace_frac": 0.3,
     "retrace_window_s": 10,
 
     // --- No-Progress ---
@@ -86,7 +86,7 @@
     "min_mfe_ticks": 0,
 
     // --- Slippage ---
-    "max_slippage_ticks": 75
+    "max_slippage_ticks": 40
   },
 
   // ========= MT5 Connection =========

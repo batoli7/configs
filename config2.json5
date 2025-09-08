@@ -1,4 +1,4 @@
-// config2:  TP: 0.5   BG: disabled 
+// config2:  TP: 0.7   BG: disabled
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -22,7 +22,7 @@
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
-  "tp_mul": 0.5,
+  "tp_mul": 0.7,
   "cat_sl_factor": 3,
 
   // ========= Execution Control =========
@@ -34,8 +34,8 @@
 
   // ========= Breakeven Logic =========
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.4,
-  "breakeven_offset_atr": 0.02,
+  "breakeven_trigger_atr": 0.56,
+  "breakeven_offset_atr": 0.03,
 
   // ========= Trailing-Stop Parameters (disabled) =========
   "enable_trailing_sl": false,

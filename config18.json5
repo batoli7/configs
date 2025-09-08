@@ -1,4 +1,4 @@
-// config18:  TP: 0.7   BG: D4-ticksOFF-slip150-r015-pre600 
+// config18:  TP: 0.7   BG: D4-ticks40/60-slip75-r025-pre700
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -8,13 +8,13 @@
   // ========= Sizing Governor =========
   // Disabled to isolate BurstGuardian behavior in this run.
   "sizing_governor": {
-    "enabled": false,
+    "enabled": true,
     "per_symbol": true,
-    "small_fraction": 0.10,
-    "min_fraction": 0.05,
-    "max_fraction": 1.00,
-    "be_counts_as": "win",
-    "be_pnl_usd_tolerance": 2.0,
+    "small_fraction": 0.0,
+    "min_fraction": 0.0,
+    "max_fraction": 1.0,
+    "be_counts_as": "loss",
+    "be_pnl_usd_tolerance": 0.5,
     "floor_policy": "min_volume",
     "state_path": "C:/Tradingsystem/data/governor_state.json"
   },
@@ -66,9 +66,9 @@
     "enabled": true,
 
     // --- PreRun (ticks; ATR gate off) ---
-    "pre_window_ms": 600,
-    "pre_max_move_ticks": 9000000000,
-    "pre_max_move_atr_frac": 9000000000,
+    "pre_window_ms": 700,
+    "pre_max_move_ticks": 40,
+    "pre_max_move_atr_frac": 9000000000.0,
 
     // --- Jump (ticks; ATR gate off) ---
     "max_lag_ms": 2500,
@@ -77,7 +77,7 @@
     "max_spread_mult": 2.2,
 
     // --- Retrace ---
-    "retrace_frac": 0.15,
+    "retrace_frac": 0.25,
     "retrace_window_s": 10,
 
     // --- No-Progress ---
@@ -86,7 +86,7 @@
     "min_mfe_ticks": 0,
 
     // --- Slippage ---
-    "max_slippage_ticks": 150
+    "max_slippage_ticks": 75
   },
 
   // ========= MT5 Connection =========

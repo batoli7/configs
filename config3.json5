@@ -1,4 +1,4 @@
-// config3:  TP: 0.7   BG: disabled 
+// config3:  TP: 0.7   BG: D4
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -63,7 +63,7 @@
 
   // ========= BurstGuardian (D4-focused sweep) =========
   "burst_guardian": {
-    "enabled": false,
+    "enabled": true,
 
     // --- PreRun (ticks; ATR gate off) ---
     "pre_window_ms": 900,
