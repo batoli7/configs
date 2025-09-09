@@ -1,4 +1,4 @@
-// config17:  TP: 0.7   BG: D4-slip40-lag2000
+// config17:  TP: 0.7   BG: ticksOFF-slip100-r015-pre700
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -68,10 +68,10 @@
     // --- PreRun (ticks; ATR gate off) ---
     "pre_window_ms": 900,
     "pre_max_move_ticks": 20,
-    "pre_max_move_atr_frac": 9000000000.0,
+    "pre_max_move_atr_frac": 9000000000,
 
     // --- Jump (ticks; ATR gate off) ---
-    "max_lag_ms": 2000,
+    "max_lag_ms": 2500,
     "max_move_ticks": 9000000000,
     "max_move_atr_frac": 9000000000,
     "max_spread_mult": 2.2,
@@ -86,7 +86,7 @@
     "min_mfe_ticks": 0,
 
     // --- Slippage ---
-    "max_slippage_ticks": 40
+    "max_slippage_ticks": 25
   },
 
   // ========= MT5 Connection =========
