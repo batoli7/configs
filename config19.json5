@@ -1,4 +1,4 @@
-// config19:  TP: 0.7   BG: D4-slip40-lag2000-pre700
+// config19:  TP: 0.7   MBG ON (min_bursts=2, window=12s, gap=2.0s, refractory=10.0s; strength=60/off=20; BG OFF, SG OFF)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -8,7 +8,7 @@
   // ========= Sizing Governor =========
   // Disabled to isolate BurstGuardian behavior in this run.
   "sizing_governor": {
-    "enabled": true,
+    "enabled": false,
     "per_symbol": true,
     "small_fraction": 0.0,
     "min_fraction": 0.0,
@@ -63,7 +63,7 @@
 
   // ========= BurstGuardian (D4-focused sweep) =========
   "burst_guardian": {
-    "enabled": true,
+    "enabled": false,
 
     // --- PreRun (ticks; ATR gate off) ---
     "pre_window_ms": 700,
@@ -87,6 +87,18 @@
 
     // --- Slippage ---
     "max_slippage_ticks": 40
+  },
+
+
+  // ========= MultiBurstGate (order-flow burst confirmation) =========
+  "burst_entry": {
+    "enabled": true,
+    "min_bursts": 2,
+    "burst_window_sec": 12,
+    "signal_strength_min": 60,
+    "off_threshold": 20,
+    "min_gap_sec": 2.0,
+    "refractory_sec": 10.0
   },
 
   // ========= MT5 Connection =========
