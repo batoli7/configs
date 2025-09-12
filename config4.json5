@@ -1,4 +1,4 @@
-// config4:  TP: 0.7   MBG ON (min_bursts=2, window=6s, gap=0.3s, refractory=0.8s, leniency=8.0s, once=true; strength=60/off=20; BG OFF, SG OFF)
+// config4:  TP: 0.7   MBG ON (min_bursts=2, window=6s, gap=0.3s, refractory=0.8s, leniency=8.0s, once=true, snapshot=5s; strength=60/off=20; BG OFF, SG OFF, cooldown=1)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -26,6 +26,8 @@
   "cat_sl_factor": 3,
 
   // ========= Execution Control =========
+  "pos_slot_ttl_sec": 8.0,
+  "queue_debounce_ms": 200,
   "cooldown_sec": 1,
   "max_pos_per_symbol": 2,
   "atr_period": 5,
@@ -102,7 +104,9 @@
     "audit": true,
     "leniency_after_edge_sec": 8.0,
     "leniency_once_per_edge": true
-  },
+  
+      "audit_snapshot_sec": 5,
+},
 
   // ========= MT5 Connection =========
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
