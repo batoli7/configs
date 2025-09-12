@@ -99,9 +99,9 @@
     "burst_window_sec": 12,
     "signal_strength_min": 60,
     "off_threshold": 20,
-    "min_gap_sec": 10,
+    "min_gap_sec": 1.0,
     "refractory_sec": 1.5,
-    "leniency_after_edge_sec": 60,
+    "leniency_after_edge_sec": 6.0,
     "leniency_once_per_edge": true,
     "audit": true,
     "audit_snapshot_sec": 5
