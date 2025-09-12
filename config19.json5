@@ -93,20 +93,20 @@
 
 
   // ========= MultiBurstGate (order-flow burst confirmation) =========
-  "burst_entry": {
+    "burst_entry": {
     "enabled": true,
     "min_bursts": 2,
     "burst_window_sec": 12,
     "signal_strength_min": 60,
     "off_threshold": 20,
-    "min_gap_sec": 2.0,
-    "refractory_sec": 10.0,
+    "min_gap_sec": 20,
+    "refractory_sec": 100,
+    "leniency_after_edge_sec": 00,
+    "leniency_once_per_edge": false,
     "audit": true,
-    "leniency_after_edge_sec": 0.0,
-    "leniency_once_per_edge": false
-  
-      "audit_snapshot_sec": 5,
-},
+    "audit_snapshot_sec": 5
+  },
+
 
   // ========= MT5 Connection =========
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
