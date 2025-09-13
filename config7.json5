@@ -1,4 +1,4 @@
-// config7:  TP: 0.7   MBG ON (min_bursts=2, window=12s, gap=1.0s, refractory=1.5s, leniency=6.0s, once=true, snapshot=5s; strength=60/off=20; BG OFF, SG OFF, cooldown=1)
+// config7:  TP: 0.7   BTC day MBG (bursts=2, window=12s, gap=1.0s, ref=1.5s, leniency=0.0; BG OFF, SG OFF, cooldown=1; audit on; 07:00–21:59)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -54,7 +54,7 @@
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
-  "symbols": ["DE40", "US30", "US500", "USTEC", "US2000", "BTCUSD", "EURUSD", "USDJPY", "XTIUSD", "XAUUSD"],
+  "symbols": ["BTCUSD"],
   // ========= Reversal Logic (live) =========
   "enable_reversals": true,
   "max_reversals_per_min": 2,
@@ -93,7 +93,7 @@
 
 
   // ========= MultiBurstGate (order-flow burst confirmation) =========
-    "burst_entry": {
+      "burst_entry": {
     "enabled": true,
     "min_bursts": 2,
     "burst_window_sec": 12,
@@ -101,11 +101,12 @@
     "off_threshold": 20,
     "min_gap_sec": 1.0,
     "refractory_sec": 1.5,
-    "leniency_after_edge_sec": 6.0,
-    "leniency_once_per_edge": true,
+    "leniency_after_edge_sec": 0.0,
+    "leniency_once_per_edge": false,
     "audit": true,
     "audit_snapshot_sec": 5
   },
+
 
 
   // ========= MT5 Connection =========

@@ -1,4 +1,4 @@
-// config2:  TP: 0.7   Clean (BG OFF, SG OFF, MBG OFF)
+// config2:  TP: 0.7   Clean (BG OFF, SG OFF, MBG OFF, BTC-only, 07:00–21:59)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -54,7 +54,7 @@
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
-  "symbols": ["DE40", "US30", "US500", "USTEC", "US2000", "BTCUSD", "EURUSD", "USDJPY", "XTIUSD", "XAUUSD"],
+  "symbols": ["BTCUSD"],
   // ========= Reversal Logic (live) =========
   "enable_reversals": true,
   "max_reversals_per_min": 2,
@@ -93,11 +93,12 @@
 
 
   // ========= MultiBurstGate (order-flow burst confirmation) =========
-    "burst_entry": {
+      "burst_entry": {
     "enabled": false,
     "audit": false,
     "audit_snapshot_sec": 0
   },
+
 
 
   // ========= MT5 Connection =========
