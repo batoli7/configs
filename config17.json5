@@ -1,4 +1,4 @@
-// config17:  TP: 0.7   BTC day MBG (bursts=3, window=10s, gap=0.8s, ref=1.5s, leniency=0.0; BG OFF, SG OFF, cooldown=1; audit on; 07:00–21:59)
+// config17:  TP: 0.7   BTC day MBG (SG=ON; bursts=6, window=18s, gap=1.8s, ref=3.5s; leniency=0.0; BG OFF; cooldown=1; audit on; 07:00–21:59)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -7,17 +7,18 @@
 
   // ========= Sizing Governor =========
   // Disabled to isolate BurstGuardian behavior in this run.
-  "sizing_governor": {
-    "enabled": false,
+    "sizing_governor": {
+    "enabled": true,
     "per_symbol": true,
     "small_fraction": 0.0,
     "min_fraction": 0.0,
-    "max_fraction": 1.0,
-    "be_counts_as": "loss",
+    "max_fraction": 1.00,
+    "be_counts_as": "win",
     "be_pnl_usd_tolerance": 0.5,
     "floor_policy": "min_volume",
     "state_path": "C:/Tradingsystem/data/governor_state.json"
   },
+
 
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
@@ -40,9 +41,9 @@
   "breakeven_offset_atr": 0.03,
 
   // ========= Trailing-Stop Parameters (disabled) =========
-  "enable_trailing_sl": true,
+  "enable_trailing_sl": false,
   "enable_dynamic_trailing": false,
-  "trailing_offset_base_atr": 1.2,
+  "trailing_offset_base_atr": 1.0,
   "trailing_offset_max_atr": 2.5,
   "trailing_offset_step_atr": 0.25,
   "trailing_step_trigger_atr": 1.0,
@@ -95,12 +96,12 @@
   // ========= MultiBurstGate (order-flow burst confirmation) =========
       "burst_entry": {
     "enabled": true,
-    "min_bursts": 3,
-    "burst_window_sec": 10,
+    "min_bursts": 6,
+    "burst_window_sec": 18,
     "signal_strength_min": 60,
     "off_threshold": 20,
-    "min_gap_sec": 0.8,
-    "refractory_sec": 1.5,
+    "min_gap_sec": 1.8,
+    "refractory_sec": 3.5,
     "leniency_after_edge_sec": 0.0,
     "leniency_once_per_edge": false,
     "audit": true,

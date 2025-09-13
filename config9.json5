@@ -1,4 +1,4 @@
-// config9:  TP: 0.7   BTC day MBG (bursts=3, window=10s, gap=0.8s, ref=1.5s, leniency=0.0; BG OFF, SG OFF, cooldown=1; audit on; 07:00–21:59)
+// config9:  TP: 0.7   BTC day MBG (SG=ON; bursts=4, window=12s, gap=1.0s, ref=2.0s; leniency=0.0; BG OFF; cooldown=1; audit on; 07:00–21:59)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -7,17 +7,18 @@
 
   // ========= Sizing Governor =========
   // Disabled to isolate BurstGuardian behavior in this run.
-  "sizing_governor": {
-    "enabled": false,
+    "sizing_governor": {
+    "enabled": true,
     "per_symbol": true,
-    "small_fraction": 0.10,
-    "min_fraction": 0.05,
+    "small_fraction": 0.0,
+    "min_fraction": 0.0,
     "max_fraction": 1.00,
     "be_counts_as": "win",
-    "be_pnl_usd_tolerance": 2.0,
+    "be_pnl_usd_tolerance": 0.5,
     "floor_policy": "min_volume",
     "state_path": "C:/Tradingsystem/data/governor_state.json"
   },
+
 
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
@@ -95,12 +96,12 @@
   // ========= MultiBurstGate (order-flow burst confirmation) =========
       "burst_entry": {
     "enabled": true,
-    "min_bursts": 3,
-    "burst_window_sec": 10,
+    "min_bursts": 4,
+    "burst_window_sec": 12,
     "signal_strength_min": 60,
     "off_threshold": 20,
-    "min_gap_sec": 0.8,
-    "refractory_sec": 1.5,
+    "min_gap_sec": 1.0,
+    "refractory_sec": 2.0,
     "leniency_after_edge_sec": 0.0,
     "leniency_once_per_edge": false,
     "audit": true,

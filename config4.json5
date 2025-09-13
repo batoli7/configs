@@ -1,4 +1,4 @@
-// config4:  TP: 0.7   BTC day MBG (bursts=2, window=6s, gap=0.3s, ref=0.8s, leniency=0.0; BG OFF, SG OFF, cooldown=1; audit on; 07:00–21:59)
+// config4:  TP: 0.7   BTC day MBG (SG=OFF; bursts=3, window=10s, gap=0.8s, ref=1.5s; leniency=0.0; BG OFF; cooldown=1; audit on; 07:00–21:59)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -95,12 +95,12 @@
   // ========= MultiBurstGate (order-flow burst confirmation) =========
       "burst_entry": {
     "enabled": true,
-    "min_bursts": 2,
-    "burst_window_sec": 6,
+    "min_bursts": 3,
+    "burst_window_sec": 10,
     "signal_strength_min": 60,
     "off_threshold": 20,
-    "min_gap_sec": 0.3,
-    "refractory_sec": 0.8,
+    "min_gap_sec": 0.8,
+    "refractory_sec": 1.5,
     "leniency_after_edge_sec": 0.0,
     "leniency_once_per_edge": false,
     "audit": true,
