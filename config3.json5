@@ -27,7 +27,7 @@
 
   // ========= Execution Control =========
   "pos_slot_ttl_sec": 8.0,
-  "queue_debounce_ms": 200,
+  "queue_debounce_ms": 150,
   "cooldown_sec": 10,
   "max_pos_per_symbol": 2,
   "atr_period": 5,

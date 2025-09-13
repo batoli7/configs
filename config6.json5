@@ -1,4 +1,4 @@
-// config6:  TP: 0.7   BTC day MBG (SG=OFF; bursts=3, window=15s, gap=1.2s, ref=2.2s; leniency=0.0; BG OFF; cooldown=1; audit on; 07:00–21:59)
+// config6:  TP: 0.7   BTC day MBG + Dynamic Trail (bursts=2, window=10s, gap=1.0s, ref=1.8s; trail base=1.0 ATR, trig=0.75 ATR, step=0.25 ATR, backoff=0.25 ATR, upd=5s; max_pos=3; staller_timeout=8s; leniency=0.0; BG OFF; cooldown=1)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -27,9 +27,9 @@
 
   // ========= Execution Control =========
   "pos_slot_ttl_sec": 8.0,
-  "queue_debounce_ms": 200,
+  "queue_debounce_ms": 150,
   "cooldown_sec": 1,
-  "max_pos_per_symbol": 2,
+  "max_pos_per_symbol": 3,
   "atr_period": 5,
   "order_workers": 4,
   "guardian_poll_ms": 200,
@@ -40,14 +40,14 @@
   "breakeven_offset_atr": 0.03,
 
   // ========= Trailing-Stop Parameters (disabled) =========
-  "enable_trailing_sl": false,
-  "enable_dynamic_trailing": false,
+  "enable_trailing_sl": true,
+  "enable_dynamic_trailing": true,
   "trailing_offset_base_atr": 1.0,
-  "trailing_offset_max_atr": 2.5,
+  "trailing_offset_max_atr": 3.0,
   "trailing_offset_step_atr": 0.25,
-  "trailing_step_trigger_atr": 1.0,
+  "trailing_step_trigger_atr": 0.75,
   "trailing_backoff_atr": 0.25,
-  "trailing_sl_update_cooldown_sec": 10,
+  "trailing_sl_update_cooldown_sec": 5,
 
   // ========= Signal Strength / Polling =========
   "strength_threshold": 60,
@@ -56,7 +56,7 @@
   // ========= Symbol Universe =========
   "symbols": ["BTCUSD"],
   // ========= Reversal Logic (live) =========
-  "enable_reversals": true,
+  "enable_reversals": false,
   "max_reversals_per_min": 2,
 
   // ========= Time-Window Filter =========
@@ -83,7 +83,7 @@
     "retrace_window_s": 10,
 
     // --- No-Progress ---
-    "timeout_s": 15,
+    "timeout_s": 8,
     "min_net_ticks": 0,
     "min_mfe_ticks": 0,
 
@@ -95,12 +95,12 @@
   // ========= MultiBurstGate (order-flow burst confirmation) =========
       "burst_entry": {
     "enabled": true,
-    "min_bursts": 3,
-    "burst_window_sec": 15,
+    "min_bursts": 2,
+    "burst_window_sec": 10,
     "signal_strength_min": 60,
     "off_threshold": 20,
-    "min_gap_sec": 1.2,
-    "refractory_sec": 2.2,
+    "min_gap_sec": 1.0,
+    "refractory_sec": 1.8,
     "leniency_after_edge_sec": 0.0,
     "leniency_once_per_edge": false,
     "audit": true,
