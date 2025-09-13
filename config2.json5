@@ -1,4 +1,4 @@
-// config2:  TP: 0.7   Clean (BG OFF, SG OFF, MBG OFF, BTC-only, 07:00–21:59)
+// config2:  Clean (BG OFF, SG OFF, MBG OFF, BTC-only, 07:00–21:59)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========

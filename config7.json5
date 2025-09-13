@@ -1,4 +1,4 @@
-// config7:  TP: 0.7   BTC day MBG + Dynamic Trail (bursts=2, window=12s, gap=1.2s, ref=2.0s; trail base=1.0 ATR, trig=0.75 ATR, step=0.25 ATR, backoff=0.25 ATR, upd=5s; max_pos=3; staller_timeout=8s; leniency=0.0; BG OFF; cooldown=1)
+// config7:  BTC day MBG + Dynamic Trail (bursts=2, window=12s, gap=1.2s, ref=2.0s; trail base=1.0 ATR, trig=0.8 ATR, step=0.25 ATR, backoff=0.25 ATR, upd=5s; max_pos=3; timeout=8s; PnL-keep: net>=1 or mfe>=2; leniency=0.0; TP off; BG OFF; cooldown=1)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -22,7 +22,7 @@
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
-  "tp_mul": 0.7,
+  "tp_mul": 9.99,
   "cat_sl_factor": 3,
 
   // ========= Execution Control =========
@@ -45,7 +45,7 @@
   "trailing_offset_base_atr": 1.0,
   "trailing_offset_max_atr": 3.0,
   "trailing_offset_step_atr": 0.25,
-  "trailing_step_trigger_atr": 0.75,
+  "trailing_step_trigger_atr": 0.8,
   "trailing_backoff_atr": 0.25,
   "trailing_sl_update_cooldown_sec": 5,
 
@@ -84,8 +84,8 @@
 
     // --- No-Progress ---
     "timeout_s": 8,
-    "min_net_ticks": 0,
-    "min_mfe_ticks": 0,
+    "min_net_ticks": 1,
+    "min_mfe_ticks": 2,
 
     // --- Slippage ---
     "max_slippage_ticks": 40
