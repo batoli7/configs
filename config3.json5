@@ -93,12 +93,11 @@
 
 
   // ========= MultiBurstGate (order-flow burst confirmation) =========
-      "burst_entry": {
+    "burst_entry": {
     "enabled": false,
     "audit": false,
     "audit_snapshot_sec": 0
   },
-
 
 
   // ========= MT5 Connection =========

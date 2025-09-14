@@ -1,4 +1,4 @@
-// config18:  BTC day MBG + Dynamic Trail (bursts=4, window=18s, gap=1.5s, ref=3.5s; trail base=1.2 ATR, trig=1.0 ATR, step=0.25 ATR, backoff=0.3 ATR, upd=10s; max_pos=3; timeout=12s; PnL-keep: net>=1 or mfe>=2; leniency=0.0; TP off; BG OFF; cooldown=1)
+// config18:  BTC day MBG + Dynamic Trail + BG=OFF (bursts=4, window=12s, gap=1.0s, ref=2.5s; trail base=1.2 ATR, trig=1.0 ATR, step=0.25 ATR, backoff=0.3 ATR, upd=10s; timeout=12s with PnL-keep: net>=1 or mfe>=2; TP off; max_pos=3; cooldown=1)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -96,11 +96,11 @@
       "burst_entry": {
     "enabled": true,
     "min_bursts": 4,
-    "burst_window_sec": 18,
+    "burst_window_sec": 12,
     "signal_strength_min": 60,
     "off_threshold": 20,
-    "min_gap_sec": 1.5,
-    "refractory_sec": 3.5,
+    "min_gap_sec": 1.0,
+    "refractory_sec": 2.5,
     "leniency_after_edge_sec": 0.0,
     "leniency_once_per_edge": false,
     "audit": true,
