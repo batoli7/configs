@@ -1,4 +1,4 @@
-// config9:  BTC day MBG + Dynamic Trail + BG=ON (Sunday BTC profile) (bursts=2, window=10s, gap=1.0s, ref=1.8s; trail base=1.0 ATR, trig=0.8 ATR, step=0.25 ATR, backoff=0.25 ATR, upd=5s; timeout=8s with PnL-keep: net>=1 or mfe>=2; TP off; max_pos=3; cooldown=1)
+// config9:  All-symbols MBG + Dynamic Trail + BG=ON (Sunday BTC profile) (bursts=2, window=10s, gap=1.0s, ref=1.8s; trail base=1.0 ATR, trig=0.8 ATR, step=0.25 ATR, backoff=0.25 ATR, upd=5s; timeout=8s with PnL-keep: net>=1 or mfe>=2; TP off; max_pos=3; cooldown=1)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -54,7 +54,7 @@
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
-  "symbols": ["BTCUSD"],
+  "symbols": ["DE40","US30","US500","USTEC","US2000","BTCUSD","EURUSD","USDJPY","XTIUSD","XAUUSD"],
   // ========= Reversal Logic (live) =========
   "enable_reversals": false,
   "max_reversals_per_min": 2,
