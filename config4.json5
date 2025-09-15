@@ -1,7 +1,7 @@
 // config4:  All-symbols MBG + Dynamic Trail + BG=OFF (bursts=2, window=6s, gap=0.5s, ref=1.2s; trail base=1.0 ATR, trig=0.8 ATR, step=0.25 ATR, backoff=0.25 ATR, upd=5s; timeout=8s with PnL-keep: net>=1 or mfe>=2; TP off; max_pos=3; cooldown=1)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
-  // ========= Live Trading Switches ========
+  // ========= Live Trading Switches ======
   "live_trading_enabled":   true,
   "force_live_trading":     false,
 
