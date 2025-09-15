@@ -5,7 +5,7 @@
   "live_trading_enabled":   true,
   "force_live_trading":     false,
 
-  // ========= Sizing Governor ========
+  // ========= Sizing Governor =====
   // Disabled to isolate BurstGuardian behavior in this run.
   "sizing_governor": {
     "enabled": false,
