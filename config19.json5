@@ -1,7 +1,7 @@
 // config19:  All-symbols MBG + Dynamic Trail + BG=ON (Sunday BTC profile) (bursts=4, window=12s, gap=1.0s, ref=2.5s; trail base=1.2 ATR, trig=1.0 ATR, step=0.25 ATR, backoff=0.3 ATR, upd=10s; timeout=12s with PnL-keep: net>=1 or mfe>=2; TP off; max_pos=3; cooldown=1)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
-  // ========= Live Trading Switches =========
+  // ========= Live Trading Switches ========
   "live_trading_enabled":   true,
   "force_live_trading":     false,
 
