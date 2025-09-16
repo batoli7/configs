@@ -1,4 +1,4 @@
-// config2:  Clean (BG OFF, SG OFF, MBG OFF, 10 symbols, 07:00–21:59)
+// config2:  Clean (BG OFF, SG OFF, MBG OFF, 10 symbols incl AAPL.NAS/MSFT.NAS, 07:00–21:59)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
