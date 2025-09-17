@@ -52,7 +52,7 @@
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
-  "symbols": ["DE40","US30","US500","USTEC","US2000","BTCUSD","AAPL.NAS","MSFT.NAS","XTIUSD","XAUUSD"],
+  "symbols": ["DE40","US30","US500","USTEC","US2000","AAPL.NAS","MSFT.NAS","GOOG.NAS","AMZN.NAS","TSLA.NAS","NVDA.NAS","AMD.NAS","BTCUSD","XAUUSD","XTIUSD"],
   // ========= Reversal Logic (live) =========
   "enable_reversals": true,
   "max_reversals_per_min": 2,
