@@ -1,4 +1,4 @@
-// config17:  All-symbols MBG + Dynamic Trail + BG=ON (Sunday BTC profile) (bursts=3, window=15s, gap=1.2s, ref=2.2s; trail base=1.1 ATR, trig=1.0 ATR, step=0.25 ATR, backoff=0.25 ATR, upd=7s; timeout=10s with PnL-keep: net>=1 or mfe>=2; TP off; max_pos=3; cooldown=1)
+// config17:  TP: 0.7   MBG ON (min_bursts=2, window=8s, gap=5.0s, refractory=10.0s, leniency=0.0s, once=false, snapshot=5s; strength=60/off=20; BG OFF, SG OFF, cooldown=1)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -22,14 +22,14 @@
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
   "sl_mul": 1.0,
-  "tp_mul": 9.99,
+  "tp_mul": 0.7,
   "cat_sl_factor": 3,
 
   // ========= Execution Control =========
   "pos_slot_ttl_sec": 8.0,
-  "queue_debounce_ms": 150,
+  "queue_debounce_ms": 200,
   "cooldown_sec": 1,
-  "max_pos_per_symbol": 3,
+  "max_pos_per_symbol": 2,
   "atr_period": 5,
   "order_workers": 4,
   "guardian_poll_ms": 200,
@@ -40,23 +40,23 @@
   "breakeven_offset_atr": 0.03,
 
   // ========= Trailing-Stop Parameters (disabled) =========
-  "enable_trailing_sl": true,
-  "enable_dynamic_trailing": true,
-  "trailing_offset_base_atr": 1.1,
-  "trailing_offset_max_atr": 3.0,
+  "enable_trailing_sl": false,
+  "enable_dynamic_trailing": false,
+  "trailing_offset_base_atr": 1.0,
+  "trailing_offset_max_atr": 2.5,
   "trailing_offset_step_atr": 0.25,
   "trailing_step_trigger_atr": 1.0,
   "trailing_backoff_atr": 0.25,
-  "trailing_sl_update_cooldown_sec": 7,
+  "trailing_sl_update_cooldown_sec": 10,
 
   // ========= Signal Strength / Polling =========
   "strength_threshold": 60,
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
-  "symbols": ["DE40","US30","US500","USTEC","US2000","BTCUSD","AAPL.NAS","MSFT.NAS","XTIUSD","XAUUSD"],
+  "symbols": ["DE40","US30","US500","USTEC","US2000","AAPL.NAS","MSFT.NAS","GOOG.NAS","AMZN.NAS","TSLA.NAS","NVDA.NAS","AMD.NAS","BTCUSD","XAUUSD","XTIUSD"],
   // ========= Reversal Logic (live) =========
-  "enable_reversals": false,
+  "enable_reversals": true,
   "max_reversals_per_min": 2,
 
   // ========= Time-Window Filter =========
@@ -65,48 +65,47 @@
 
   // ========= BurstGuardian (D4-focused sweep) =========
   "burst_guardian": {
-    "enabled": true,
+    "enabled": false,
 
     // --- PreRun (ticks; ATR gate off) ---
-    "pre_window_ms": 600,
-    "pre_max_move_ticks": 70,
+    "pre_window_ms": 900,
+    "pre_max_move_ticks": 20,
     "pre_max_move_atr_frac": 9000000000,
 
     // --- Jump (ticks; ATR gate off) ---
-    "max_lag_ms": 1500,
+    "max_lag_ms": 2500,
     "max_move_ticks": 9000000000,
     "max_move_atr_frac": 9000000000,
-    "max_spread_mult": 1.8,
+    "max_spread_mult": 2.2,
 
     // --- Retrace ---
-    "retrace_frac": 0.18,
+    "retrace_frac": 0.3,
     "retrace_window_s": 10,
 
     // --- No-Progress ---
-    "timeout_s": 10,
-    "min_net_ticks": 1,
-    "min_mfe_ticks": 2,
+    "timeout_s": 15,
+    "min_net_ticks": 0,
+    "min_mfe_ticks": 0,
 
     // --- Slippage ---
-    "max_slippage_ticks": 70
+    "max_slippage_ticks": 25
   },
 
 
   // ========= MultiBurstGate (order-flow burst confirmation) =========
-      "burst_entry": {
+    "burst_entry": {
     "enabled": true,
-    "min_bursts": 3,
-    "burst_window_sec": 15,
+    "min_bursts": 2,
+    "burst_window_sec": 8,
     "signal_strength_min": 60,
     "off_threshold": 20,
-    "min_gap_sec": 1.2,
-    "refractory_sec": 2.2,
+    "min_gap_sec": 5.0,
+    "refractory_sec": 10.0,
     "leniency_after_edge_sec": 0.0,
     "leniency_once_per_edge": false,
     "audit": true,
     "audit_snapshot_sec": 5
   },
-
 
 
   // ========= MT5 Connection =========

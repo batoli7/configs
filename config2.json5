@@ -1,4 +1,4 @@
-// config2:  Clean (BG OFF, SG OFF, MBG OFF, 10 symbols incl AAPL.NAS/MSFT.NAS, 07:00–21:59)
+// config2:  TP: 0.7   Clean (BG OFF, SG OFF, MBG OFF)
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -27,7 +27,7 @@
 
   // ========= Execution Control =========
   "pos_slot_ttl_sec": 8.0,
-  "queue_debounce_ms": 150,
+  "queue_debounce_ms": 200,
   "cooldown_sec": 10,
   "max_pos_per_symbol": 2,
   "atr_period": 5,
@@ -54,7 +54,7 @@
   "poll_interval_ms": 100,
 
   // ========= Symbol Universe =========
-  "symbols": ["DE40","US30","US500","USTEC","US2000","BTCUSD","AAPL.NAS","MSFT.NAS","XTIUSD","XAUUSD"],
+  "symbols": ["DE40","US30","US500","USTEC","US2000","AAPL.NAS","MSFT.NAS","GOOG.NAS","AMZN.NAS","TSLA.NAS","NVDA.NAS","AMD.NAS","BTCUSD","XAUUSD","XTIUSD"],
   // ========= Reversal Logic (live) =========
   "enable_reversals": true,
   "max_reversals_per_min": 2,
