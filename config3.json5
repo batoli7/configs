@@ -1,4 +1,4 @@
-// config3:  TP: 0.7   D4 baseline (BG ON as template, SG OFF, MBG OFF)
+// config3: Anchor D4 — BG ON (D4), MBG OFF (reference).
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========

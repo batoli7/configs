@@ -1,4 +1,4 @@
-// config2:  TP: 0.7   Clean (BG OFF, SG OFF, MBG OFF)
+// config2: Anchor clean — BG OFF, SG OFF, MBG OFF (reference).
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========

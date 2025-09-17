@@ -1,4 +1,4 @@
-// config14:  TP: 0.7   MBG ON (min_bursts=3, window=12s, gap=3.0s, refractory=5.0s, leniency=2.0s, once=true, snapshot=5s; strength=60/off=20; BG OFF, SG OFF, cooldown=1)
+// config14: MBG n3 w12 g1.0 r2.0 | TRL b1.1 t1 s0.25 bk0.25 u7 | TO10 | BG OFF
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
