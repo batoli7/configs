@@ -1,4 +1,4 @@
-// config12: MBG n3 w10 g0.8 r1.8 | TRL b1.1 t1 s0.25 bk0.25 u7 | TO10 | BG OFF
+// config3: Anchor D4 — BG ON (D4), MBG OFF (reference).
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -10,11 +10,11 @@
   "sizing_governor": {
     "enabled": false,
     "per_symbol": true,
-    "small_fraction": 0.0,
-    "min_fraction": 0.0,
-    "max_fraction": 1.0,
-    "be_counts_as": "loss",
-    "be_pnl_usd_tolerance": 0.5,
+    "small_fraction": 0.10,
+    "min_fraction": 0.05,
+    "max_fraction": 1.00,
+    "be_counts_as": "win",
+    "be_pnl_usd_tolerance": 2.0,
     "floor_policy": "min_volume",
     "state_path": "C:/Tradingsystem/data/governor_state.json"
   },
@@ -28,7 +28,7 @@
   // ========= Execution Control =========
   "pos_slot_ttl_sec": 8.0,
   "queue_debounce_ms": 200,
-  "cooldown_sec": 1,
+  "cooldown_sec": 10,
   "max_pos_per_symbol": 2,
   "atr_period": 5,
   "order_workers": 4,
@@ -65,7 +65,7 @@
 
   // ========= BurstGuardian (D4-focused sweep) =========
   "burst_guardian": {
-    "enabled": false,
+    "enabled": true,
 
     // --- PreRun (ticks; ATR gate off) ---
     "pre_window_ms": 900,
@@ -73,9 +73,9 @@
     "pre_max_move_atr_frac": 9000000000,
 
     // --- Jump (ticks; ATR gate off) ---
-    "max_lag_ms": 2000,
+    "max_lag_ms": 2500,
     "max_move_ticks": 25,
-    "max_move_atr_frac": 9000000000,
+    "max_move_atr_frac": 9000000000.0,
     "max_spread_mult": 2.2,
 
     // --- Retrace ---
@@ -88,23 +88,15 @@
     "min_mfe_ticks": 0,
 
     // --- Slippage ---
-    "max_slippage_ticks": 40
+    "max_slippage_ticks": 25
   },
 
 
   // ========= MultiBurstGate (order-flow burst confirmation) =========
     "burst_entry": {
-    "enabled": true,
-    "min_bursts": 2,
-    "burst_window_sec": 12,
-    "signal_strength_min": 60,
-    "off_threshold": 20,
-    "min_gap_sec": 5.0,
-    "refractory_sec": 8.0,
-    "leniency_after_edge_sec": 2.0,
-    "leniency_once_per_edge": true,
-    "audit": true,
-    "audit_snapshot_sec": 5
+    "enabled": false,
+    "audit": false,
+    "audit_snapshot_sec": 0
   },
 
 
