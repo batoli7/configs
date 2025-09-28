@@ -9,11 +9,11 @@
   "sizing_governor": {
     "enabled": false,
     "per_symbol": true,
-    "small_fraction": 0.10,
-    "min_fraction": 0.05,
-    "max_fraction": 1.00,
-    "be_counts_as": "win",
-    "be_pnl_usd_tolerance": 2.0,
+    "small_fraction": 0.0,
+    "min_fraction": 0.0,
+    "max_fraction": 1.0,
+    "be_counts_as": "loss",
+    "be_pnl_usd_tolerance": 0.5,
     "floor_policy": "min_volume",
     "state_path": "C:/Tradingsystem/data/governor_state.json"
   },
@@ -60,25 +60,25 @@
 
   // ========= Time-Window Filter =========
   "enable_time_filtering": true,
-  "trading_hours": [['07:00', '21:59']],
+  "trading_hours": [['07:00', '21:58']],
 
   // ========= BurstGuardian (D4-focused sweep) =========
   "burst_guardian": {
     "enabled": false,
 
     // --- PreRun (ticks; ATR gate off) ---
-    "pre_window_ms": 900,
-    "pre_max_move_ticks": 20,
+    "pre_window_ms": 700,
+    "pre_max_move_ticks": 999999,
     "pre_max_move_atr_frac": 9000000000,
 
     // --- Jump (ticks; ATR gate off) ---
-    "max_lag_ms": 2000,
-    "max_move_ticks": 25,
-    "max_move_atr_frac": 9000000000.0,
+    "max_lag_ms": 2500,
+    "max_move_ticks": 9000000000,
+    "max_move_atr_frac": 9000000000,
     "max_spread_mult": 2.2,
 
     // --- Retrace ---
-    "retrace_frac": 0.3,
+    "retrace_frac": 0.2,
     "retrace_window_s": 10,
 
     // --- No-Progress ---
@@ -87,7 +87,7 @@
     "min_mfe_ticks": 0,
 
     // --- Slippage ---
-    "max_slippage_ticks": 40
+    "max_slippage_ticks": 120
   },
 
 
@@ -95,12 +95,12 @@
     "burst_entry": {
     "enabled": true,
     "min_bursts": 2,
-    "burst_window_sec": 12,
+    "burst_window_sec": 5,
     "signal_strength_min": 60,
     "off_threshold": 20,
-    "min_gap_sec": 1.0,
-    "refractory_sec": 1.5,
-    "leniency_after_edge_sec": 6.0,
+    "min_gap_sec": 1.5,
+    "refractory_sec": 2.0,
+    "leniency_after_edge_sec": 8.0,
     "leniency_once_per_edge": true,
     "audit": true,
     "audit_snapshot_sec": 5

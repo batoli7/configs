@@ -60,7 +60,7 @@
 
   // ========= Time-Window Filter =========
   "enable_time_filtering": true,
-  "trading_hours": [['07:00', '21:59']],
+  "trading_hours": [['07:00', '21:58']],
 
   // ========= BurstGuardian (D4-focused sweep) =========
   "burst_guardian": {
