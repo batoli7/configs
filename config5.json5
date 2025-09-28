@@ -1,4 +1,4 @@
-// config5:  MBG n2 w6 g0.5 r1.2 | TRL b1 t0.8 s0.25 bk0.25 u5 | TO8  | BG ON(sun)
+// config5 — Baseline from config4 | Best for: TSLA
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -96,11 +96,11 @@
     "burst_entry": {
     "enabled": true,
     "min_bursts": 2,
-    "burst_window_sec": 8,
+    "burst_window_sec": 6,
     "signal_strength_min": 60,
     "off_threshold": 20,
-    "min_gap_sec": 0.5,
-    "refractory_sec": 1.0,
+    "min_gap_sec": 0.3,
+    "refractory_sec": 0.8,
     "leniency_after_edge_sec": 8.0,
     "leniency_once_per_edge": true,
     "audit": true,

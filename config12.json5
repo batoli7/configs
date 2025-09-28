@@ -1,4 +1,4 @@
-// config3: Anchor D4 — BG ON (D4), MBG OFF (reference).
+// config2: Anchor clean — BG OFF, SG OFF, MBG OFF (reference).
 // MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
 {
   // ========= Live Trading Switches =========
@@ -65,7 +65,7 @@
 
   // ========= BurstGuardian (D4-focused sweep) =========
   "burst_guardian": {
-    "enabled": true,
+    "enabled": false,
 
     // --- PreRun (ticks; ATR gate off) ---
     "pre_window_ms": 900,
