@@ -1,5 +1,4 @@
-// config4 — Baseline from config3 | Best for: GOOG
-// MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
+// BASE-4 (GOOG) — Tech flow rider — balanced guard & trailing for sustained tech moves
 {
   // ========= Live Trading Switches =========
   "live_trading_enabled":   true,

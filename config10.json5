@@ -1,5 +1,4 @@
-// config5:  MBG n2 w6 g0.5 r1.2 | TRL b1 t0.8 s0.25 bk0.25 u5 | TO8  | BG ON(sun)
-// MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
+// BASE-5 (TSLA) — Wild swing chaser — looser gates & trailing to capture TSLA’s volatility
 {
   // ========= Live Trading Switches =========
   "live_trading_enabled":   true,

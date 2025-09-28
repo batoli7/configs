@@ -1,5 +1,4 @@
-// config5 — Baseline from config4 | Best for: TSLA
-// MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
+// BASE-5 (TSLA) — Wild swing chaser — looser gates & trailing to capture TSLA’s volatility
 {
   // ========= Live Trading Switches =========
   "live_trading_enabled":   true,

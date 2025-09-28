@@ -1,5 +1,4 @@
-// config2: Anchor clean — BG OFF, SG OFF, MBG OFF (reference).
-// MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
+// BASE-2 (US30) — Steady grinder — conservative filters for slower, grindy Dow movement
 {
   // ========= Live Trading Switches =========
   "live_trading_enabled":   true,

@@ -1,5 +1,4 @@
-// config4:  MBG n2 w6 g0.5 r1.2 | TRL b1 t0.8 s0.25 bk0.25 u5 | TO8  | BG OFF
-// MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
+// BASE-4 (GOOG) — Tech flow rider — balanced guard & trailing for sustained tech moves
 {
   // ========= Live Trading Switches =========
   "live_trading_enabled":   true,

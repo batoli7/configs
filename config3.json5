@@ -1,5 +1,4 @@
-// config3 — Baseline from config7 | Best for: AAPL
-// MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
+// BASE-3 (AAPL) — Stock sprinter — responsive burst logic for sharp single-stock momentum
 {
   // ========= Live Trading Switches =========
   "live_trading_enabled":   true,

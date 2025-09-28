@@ -1,5 +1,4 @@
-// config1 — Baseline from config2 | Best for: USTEC, NVDA
-// MainBrain v3.21.1 – BurstGuardian diagnostic (ATR gates off, slippage & no-progress relaxed)
+// BASE-1 (USTEC, NVDA) — Fast burst catcher — aggressive entry & trailing for high-volatility sweeps
 {
   // ========= Live Trading Switches =========
   "live_trading_enabled":   true,
