@@ -1,4 +1,4 @@
-// BASE-5 (TSLA) — Wild swing chaser — looser gates & trailing to capture TSLA’s volatility
+// BASE-ALL (Conservative profile) — Config15 (Server15)
 {
   // ========= Live Trading Switches =========
   "live_trading_enabled":   true,
@@ -9,11 +9,11 @@
   "sizing_governor": {
     "enabled": false,
     "per_symbol": true,
-    "small_fraction": 0.0,
-    "min_fraction": 0.0,
-    "max_fraction": 1.0,
-    "be_counts_as": "loss",
-    "be_pnl_usd_tolerance": 0.5,
+    "small_fraction": 0.10,
+    "min_fraction": 0.05,
+    "max_fraction": 1.00,
+    "be_counts_as": "win",
+    "be_pnl_usd_tolerance": 2.0,
     "floor_policy": "min_volume",
     "state_path": "C:/Tradingsystem/data/governor_state.json"
   },
@@ -27,7 +27,7 @@
   // ========= Execution Control =========
   "pos_slot_ttl_sec": 8.0,
   "queue_debounce_ms": 200,
-  "cooldown_sec": 1,
+  "cooldown_sec": 10,
   "max_pos_per_symbol": 2,
   "atr_period": 5,
   "order_workers": 4,
@@ -93,17 +93,9 @@
 
   // ========= MultiBurstGate (order-flow burst confirmation) =========
     "burst_entry": {
-    "enabled": true,
-    "min_bursts": 2,
-    "burst_window_sec": 8,
-    "signal_strength_min": 60,
-    "off_threshold": 20,
-    "min_gap_sec": 0.5,
-    "refractory_sec": 1.0,
-    "leniency_after_edge_sec": 8.0,
-    "leniency_once_per_edge": true,
-    "audit": true,
-    "audit_snapshot_sec": 5
+    "enabled": false,
+    "audit": false,
+    "audit_snapshot_sec": 0
   },
 
 

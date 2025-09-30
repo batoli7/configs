@@ -1,4 +1,4 @@
-// BASE-2 (US30) — Steady grinder — conservative filters for slower, grindy Dow movement
+// BASE-ALL (Conservative profile) — Config12 (Server12)
 {
   // ========= Live Trading Switches =========
   "live_trading_enabled":   true,

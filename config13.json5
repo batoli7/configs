@@ -1,4 +1,4 @@
-// BASE-3 (AAPL) — Stock sprinter — responsive burst logic for sharp single-stock momentum
+// BASE-ALL (Conservative profile) — Config13 (Server13)
 {
   // ========= Live Trading Switches =========
   "live_trading_enabled":   true,
@@ -64,7 +64,7 @@
 
   // ========= BurstGuardian (D4-focused sweep) =========
   "burst_guardian": {
-    "enabled": true,
+    "enabled": false,
 
     // --- PreRun (ticks; ATR gate off) ---
     "pre_window_ms": 900,

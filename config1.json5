@@ -1,4 +1,4 @@
-// BASE-1 (USTEC, NVDA) — Fast burst catcher — aggressive entry & trailing for high-volatility sweeps
+// BASE-ALL (Conservative profile) — Config1 (Server1)
 {
   // ========= Live Trading Switches =========
   "live_trading_enabled":   true,

@@ -1,4 +1,4 @@
-// BASE-3 (AAPL) — Stock sprinter — responsive burst logic for sharp single-stock momentum
+// BASE-ALL (Conservative profile) — Config3 (Server3)
 {
   // ========= Live Trading Switches =========
   "live_trading_enabled":   true,
@@ -27,7 +27,7 @@
   // ========= Execution Control =========
   "pos_slot_ttl_sec": 8.0,
   "queue_debounce_ms": 200,
-  "cooldown_sec": 1,
+  "cooldown_sec": 10,
   "max_pos_per_symbol": 2,
   "atr_period": 5,
   "order_workers": 4,
@@ -72,7 +72,7 @@
     "pre_max_move_atr_frac": 9000000000,
 
     // --- Jump (ticks; ATR gate off) ---
-    "max_lag_ms": 2000,
+    "max_lag_ms": 2500,
     "max_move_ticks": 25,
     "max_move_atr_frac": 9000000000.0,
     "max_spread_mult": 2.2,
@@ -87,23 +87,15 @@
     "min_mfe_ticks": 0,
 
     // --- Slippage ---
-    "max_slippage_ticks": 40
+    "max_slippage_ticks": 25
   },
 
 
   // ========= MultiBurstGate (order-flow burst confirmation) =========
     "burst_entry": {
-    "enabled": true,
-    "min_bursts": 2,
-    "burst_window_sec": 12,
-    "signal_strength_min": 60,
-    "off_threshold": 20,
-    "min_gap_sec": 1.0,
-    "refractory_sec": 1.5,
-    "leniency_after_edge_sec": 6.0,
-    "leniency_once_per_edge": true,
-    "audit": true,
-    "audit_snapshot_sec": 5
+    "enabled": false,
+    "audit": false,
+    "audit_snapshot_sec": 0
   },
 
 
