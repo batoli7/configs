@@ -62,7 +62,32 @@
   "enable_time_filtering": true,
   "trading_hours": [['07:00', '21:58']],
 
-  // ========= BurstGuardian (D4-focused sweep) =========
+  // ========= Alpha Filter (aggressive) =========
+"alpha_filter": {
+  "enabled": true,
+
+  // Reaction window (tight)
+  "reaction_pre_ms": 500,
+  "reaction_post_s": 5,
+
+  // Reaction distance (slightly stricter)
+  "delta_atr_frac": 0.20,
+  "delta_min_ticks": 4,
+
+  // Memory (responsive)
+  "memory_n": 7,
+
+  // Hysteresis (quicker OFF, requires recovery to turn ON)
+  "off_below": 0.43,
+  "on_above": 0.65,
+
+  // Anti-spam / caps
+  "min_gap_ms": 200,
+  "max_pending_per_symbol": 10
+},
+
+
+// ========= BurstGuardian (D4-focused sweep) =========
   "burst_guardian": {
     "enabled": false,
 
