@@ -4,22 +4,6 @@
   "live_trading_enabled":   true,
   "force_live_trading":     false,
 
-  // ========= Price Unit System =========
-  // Unit size = price delta per 1.0 "unit". Overrides recommended for CFD indices / crypto where MT5 tick size/value are 0.
-  "use_price_units": true,
-  "unit_shadow_mode": true,
-  "unit_shadow_every_ms": 30000,
-  "price_unit_overrides": {
-    "USTEC": 1.0,
-    "US30": 1.0,
-    "DE40": 1.0,
-    "US2000": 1.0,
-    "US500": 1.0,
-    "BTCUSD": 1.0,
-    "XAUUSD": 0.1,
-    "XTIUSD": 0.01
-  },
-
   // ========= Sizing Governor =========
   // Disabled to isolate BurstGuardian behavior in this run.
   "sizing_governor": {
