@@ -64,7 +64,7 @@
 
   // ========= Alpha Filter (aggressive) =========
 "alpha_filter": {
-  "enabled": true,
+  "enabled": false,
 
   // Reaction window (tight)
   "reaction_pre_ms": 500,
@@ -134,5 +134,21 @@
 
   // ========= Database Storage =========
   "decisions_db": "C:/Tradingsystem/data/decisions.db",
-  "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw"
+  "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw",
+
+// --- Price Unit System (added) ---
+"use_price_units": true,
+"unit_shadow_mode": true,
+"unit_shadow_every_ms": 30000,
+"price_unit_overrides": {
+  "USTEC": 1.0,
+  "US30": 1.0,
+  "DE40": 1.0,
+  "US2000": 1.0,
+  "US500": 1.0,
+
+  "BTCUSD": 1.0,
+  "XAUUSD": 0.1,
+  "XTIUSD": 0.01
+}
 }
