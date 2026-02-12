@@ -64,8 +64,6 @@
 
   // ========= Alpha Filter (conservative) =========
 "alpha_filter": {
-  "enabled": true,
-
   // Reaction window (more forgiving)
   "reaction_pre_ms": 800,
   "reaction_post_s": 8,
@@ -83,14 +81,13 @@
 
   // Anti-spam / caps
   "min_gap_ms": 200,
-  "max_pending_per_symbol": 10
+  "max_pending_per_symbol": 10,
+  "enabled": false,
 },
 
 
 // ========= BurstGuardian (D4-focused sweep) =========
   "burst_guardian": {
-    "enabled": false,
-
     // --- PreRun (ticks; ATR gate off) ---
     "pre_window_ms": 900,
     "pre_max_move_ticks": 20,
@@ -107,13 +104,20 @@
     "retrace_window_s": 10,
 
     // --- No-Progress ---
-    "timeout_s": 15,
+
     "min_net_ticks": 0,
     "min_mfe_ticks": 0,
 
     // --- Slippage ---
-    "max_slippage_ticks": 25
-  },
+    "max_slippage_ticks": 25,
+    "enabled": true,
+    "timeout_s": 2,
+    "min_mfe_units": 1.0,
+    "min_net_units": 0.2,
+    "pre_max_move_units": 9999,
+    "max_move_units": 9999,
+    "max_slippage_units": 9999,
+},
 
 
   // ========= MultiBurstGate (order-flow burst confirmation) =========

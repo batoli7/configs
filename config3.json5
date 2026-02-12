@@ -64,8 +64,6 @@
 
   // ========= BurstGuardian (D4-focused sweep) =========
   "burst_guardian": {
-    "enabled": false,
-
     // --- PreRun (ticks; ATR gate off) ---
     "pre_window_ms": 900,
     "pre_max_move_ticks": 20,
@@ -87,8 +85,9 @@
     "min_mfe_ticks": 0,
 
     // --- Slippage ---
-    "max_slippage_ticks": 25
-  },
+    "max_slippage_ticks": 25,
+    "enabled": false,
+},
 
 
   // ========= MultiBurstGate (order-flow burst confirmation) =========
@@ -110,4 +109,44 @@
   // ========= Database Storage =========
   "decisions_db": "C:/Tradingsystem/data/decisions.db",
   "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw"
+,
+
+// --- Price Unit System ---
+"use_price_units": true,
+"unit_shadow_mode": true,
+"unit_shadow_every_ms": 30000,
+"price_unit_overrides": {
+  "USTEC": 1.0,
+  "US30": 1.0,
+  "US500": 1.0,
+  "DE40": 1.0,
+  "US2000": 1.0,
+
+  "AAPL.NAS": 0.01,
+  "MSFT.NAS": 0.01,
+  "GOOG.NAS": 0.01,
+  "AMZN.NAS": 0.01,
+  "TSLA.NAS": 0.01,
+  "NVDA.NAS": 0.01,
+  "AMD.NAS": 0.01,
+
+  "BTCUSD": 1.0,
+  "XAUUSD": 0.1,
+  "XTIUSD": 0.01
+}
+,
+
+"alpha_filter": {
+  "delta_atr_frac": 0.12,
+  "delta_min_ticks": 3,
+
+  "reaction_pre_s": 5,
+
+  "memory_n": 12,
+  "on_above": 0.55,
+  "off_below": 0.33,
+  "enabled": true,
+  "delta_min_units": 0.6,
+  "reaction_post_s": 2,
+}
 }
