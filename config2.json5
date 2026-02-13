@@ -80,13 +80,19 @@
     "retrace_window_s": 10,
 
     // --- No-Progress ---
-    "timeout_s": 15,
+
     "min_net_ticks": 0,
     "min_mfe_ticks": 0,
 
     // --- Slippage ---
     "max_slippage_ticks": 25,
-    "enabled": false,
+    "enabled": true,
+    "timeout_s": 4,
+    "min_mfe_units": 1.0,
+    "min_net_units": 0.0,
+    "pre_max_move_units": 9999,
+    "max_move_units": 9999,
+    "max_slippage_units": 9999,
 },
 
 
@@ -137,16 +143,24 @@
 ,
 
 "alpha_filter": {
+  // Reaction window (more forgiving)
+  "reaction_pre_ms": 800,
+  "reaction_post_s": 8,
+
+  // Reaction distance (easier to qualify)
   "delta_atr_frac": 0.12,
   "delta_min_ticks": 3,
 
-  "reaction_pre_s": 5,
-
+  // Memory (stability)
   "memory_n": 12,
-  "on_above": 0.55,
+
+  // Hysteresis (harder to turn OFF, easier to stay ON)
   "off_below": 0.33,
-  "enabled": true,
-  "delta_min_units": 0.3,
-  "reaction_post_s": 2,
+  "on_above": 0.55,
+
+  // Anti-spam / caps
+  "min_gap_ms": 200,
+  "max_pending_per_symbol": 10,
+  "enabled": false,
 }
 }

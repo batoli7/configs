@@ -66,6 +66,7 @@
 "alpha_filter": {
   // Reaction window (tight)
   "reaction_pre_ms": 500,
+  "reaction_post_s": 5,
 
   // Reaction distance (slightly stricter)
   "delta_atr_frac": 0.20,
@@ -81,9 +82,7 @@
   // Anti-spam / caps
   "min_gap_ms": 200,
   "max_pending_per_symbol": 10,
-  "enabled": true,
-  "delta_min_units": 1.5,
-  "reaction_post_s": 4,
+  "enabled": false,
 },
 
 
@@ -105,13 +104,19 @@
     "retrace_window_s": 10,
 
     // --- No-Progress ---
-    "timeout_s": 15,
+
     "min_net_ticks": 0,
     "min_mfe_ticks": 0,
 
     // --- Slippage ---
     "max_slippage_ticks": 25,
-    "enabled": false,
+    "enabled": true,
+    "timeout_s": 2,
+    "min_mfe_units": 0.5,
+    "min_net_units": 0.0,
+    "pre_max_move_units": 9999,
+    "max_move_units": 9999,
+    "max_slippage_units": 9999,
 },
 
 
