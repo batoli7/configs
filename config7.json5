@@ -7,16 +7,16 @@
   // ========= Sizing Governor =========
   // Disabled to isolate BurstGuardian behavior in this run.
   "sizing_governor": {
-    "enabled": false,
+    "state_path": "C:/Tradingsystem/data/governor_state.json",
+    "enabled": true,
     "per_symbol": true,
-    "small_fraction": 0.10,
+    "small_fraction": 0.15,
     "min_fraction": 0.05,
     "max_fraction": 1.00,
     "be_counts_as": "win",
     "be_pnl_usd_tolerance": 2.0,
     "floor_policy": "min_volume",
-    "state_path": "C:/Tradingsystem/data/governor_state.json"
-  },
+},
 
   // ========= Core Risk Settings =========
   "risk_per_trade_usd": 100,
