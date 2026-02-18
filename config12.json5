@@ -116,7 +116,7 @@
     "max_move_units": 9999,
     "max_slippage_units": 9999,
     "timeout_s": 4,
-    "min_mfe_units": 0.4,
+    "min_mfe_units": 0.5,
     "min_net_units": 0.0,
 },
 
