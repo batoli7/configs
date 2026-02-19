@@ -1,171 +1,127 @@
-// BASE-ALL (Conservative profile) — Config13 (Server13)
+// AUTO-GENERATED: Robust engine (BG 4/0.5/0.2), SG OFF, window 15:30-21:50 (based on Feb-18 config13)
 {
-  // ========= Live Trading Switches =========
-  "live_trading_enabled":   true,
-  "force_live_trading":     false,
-
-  // ========= Sizing Governor =========
-  // Disabled to isolate BurstGuardian behavior in this run.
-  "sizing_governor": {
-    "per_symbol": true,
-    "small_fraction": 0.10,
-    "min_fraction": 0.05,
-    "max_fraction": 1.00,
-    "be_counts_as": "win",
-    "be_pnl_usd_tolerance": 2.0,
-    "floor_policy": "min_volume",
-    "state_path": "C:/Tradingsystem/data/governor_state.json",
-    "enabled": false,
-},
-
-  // ========= Core Risk Settings =========
-  "risk_per_trade_usd": 100,
-  "sl_mul": 1.0,
-  "tp_mul": 0.7,
-  "cat_sl_factor": 3,
-
-  // ========= Execution Control =========
-  "pos_slot_ttl_sec": 8.0,
-  "queue_debounce_ms": 200,
-  "cooldown_sec": 10,
-  "max_pos_per_symbol": 2,
-  "atr_period": 5,
-  "order_workers": 4,
-  "guardian_poll_ms": 200,
-
-  // ========= Breakeven Logic =========
-  "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.56,
-  "breakeven_offset_atr": 0.03,
-
-  // ========= Trailing-Stop Parameters (disabled) =========
-  "enable_trailing_sl": false,
-  "enable_dynamic_trailing": false,
-  "trailing_offset_base_atr": 1.0,
-  "trailing_offset_max_atr": 2.5,
-  "trailing_offset_step_atr": 0.25,
-  "trailing_step_trigger_atr": 1.0,
-  "trailing_backoff_atr": 0.25,
-  "trailing_sl_update_cooldown_sec": 10,
-
-  // ========= Signal Strength / Polling =========
-  "strength_threshold": 60,
-  "poll_interval_ms": 100,
-
-  // ========= Symbol Universe =========
-  "symbols": ["DE40","US30","US500","USTEC","US2000","AAPL.NAS","MSFT.NAS","GOOG.NAS","AMZN.NAS","TSLA.NAS","NVDA.NAS","AMD.NAS","BTCUSD","XAUUSD","XTIUSD"],
-  // ========= Reversal Logic (live) =========
-  "enable_reversals": true,
-  "max_reversals_per_min": 2,
-
-  // ========= Time-Window Filter =========
-  "enable_time_filtering": true,
-  "trading_hours": [[\'15:30\', \'21:50\']],
-
-  // ========= Alpha Filter (conservative) =========
-"alpha_filter": {
-  // Reaction window (tight)
-  "reaction_pre_ms": 500,
-  "reaction_post_s": 5,
-
-  // Reaction distance (slightly stricter)
-  "delta_atr_frac": 0.20,
-  "delta_min_ticks": 4,
-
-  // Memory (responsive)
-  "memory_n": 7,
-
-  // Hysteresis (quicker OFF, requires recovery to turn ON)
-  "off_below": 0.43,
-  "on_above": 0.65,
-
-  // Anti-spam / caps
-  "min_gap_ms": 200,
-  "max_pending_per_symbol": 10,
-  "enabled": false,
-},
-
-
-// ========= BurstGuardian (D4-focused sweep) =========
-  "burst_guardian": {
-    // --- PreRun (ticks; ATR gate off) ---
-    "pre_window_ms": 900,
-    "pre_max_move_ticks": 20,
-    "pre_max_move_atr_frac": 9000000000,
-
-    // --- Jump (ticks; ATR gate off) ---
-    "max_lag_ms": 2500,
-    "max_move_ticks": 25,
-    "max_move_atr_frac": 9000000000.0,
-    "max_spread_mult": 2.2,
-
-    // --- Retrace ---
-    "retrace_frac": 0.3,
-    "retrace_window_s": 10,
-
-    // --- No-Progress ---
-
-    "min_net_ticks": 0.2,
-    "min_mfe_ticks": 0.5,
-
-    // --- Slippage ---
-    "max_slippage_ticks": 25,
-    "enabled": true,
-
-    "pre_max_move_units": 9999,
-    "max_move_units": 9999,
-    "max_slippage_units": 9999,
-    "timeout_s": 4,
-    "min_mfe_units": 0.5,
-    "min_net_units": 0.2,
-},
-
-
-  // ========= MultiBurstGate (order-flow burst confirmation) =========
-    "burst_entry": {
-    "enabled": false,
-    "audit": false,
-    "audit_snapshot_sec": 0
+  live_trading_enabled: true,
+  force_live_trading: false,
+  sizing_governor: {
+    per_symbol: true,
+    small_fraction: 0.1,
+    min_fraction: 0.05,
+    max_fraction: 1.0,
+    be_counts_as: "win",
+    be_pnl_usd_tolerance: 2.0,
+    floor_policy: "min_volume",
+    state_path: "C:/Tradingsystem/data/governor_state.json",
+    enabled: false,
   },
-
-
-  // ========= MT5 Connection =========
-  "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
-  "mt5_login": {
-    "login": 52443415,
-    "password": "bO&Ct@at9w4F$K",
-    "server": "ICMarketsEU-Demo"
+  risk_per_trade_usd: 100,
+  sl_mul: 1.0,
+  tp_mul: 0.7,
+  cat_sl_factor: 3,
+  pos_slot_ttl_sec: 8.0,
+  queue_debounce_ms: 200,
+  cooldown_sec: 10,
+  max_pos_per_symbol: 2,
+  atr_period: 5,
+  order_workers: 4,
+  guardian_poll_ms: 200,
+  enable_breakeven_sl: true,
+  breakeven_trigger_atr: 0.56,
+  breakeven_offset_atr: 0.03,
+  enable_trailing_sl: false,
+  enable_dynamic_trailing: false,
+  trailing_offset_base_atr: 1.0,
+  trailing_offset_max_atr: 2.5,
+  trailing_offset_step_atr: 0.25,
+  trailing_step_trigger_atr: 1.0,
+  trailing_backoff_atr: 0.25,
+  trailing_sl_update_cooldown_sec: 10,
+  strength_threshold: 60,
+  poll_interval_ms: 100,
+  symbols: [
+    "DE40",
+    "US30",
+    "US500",
+    "USTEC",
+    "US2000",
+    "AAPL.NAS",
+    "MSFT.NAS",
+    "GOOG.NAS",
+    "AMZN.NAS",
+    "TSLA.NAS",
+    "NVDA.NAS",
+    "AMD.NAS",
+    "BTCUSD",
+    "XAUUSD",
+    "XTIUSD",
+  ],
+  enable_reversals: true,
+  max_reversals_per_min: 2,
+  enable_time_filtering: true,
+  trading_hours: [['15:30','21:50']],
+  alpha_filter: {
+    reaction_pre_ms: 500,
+    reaction_post_s: 5,
+    delta_atr_frac: 0.2,
+    delta_min_ticks: 4,
+    memory_n: 7,
+    off_below: 0.43,
+    on_above: 0.65,
+    min_gap_ms: 200,
+    max_pending_per_symbol: 10,
+    enabled: false,
   },
-
-  // ========= Database Storage =========
-  "decisions_db": "C:/Tradingsystem/data/decisions.db",
-  "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw",
-
-// --- Price Unit System ---
-"use_price_units": true,
-"unit_shadow_mode": true,
-"unit_shadow_every_ms": 30000,
-"price_unit_overrides": {
-  // Indices: 1 unit = 1 index point
-  "USTEC": 1.0,
-  "US30": 1.0,
-  "US500": 1.0,
-  "DE40": 1.0,
-  "US2000": 1.0,
-
-  // Stocks: 1 unit = $0.01
-  "AAPL.NAS": 0.01,
-  "MSFT.NAS": 0.01,
-  "GOOG.NAS": 0.01,
-  "AMZN.NAS": 0.01,
-  "TSLA.NAS": 0.01,
-  "NVDA.NAS": 0.01,
-  "AMD.NAS": 0.01,
-
-  // Others (recommended starting points)
-  "BTCUSD": 1.0,
-  "XAUUSD": 0.1,
-  "XTIUSD": 0.01
-},
-
+  burst_guardian: {
+    pre_window_ms: 900,
+    pre_max_move_ticks: 20,
+    pre_max_move_atr_frac: 9000000000,
+    max_lag_ms: 2500,
+    max_move_ticks: 25,
+    max_move_atr_frac: 9000000000.0,
+    max_spread_mult: 2.2,
+    retrace_frac: 0.3,
+    retrace_window_s: 10,
+    min_net_ticks: 0,
+    min_mfe_ticks: 0,
+    max_slippage_ticks: 25,
+    enabled: true,
+    pre_max_move_units: 9999,
+    max_move_units: 9999,
+    max_slippage_units: 9999,
+    timeout_s: 4,
+    min_mfe_units: 0.5,
+    min_net_units: 0.2,
+  },
+  burst_entry: {
+    enabled: false,
+    audit: false,
+    audit_snapshot_sec: 0,
+  },
+  mt5_path: "C:\\MT5\\IC1\\terminal64.exe",
+  mt5_login: {
+    login: 52443415,
+    password: "bO&Ct@at9w4F$K",
+    server: "ICMarketsEU-Demo",
+  },
+  decisions_db: "C:/Tradingsystem/data/decisions.db",
+  signals_db_ro: "file:C:/Tradingsystem/data/signals.db?mode=rw",
+  use_price_units: true,
+  unit_shadow_mode: true,
+  unit_shadow_every_ms: 30000,
+  price_unit_overrides: {
+    USTEC: 1.0,
+    US30: 1.0,
+    US500: 1.0,
+    DE40: 1.0,
+    US2000: 1.0,
+    "AAPL.NAS": 0.01,
+    "MSFT.NAS": 0.01,
+    "GOOG.NAS": 0.01,
+    "AMZN.NAS": 0.01,
+    "TSLA.NAS": 0.01,
+    "NVDA.NAS": 0.01,
+    "AMD.NAS": 0.01,
+    BTCUSD: 1.0,
+    XAUUSD: 0.1,
+    XTIUSD: 0.01,
+  },
 }
