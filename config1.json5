@@ -1,9 +1,9 @@
 {
   "__meta": {
-    "batch_tag": "2026-02-20-robust-grid-newformat",
+    "batch_tag": "2026-02-20-robust-grid-newformat-json5names",
     "role": "baseline",
-    "source": "Feb19 config1.json5",
-    "notes": "Baseline values preserved; only reformatted to flat-but-structured JSON. All keys remain top-level for MainBrain loader compatibility."
+    "source": "Feb19 config1.json5 (robust contract from Feb19 config3 applied to configs 2-18)",
+    "notes": "Baseline values preserved (config1)."
   },
   "symbols": [
     "DE40",

@@ -1,9 +1,9 @@
 {
   "__meta": {
-    "batch_tag": "2026-02-20-robust-grid-newformat",
+    "batch_tag": "2026-02-20-robust-grid-newformat-json5names",
     "role": "robust",
-    "source": "Feb19 config3.json5",
-    "notes": "Values match Feb19 config3 (Robust engine). Reformatted to flat-but-structured JSON (top-level keys preserved)."
+    "source": "Feb19 config9.json5 (robust contract from Feb19 config3 applied to configs 2-18)",
+    "notes": "Per-config creds/paths preserved from Feb19; robust contract enforced for trading_hours/burst_guardian/sizing_governor."
   },
   "symbols": [
     "DE40",
@@ -26,8 +26,8 @@
   "poll_interval_ms": 100,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
-    "login": 52443403,
-    "password": "SA@v4$1l6DW4m@",
+    "login": 52443410,
+    "password": "c4Hsn@iKSbUFhS",
     "server": "ICMarketsEU-Demo"
   },
   "trading_hours": [
