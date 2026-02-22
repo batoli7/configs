@@ -1,9 +1,9 @@
 {
   "__meta": {
-    "batch_tag": "2026-02-20-robust-plus-upside-sgfriendly",
+    "batch_tag": "2026-02-20-robust-grid-newformat-json5names",
     "role": "robust",
-    "source": "Rebuilt from uploaded pack; only engine knobs overridden; creds/paths preserved per config.",
-    "notes": "Per-config creds/paths preserved from Feb19; robust contract enforced for trading_hours/burst_guardian/sizing_governor. | Engine enforced: robust."
+    "source": "Feb19 config15.json5 (robust contract from Feb19 config3 applied to configs 2-18)",
+    "notes": "Per-config creds/paths preserved from Feb19; robust contract enforced for trading_hours/burst_guardian/sizing_governor."
   },
   "symbols": [
     "DE40",
@@ -11,13 +11,6 @@
     "US500",
     "USTEC",
     "US2000",
-    "AAPL.NAS",
-    "MSFT.NAS",
-    "GOOG.NAS",
-    "AMZN.NAS",
-    "TSLA.NAS",
-    "NVDA.NAS",
-    "AMD.NAS",
     "BTCUSD",
     "XAUUSD",
     "XTIUSD"
