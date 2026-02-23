@@ -112,5 +112,8 @@
     "enabled": false,
     "audit": false,
     "audit_snapshot_sec": 0
-  }
+  },
+  "unit_shadow_mode": false,
+  "unit_shadow_every_ms": 30000,
+  "alpha_filter": { "enabled": false }
 }
