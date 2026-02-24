@@ -25,7 +25,7 @@
   },
   "trading_hours": [
     [
-      "15:30",
+      "09:00",
       "21:50"
     ]
   ],
@@ -79,7 +79,7 @@
     "XAUUSD": 0.1,
     "XTIUSD": 0.01
   },
-  "unit_shadow_mode": false,
+  "unit_shadow_mode": true,
   "unit_shadow_every_ms": 30000,
   "live_trading_enabled": true,
   "force_live_trading": false,
