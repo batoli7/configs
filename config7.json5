@@ -28,6 +28,10 @@
   "enable_time_filtering": true,
   "trading_hours": [
     [
+      "09:00",
+      "11:00"
+    ],
+    [
       "15:30",
       "21:50"
     ]
