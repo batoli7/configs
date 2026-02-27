@@ -1,6 +1,6 @@
 {
   "__meta": {
-    "batch_tag": "2026-02-20-robust-grid-newformat-json5names333333333333",
+    "batch_tag": "2026-02-20-robust-grid-newformat-json5names",
     "role": "robust",
     "source": "Feb19 config4.json5 (robust contract from Feb19 config3 applied to configs 2-18)",
     "notes": "Per-config creds/paths preserved from Feb19; robust contract enforced for trading_hours/burst_guardian/sizing_governor."
@@ -32,7 +32,7 @@
       "11:00"
     ],
     [
-      "15:30",
+      "14:25",
       "21:50"
     ]
   ],
