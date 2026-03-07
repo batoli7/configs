@@ -1,11 +1,10 @@
 {
   "__meta": {
-    "batch_tag": "2026-03-07-robust-all-poll50",
-    "role": "robust",
-    "source": "Base pack config10.json5 normalized to robust engine; poll_interval_ms set to 50",
-    "notes": "Per-config creds/paths preserved; robust engine enforced for burst_guardian and sizing_governor; poll_interval_ms set to 50."
+    "batch_tag": "2026-03-07-robust-all-poll50-sg10-18",
+    "role": "sg-friendly",
+    "source": "Feb19 config10.json5 (normalized from current pack; SG-friendly for config10/config18)",
+    "notes": "Per-config creds/paths preserved; SG-friendly contract enforced with poll_interval_ms=50."
   },
-
   "symbols": [
     "DE40",
     "US30",
@@ -24,7 +23,6 @@
     "password": "bT3d@Q6hFqa0M5",
     "server": "ICMarketsEU-Demo"
   },
-
   "enable_time_filtering": true,
   "trading_hours": [
     [
@@ -36,12 +34,11 @@
       "21:50"
     ]
   ],
-
   "burst_guardian": {
     "enabled": true,
-    "timeout_s": 4,
+    "timeout_s": 2,
     "min_mfe_units": 0.5,
-    "min_net_units": 0.2,
+    "min_net_units": 0.0,
     "pre_window_ms": 900,
     "pre_max_move_ticks": 20,
     "pre_max_move_units": 9999,
@@ -58,11 +55,10 @@
     "max_slippage_ticks": 25,
     "max_slippage_units": 9999
   },
-
   "sizing_governor": {
-    "enabled": false,
+    "enabled": true,
     "per_symbol": true,
-    "small_fraction": 0.1,
+    "small_fraction": 0.15,
     "min_fraction": 0.05,
     "max_fraction": 1.0,
     "be_counts_as": "win",
@@ -70,7 +66,6 @@
     "floor_policy": "min_volume",
     "state_path": "C:/Tradingsystem/data/governor_state.json"
   },
-
   "use_price_units": true,
   "price_unit_overrides": {
     "USTEC": 1.0,
@@ -91,7 +86,6 @@
   },
   "unit_shadow_mode": false,
   "unit_shadow_every_ms": 30000,
-
   "live_trading_enabled": true,
   "force_live_trading": false,
   "order_workers": 4,
@@ -100,17 +94,14 @@
   "cooldown_sec": 10,
   "pos_slot_ttl_sec": 8.0,
   "max_pos_per_symbol": 2,
-
   "risk_per_trade_usd": 100,
   "atr_period": 5,
   "sl_mul": 1.0,
   "tp_mul": 0.7,
   "cat_sl_factor": 3,
-
   "enable_breakeven_sl": true,
   "breakeven_trigger_atr": 0.56,
   "breakeven_offset_atr": 0.03,
-
   "enable_trailing_sl": false,
   "enable_dynamic_trailing": false,
   "trailing_step_trigger_atr": 1.0,
@@ -119,19 +110,15 @@
   "trailing_offset_max_atr": 2.5,
   "trailing_backoff_atr": 0.25,
   "trailing_sl_update_cooldown_sec": 10,
-
   "enable_reversals": true,
   "max_reversals_per_min": 2,
-
   "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw",
   "decisions_db": "C:/Tradingsystem/data/decisions.db",
-
   "burst_entry": {
     "enabled": false,
     "audit": false,
     "audit_snapshot_sec": 0
   },
-
   "alpha_filter": {
     "enabled": false,
     "reaction_pre_ms": 500,
