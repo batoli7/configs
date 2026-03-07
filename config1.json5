@@ -1,9 +1,9 @@
 {
   "__meta": {
-    "batch_tag": "2026-02-20-robust-grid-newformat-json5names",
+    "batch_tag": "2026-03-07-robust-all-poll50",
     "role": "baseline",
-    "source": "Feb19 config1.json5 (robust contract from Feb19 config3 applied to configs 2-18)",
-    "notes": "Baseline values preserved (config1)."
+    "source": "Base pack config1.json5 (baseline preserved; poll_interval_ms set to 50)",
+    "notes": "Baseline values preserved (config1); poll_interval_ms set to 50."
   },
   "symbols": [
     "DE40",
@@ -16,7 +16,7 @@
     "XTIUSD"
   ],
   "strength_threshold": 60,
-  "poll_interval_ms": 100,
+  "poll_interval_ms": 50,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
     "login": 52443400,

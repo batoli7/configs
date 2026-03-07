@@ -1,9 +1,9 @@
 {
   "__meta": {
-    "batch_tag": "2026-02-20-robust-grid-newformat-json5names",
+    "batch_tag": "2026-03-07-robust-all-poll50",
     "role": "robust",
-    "source": "Feb19 config3.json5 (robust contract from Feb19 config3 applied to configs 2-18)",
-    "notes": "Per-config creds/paths preserved from Feb19; robust contract enforced for trading_hours/burst_guardian/sizing_governor."
+    "source": "Base pack config3.json5 normalized to robust engine; poll_interval_ms set to 50",
+    "notes": "Per-config creds/paths preserved; robust engine enforced for burst_guardian and sizing_governor; poll_interval_ms set to 50."
   },
 
   "symbols": [
@@ -17,7 +17,7 @@
     "XTIUSD"
   ],
   "strength_threshold": 60,
-  "poll_interval_ms": 100,
+  "poll_interval_ms": 50,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
     "login": 52443403,
