@@ -1,9 +1,9 @@
 {
   "__meta": {
-    "batch_tag": "2026-03-07-robust-all-poll50-sg10-18",
-    "role": "sg-friendly",
-    "source": "Feb19 config18.json5 (normalized from current pack; SG-friendly for config10/config18)",
-    "notes": "Per-config creds/paths preserved; SG-friendly contract enforced with poll_interval_ms=50."
+    "batch_tag": "2026-03-08-monday-units1-11-robust-rest",
+    "role": "robust",
+    "source": "Monday setup from current pack; config18 set to Robust engine",
+    "notes": "Robust engine applied; per-config identity fields preserved."
   },
   "symbols": [
     "DE40",
@@ -16,7 +16,7 @@
     "XTIUSD"
   ],
   "strength_threshold": 60,
-  "poll_interval_ms": 50,
+  "poll_interval_ms": 100,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
     "login": 52443423,
@@ -36,9 +36,9 @@
   ],
   "burst_guardian": {
     "enabled": true,
-    "timeout_s": 2,
+    "timeout_s": 4,
     "min_mfe_units": 0.5,
-    "min_net_units": 0.0,
+    "min_net_units": 0.2,
     "pre_window_ms": 900,
     "pre_max_move_ticks": 20,
     "pre_max_move_units": 9999,
@@ -56,9 +56,9 @@
     "max_slippage_units": 9999
   },
   "sizing_governor": {
-    "enabled": true,
+    "enabled": false,
     "per_symbol": true,
-    "small_fraction": 0.15,
+    "small_fraction": 0.1,
     "min_fraction": 0.05,
     "max_fraction": 1.0,
     "be_counts_as": "win",
@@ -120,15 +120,6 @@
     "audit_snapshot_sec": 0
   },
   "alpha_filter": {
-    "enabled": false,
-    "reaction_pre_ms": 500,
-    "reaction_post_s": 5,
-    "delta_atr_frac": 0.2,
-    "delta_min_ticks": 4,
-    "memory_n": 7,
-    "off_below": 0.43,
-    "on_above": 0.65,
-    "min_gap_ms": 200,
-    "max_pending_per_symbol": 10
+    "enabled": false
   }
 }

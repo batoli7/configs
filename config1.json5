@@ -1,9 +1,9 @@
 {
   "__meta": {
-    "batch_tag": "2026-03-07-robust-all-poll50",
-    "role": "baseline",
-    "source": "Base pack config1.json5 (baseline preserved; poll_interval_ms set to 50)",
-    "notes": "Baseline values preserved (config1); poll_interval_ms set to 50."
+    "batch_tag": "2026-03-08-monday-units1-11-robust-rest",
+    "role": "units",
+    "source": "Monday setup from current pack; config1 set to Units engine",
+    "notes": "Units engine applied; per-config identity fields preserved."
   },
   "symbols": [
     "DE40",
@@ -16,7 +16,7 @@
     "XTIUSD"
   ],
   "strength_threshold": 60,
-  "poll_interval_ms": 50,
+  "poll_interval_ms": 100,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
     "login": 52443400,
