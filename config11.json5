@@ -23,10 +23,14 @@
     "password": "peVXjt8A$aAAeG",
     "server": "ICMarketsEU-Demo"
   },
-  "trading_hours": [
+ "trading_hours": [
     [
-      "07:00",
-      "21:58"
+      "09:00",
+      "11:00"
+    ],
+    [
+      "14:25",
+      "21:50"
     ]
   ],
   "burst_guardian": {
