@@ -7,13 +7,7 @@
   },
   "symbols": [
     "DE40",
-    "US30",
-    "US500",
-    "USTEC",
-    "US2000",
-    "BTCUSD",
-    "XAUUSD",
-    "XTIUSD"
+    "US30"
   ],
   "strength_threshold": 60,
   "poll_interval_ms": 100,

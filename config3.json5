@@ -6,14 +6,7 @@
     "notes": "Robust engine applied; per-config identity fields preserved. Minor note tweak only."
   },
   "symbols": [
-    "DE40",
-    "US30",
-    "US500",
-    "USTEC",
-    "US2000",
-    "BTCUSD",
-    "XAUUSD",
-    "XTIUSD"
+    "DE40"
   ],
   "strength_threshold": 60,
   "poll_interval_ms": 100,
