@@ -3,7 +3,7 @@
     "batch_tag": "2026-03-08-monday-units1-11-robust-rest",
     "role": "robust",
     "source": "Monday setup from current pack; config17 set to Robust engine",
-    "notes": "Robust engine applied; per-config identity fields preserved."
+    "notes": "Robust engine applied; per-config identity fields preserved. Minor note tweak only."
   },
   "symbols": [
     "DE40",
