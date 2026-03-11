@@ -1,9 +1,9 @@
 {
   "__meta": {
-    "batch_tag": "2026-03-11-mixed3-de40-us30-ustec-a",
+    "batch_tag": "2026-03-11-trailingmix-b",
     "role": "units",
-    "source": "Mixed-engine 3-symbol setup from uploaded base; config1 set to Units engine (old style preserved)",
-    "notes": "Units engine applied in preserved old file style; per-config identity fields preserved. Mixed-engine 3-symbol batch; visible note tweak A."
+    "source": "config1.json5 units batch b.",
+    "notes": "config1.json5 units b."
   },
   "symbols": [
     "DE40",
