@@ -1,21 +1,16 @@
 {
   "__meta": {
-    "batch_tag": "2026-03-08-monday-units1-11-robust-rest",
+    "batch_tag": "2026-03-11-mixed3-de40-us30-ustec-a",
     "role": "robust",
-    "source": "Monday setup from current pack; config17 set to Robust engine; header note refreshed",
-    "notes": "Robust engine applied; per-config identity fields preserved. Minor note tweak only. Header note refreshed for this batch."
+    "source": "Mixed-engine 3-symbol setup from uploaded base; config17 set to Robust engine. Meta info tweak A.",
+    "notes": "Robust engine applied; per-config identity fields preserved."
   },
   "symbols": [
     "DE40",
     "US30",
-    "US500",
-    "USTEC",
-    "US2000",
-    "BTCUSD",
-    "XAUUSD",
-    "XTIUSD"
+    "USTEC"
   ],
-  "strength_threshold": 60,
+  "strength_threshold": 70,
   "poll_interval_ms": 100,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
