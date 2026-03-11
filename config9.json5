@@ -1,9 +1,9 @@
 {
   "__meta": {
-    "batch_tag": "2026-03-11-mixed3-de40-us30-ustec-a",
-    "role": "units",
-    "source": "Mixed-engine 3-symbol setup from uploaded base; config9 set to Units engine (old style preserved)",
-    "notes": "Units engine applied in preserved old file style; per-config identity fields preserved. Mixed-engine 3-symbol batch; visible note tweak A."
+    "batch_tag": "2026-03-11-trailingmix-b",
+    "role": "upside",
+    "source": "config9.json5 upside batch b.",
+    "notes": "config9.json5 upside b."
   },
   "symbols": [
     "DE40",
@@ -30,10 +30,10 @@
     ]
   ],
   "burst_guardian": {
-    "enabled": false,
-    "timeout_s": 4,
+    "enabled": true,
+    "timeout_s": 3,
     "min_mfe_units": 0.5,
-    "min_net_units": 0.2,
+    "min_net_units": 0.0,
     "pre_window_ms": 900,
     "pre_max_move_ticks": 20,
     "pre_max_move_units": 9999,

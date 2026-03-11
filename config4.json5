@@ -1,9 +1,9 @@
 {
   "__meta": {
-    "batch_tag": "2026-03-11-mixed3-de40-us30-ustec-a",
-    "role": "robust",
-    "source": "Mixed-engine 3-symbol setup from uploaded base; config4 set to Robust engine",
-    "notes": "Robust engine applied; per-config identity fields preserved. Mixed-engine 3-symbol batch; visible note tweak A."
+    "batch_tag": "2026-03-11-trailingmix-b",
+    "role": "sg-friendly",
+    "source": "config4.json5 sg-friendly batch b.",
+    "notes": "config4.json5 sg b."
   },
   "symbols": [
     "DE40",
@@ -31,9 +31,9 @@
   ],
   "burst_guardian": {
     "enabled": true,
-    "timeout_s": 4,
+    "timeout_s": 2,
     "min_mfe_units": 0.5,
-    "min_net_units": 0.2,
+    "min_net_units": 0.0,
     "pre_window_ms": 900,
     "pre_max_move_ticks": 20,
     "pre_max_move_units": 9999,
@@ -51,9 +51,9 @@
     "max_slippage_units": 9999
   },
   "sizing_governor": {
-    "enabled": false,
+    "enabled": true,
     "per_symbol": true,
-    "small_fraction": 0.1,
+    "small_fraction": 0.15,
     "min_fraction": 0.05,
     "max_fraction": 1.0,
     "be_counts_as": "win",

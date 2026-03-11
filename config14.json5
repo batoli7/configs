@@ -1,9 +1,9 @@
 {
   "__meta": {
-    "batch_tag": "2026-03-11-mixed3-de40-us30-ustec-a",
-    "role": "upside",
-    "source": "Mixed-engine 3-symbol setup from uploaded base; config14 set to Upside engine (timeout 3 test choice)",
-    "notes": "Upside engine applied with timeout 3 test choice; per-config identity fields preserved. Mixed-engine 3-symbol batch; visible note tweak A."
+    "batch_tag": "2026-03-11-trailingmix-b",
+    "role": "robust",
+    "source": "config14.json5 robust batch b.",
+    "notes": "config14.json5 robust b."
   },
   "symbols": [
     "DE40",
@@ -31,9 +31,9 @@
   ],
   "burst_guardian": {
     "enabled": true,
-    "timeout_s": 3,
+    "timeout_s": 4,
     "min_mfe_units": 0.5,
-    "min_net_units": 0.0,
+    "min_net_units": 0.2,
     "pre_window_ms": 900,
     "pre_max_move_ticks": 20,
     "pre_max_move_units": 9999,

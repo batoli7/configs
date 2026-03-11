@@ -1,9 +1,9 @@
 {
   "__meta": {
-    "batch_tag": "2026-03-11-mixed3-de40-us30-ustec-a",
-    "role": "sg-friendly",
-    "source": "Mixed-engine 3-symbol setup from uploaded base; config7 set to SG-friendly engine",
-    "notes": "SG-friendly engine applied; per-config identity fields preserved. Mixed-engine 3-symbol batch; visible note tweak A."
+    "batch_tag": "2026-03-11-trailingmix-b",
+    "role": "units",
+    "source": "config7.json5 units batch b.",
+    "notes": "config7.json5 units b."
   },
   "symbols": [
     "DE40",
@@ -30,7 +30,7 @@
     ]
   ],
   "burst_guardian": {
-    "enabled": true,
+    "enabled": false,
     "timeout_s": 2,
     "min_mfe_units": 0.5,
     "min_net_units": 0.0,
@@ -51,7 +51,7 @@
     "max_slippage_units": 9999
   },
   "sizing_governor": {
-    "enabled": true,
+    "enabled": false,
     "per_symbol": true,
     "small_fraction": 0.15,
     "min_fraction": 0.05,
