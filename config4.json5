@@ -1,9 +1,9 @@
 {
   "__meta": {
     "batch_tag": "2026-03-11-trailingmix-b",
-    "role": "sg-friendly",
-    "source": "config4.json5 sg-friendly batch b.",
-    "notes": "config4.json5 sg b."
+    "notes": "config5.json5 trailing p1 b. f4x",
+    "role": "trailing",
+    "source": "config5.json5 trailing batch b."
   },
   "symbols": [
     "DE40",
@@ -32,16 +32,16 @@
   ],
   "burst_guardian": {
     "enabled": true,
-    "timeout_s": 2,
-    "min_mfe_units": 0.5,
+    "timeout_s": 4,
+    "min_mfe_units": 0.0,
     "min_net_units": 0.0,
     "pre_window_ms": 900,
     "pre_max_move_ticks": 20,
-    "pre_max_move_units": 9999,
-    "pre_max_move_atr_frac": 9000000000,
+    "pre_max_move_units": 9999.0,
+    "pre_max_move_atr_frac": 9000000000.0,
     "max_lag_ms": 2500,
     "max_move_ticks": 25,
-    "max_move_units": 9999,
+    "max_move_units": 9999.0,
     "max_move_atr_frac": 9000000000.0,
     "max_spread_mult": 2.2,
     "retrace_frac": 0.3,
@@ -49,12 +49,12 @@
     "min_net_ticks": 0,
     "min_mfe_ticks": 0,
     "max_slippage_ticks": 25,
-    "max_slippage_units": 9999
+    "max_slippage_units": 9999.0
   },
   "sizing_governor": {
-    "enabled": true,
+    "enabled": false,
     "per_symbol": true,
-    "small_fraction": 0.15,
+    "small_fraction": 0.1,
     "min_fraction": 0.05,
     "max_fraction": 1.0,
     "be_counts_as": "win",
@@ -89,29 +89,45 @@
   "queue_debounce_ms": 200,
   "cooldown_sec": 10,
   "pos_slot_ttl_sec": 8.0,
-  "max_pos_per_symbol": 2,
-  "risk_per_trade_usd": 100,
+  "max_pos_per_symbol": 1,
+  "risk_per_trade_usd": 100.0,
   "atr_period": 5,
   "sl_mul": 1.0,
   "tp_mul": 0.7,
   "per_symbol_trade_params": {
-  "DE40": { "atr_period": 5, "sl_mul": 1.0, "tp_mul": 0.7 },
-  "US30": { "atr_period": 8, "sl_mul": 1.3, "tp_mul": 1.0 },
-  "USTEC": { "atr_period": 7, "sl_mul": 1.2, "tp_mul": 0.9 },
-  "BTCUSD": { "atr_period": 10, "sl_mul": 1.6, "tp_mul": 1.2 }
+    "DE40": {
+      "atr_period": 5,
+      "sl_mul": 1.0,
+      "tp_mul": 0.7
+    },
+    "US30": {
+      "atr_period": 8,
+      "sl_mul": 1.3,
+      "tp_mul": 1.0
+    },
+    "USTEC": {
+      "atr_period": 8,
+      "sl_mul": 1.3,
+      "tp_mul": 1.0
+    },
+    "BTCUSD": {
+      "atr_period": 10,
+      "sl_mul": 1.8,
+      "tp_mul": 1.4
+    }
   },
-  "cat_sl_factor": 3,
+  "cat_sl_factor": 3.0,
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.56,
-  "breakeven_offset_atr": 0.03,
-  "enable_trailing_sl": false,
-  "enable_dynamic_trailing": false,
-  "trailing_step_trigger_atr": 1.0,
-  "trailing_offset_base_atr": 1.0,
-  "trailing_offset_step_atr": 0.25,
-  "trailing_offset_max_atr": 2.5,
-  "trailing_backoff_atr": 0.25,
-  "trailing_sl_update_cooldown_sec": 10,
+  "breakeven_trigger_atr": 0.75,
+  "breakeven_offset_atr": 0.08,
+  "enable_trailing_sl": true,
+  "enable_dynamic_trailing": true,
+  "trailing_step_trigger_atr": 1.1,
+  "trailing_offset_base_atr": 0.9,
+  "trailing_offset_step_atr": 0.22,
+  "trailing_offset_max_atr": 2.2,
+  "trailing_backoff_atr": 0.18,
+  "trailing_sl_update_cooldown_sec": 3,
   "enable_reversals": true,
   "max_reversals_per_min": 2,
   "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw",
