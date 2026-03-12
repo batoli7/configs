@@ -8,7 +8,8 @@
   "symbols": [
     "DE40",
     "US30",
-    "USTEC"
+    "USTEC",
+    "BTCUSD"
   ],
   "strength_threshold": 60,
   "poll_interval_ms": 100,
@@ -63,6 +64,12 @@
   "atr_period": 5,
   "sl_mul": 1.0,
   "tp_mul": 0.7,
+  "per_symbol_trade_params": {
+  "DE40": { "atr_period": 5, "sl_mul": 1.0, "tp_mul": 0.7 },
+  "US30": { "atr_period": 8, "sl_mul": 1.3, "tp_mul": 1.0 },
+  "USTEC": { "atr_period": 7, "sl_mul": 1.2, "tp_mul": 0.9 },
+  "BTCUSD": { "atr_period": 10, "sl_mul": 1.6, "tp_mul": 1.2 }
+  },
   "cat_sl_factor": 3,
   "enable_breakeven_sl": true,
   "breakeven_trigger_atr": 0.56,

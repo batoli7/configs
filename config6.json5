@@ -8,7 +8,8 @@
   "symbols": [
     "DE40",
     "US30",
-    "USTEC"
+    "USTEC",
+    "BTCUSD"
   ],
   "strength_threshold": 60,
   "poll_interval_ms": 100,
