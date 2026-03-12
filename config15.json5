@@ -1,7 +1,7 @@
 {
   "__meta": {
     "batch_tag": "2026-03-11-trailingmix-b",
-    "notes": "config3.json5 upside b. 9xy",
+    "notes": "config3.json5 upside b. bcg",
     "role": "upside",
     "source": "config3.json5 upside batch b."
   },
@@ -22,11 +22,7 @@
   "enable_time_filtering": true,
   "trading_hours": [
     [
-      "09:00",
-      "11:00"
-    ],
-    [
-      "14:25",
+      "07:00",
       "21:50"
     ]
   ],
