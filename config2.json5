@@ -93,6 +93,11 @@
   "atr_period": 5,
   "sl_mul": 1.0,
   "tp_mul": 0.7,
+  "per_symbol_trade_params": {
+    "DE40": { "atr_period": 5, "sl_mul": 1.0, "tp_mul": 0.7 },
+    "US30": { "atr_period": 5, "sl_mul": 1.0, "tp_mul": 0.7 },
+    "USTEC": { "atr_period": 5, "sl_mul": 1.0, "tp_mul": 0.7 }
+  },
   "cat_sl_factor": 3,
   "enable_breakeven_sl": true,
   "breakeven_trigger_atr": 0.56,
