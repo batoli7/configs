@@ -1,7 +1,7 @@
 {
   "__meta": {
     "batch_tag": "2026-03-11-trailingmix-b",
-    "notes": "config5.json5 trailing p1 b. 9wa",
+    "notes": "config5.json5 trailing p1 b. 4r3",
     "role": "trailing",
     "source": "config5.json5 trailing batch b."
   },
@@ -137,7 +137,7 @@
     "enabled": true,
     "log_only": false,
     "debug_log": true,
-    "episode_reset_ms": 1200,
+    "episode_reset_ms": 600,
     "window_ms": 1200,
     "min_points": 4,
     "tiny_move_units": 0.05,
@@ -145,19 +145,19 @@
     "hard_veto_flip_count_at_or_above": 4,
     "hard_veto_backfill_at_or_above": 0.45,
     "pass_score": 45.0,
-    "efficiency_good_above": 0.64,
-    "efficiency_bad_below": 0.28,
-    "net_disp_good_units": 1.0,
-    "net_disp_bad_units": 0.15,
-    "gross_path_good_units": 1.6,
-    "gross_path_bad_units": 0.3,
-    "backfill_good_below": 0.15,
-    "backfill_bad_above": 0.65,
-    "w_efficiency": 20.0,
-    "w_flip_count": 10.0,
-    "w_backfill": 12.0,
-    "w_net_disp": 34.0,
-    "w_gross_path": 24.0
+    "efficiency_good_above": 0.68,
+    "efficiency_bad_below": 0.3,
+    "net_disp_good_units": 1.2,
+    "net_disp_bad_units": 0.2,
+    "gross_path_good_units": 2.0,
+    "gross_path_bad_units": 0.4,
+    "backfill_good_below": 0.18,
+    "backfill_bad_above": 0.55,
+    "w_efficiency": 28.0,
+    "w_flip_count": 14.0,
+    "w_backfill": 18.0,
+    "w_net_disp": 20.0,
+    "w_gross_path": 20.0
   },
   "alpha_filter": {
     "enabled": false
