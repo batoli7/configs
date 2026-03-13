@@ -1,7 +1,7 @@
 {
   "__meta": {
     "batch_tag": "2026-03-11-trailingmix-b",
-    "notes": "config5.json5 trailing p1 b. oor",
+    "notes": "config5.json5 trailing p1 b. zqr",
     "role": "trailing",
     "source": "config5.json5 trailing batch b."
   },
@@ -22,7 +22,7 @@
   "enable_time_filtering": true,
   "trading_hours": [
     [
-      "07:00",
+      "08:00",
       "21:50"
     ]
   ],
@@ -92,24 +92,24 @@
   "tp_mul": 0.7,
   "per_symbol_trade_params": {
     "DE40": {
-      "atr_period": 5,
-      "sl_mul": 1.0,
-      "tp_mul": 0.7
+      "atr_period": 8,
+      "sl_mul": 1.3,
+      "tp_mul": 1.0
     },
     "US30": {
-      "atr_period": 8,
-      "sl_mul": 1.3,
-      "tp_mul": 1.0
+      "atr_period": 12,
+      "sl_mul": 1.6,
+      "tp_mul": 1.3
     },
     "USTEC": {
-      "atr_period": 8,
-      "sl_mul": 1.3,
-      "tp_mul": 1.0
+      "atr_period": 11,
+      "sl_mul": 1.5,
+      "tp_mul": 1.2
     },
     "BTCUSD": {
-      "atr_period": 10,
-      "sl_mul": 1.8,
-      "tp_mul": 1.4
+      "atr_period": 16,
+      "sl_mul": 2.2,
+      "tp_mul": 1.7
     }
   },
   "cat_sl_factor": 3.0,
