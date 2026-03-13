@@ -1,7 +1,7 @@
 {
   "__meta": {
     "batch_tag": "2026-03-11-trailingmix-b",
-    "notes": "config5.json5 trailing p1 b. cwb",
+    "notes": "config5.json5 trailing p1 b. 1zv",
     "role": "trailing",
     "source": "config5.json5 trailing batch b."
   },
@@ -92,19 +92,19 @@
   "tp_mul": 0.7,
   "per_symbol_trade_params": {
     "DE40": {
-      "atr_period": 9,
-      "sl_mul": 1.3,
-      "tp_mul": 1.0
+      "atr_period": 5,
+      "sl_mul": 1.1,
+      "tp_mul": 0.8
     },
     "US30": {
-      "atr_period": 12,
-      "sl_mul": 1.7,
-      "tp_mul": 1.4
+      "atr_period": 8,
+      "sl_mul": 1.4,
+      "tp_mul": 1.1
     },
     "USTEC": {
-      "atr_period": 12,
-      "sl_mul": 1.6,
-      "tp_mul": 1.3
+      "atr_period": 10,
+      "sl_mul": 1.5,
+      "tp_mul": 1.2
     },
     "BTCUSD": {
       "atr_period": 18,
@@ -132,6 +132,32 @@
     "enabled": false,
     "audit": false,
     "audit_snapshot_sec": 0
+  },
+  "chop_quality_filter": {
+    "enabled": true,
+    "log_only": false,
+    "debug_log": true,
+    "episode_reset_ms": 1600,
+    "window_ms": 1800,
+    "min_points": 6,
+    "tiny_move_units": 0.1,
+    "hard_veto_efficiency_below": 0.38,
+    "hard_veto_flip_count_at_or_above": 2,
+    "hard_veto_backfill_at_or_above": 0.28,
+    "pass_score": 72.0,
+    "efficiency_good_above": 0.78,
+    "efficiency_bad_below": 0.36,
+    "net_disp_good_units": 1.8,
+    "net_disp_bad_units": 0.35,
+    "gross_path_good_units": 3.0,
+    "gross_path_bad_units": 0.7,
+    "backfill_good_below": 0.28,
+    "backfill_bad_above": 0.3,
+    "w_efficiency": 42.0,
+    "w_flip_count": 6.0,
+    "w_backfill": 8.0,
+    "w_net_disp": 12.0,
+    "w_gross_path": 32.0
   },
   "alpha_filter": {
     "enabled": false
