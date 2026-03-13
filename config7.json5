@@ -135,8 +135,8 @@
   },
   "chop_quality_filter": {
     "enabled": true,
-    "log_only": true,
-    "debug_log": false,
+    "log_only": false,
+    "debug_log": true,
     "episode_reset_ms": 1200,
     "window_ms": 900,
     "min_points": 5,
