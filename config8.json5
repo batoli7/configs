@@ -1,17 +1,15 @@
 {
   "__meta": {
     "batch_tag": "2026-03-11-trailingmix-b",
-    "notes": "config5.json5 trailing p1 b. 2ah",
+    "notes": "config5.json5 trailing p1 b. die",
     "role": "trailing",
     "source": "config5.json5 trailing batch b."
   },
   "symbols": [
     "DE40",
-    "US30",
-    "USTEC",
-    "BTCUSD"
+    "US30"
   ],
-  "strength_threshold": 60,
+  "strength_threshold": 50,
   "poll_interval_ms": 100,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
@@ -40,8 +38,8 @@
     "max_move_units": 9999.0,
     "max_move_atr_frac": 9000000000.0,
     "max_spread_mult": 2.2,
-    "retrace_frac": 0.35,
-    "retrace_window_s": 12,
+    "retrace_frac": 0.3,
+    "retrace_window_s": 10,
     "min_net_ticks": 0,
     "min_mfe_ticks": 0,
     "max_slippage_ticks": 25,
@@ -114,16 +112,16 @@
   },
   "cat_sl_factor": 3.0,
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 1.0,
-  "breakeven_offset_atr": 0.12,
+  "breakeven_trigger_atr": 0.75,
+  "breakeven_offset_atr": 0.08,
   "enable_trailing_sl": true,
   "enable_dynamic_trailing": true,
-  "trailing_step_trigger_atr": 1.4,
-  "trailing_offset_base_atr": 1.05,
-  "trailing_offset_step_atr": 0.24,
-  "trailing_offset_max_atr": 2.4,
-  "trailing_backoff_atr": 0.24,
-  "trailing_sl_update_cooldown_sec": 4,
+  "trailing_step_trigger_atr": 1.1,
+  "trailing_offset_base_atr": 0.9,
+  "trailing_offset_step_atr": 0.22,
+  "trailing_offset_max_atr": 2.2,
+  "trailing_backoff_atr": 0.18,
+  "trailing_sl_update_cooldown_sec": 3,
   "enable_reversals": true,
   "max_reversals_per_min": 2,
   "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw",
@@ -134,7 +132,7 @@
     "audit_snapshot_sec": 0
   },
   "chop_quality_filter": {
-    "enabled": true,
+    "enabled": false,
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1200,

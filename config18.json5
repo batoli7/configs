@@ -1,17 +1,15 @@
 {
   "__meta": {
     "batch_tag": "2026-03-11-trailingmix-b",
-    "notes": "config5.json5 trailing p1 b. mbm",
+    "notes": "config5.json5 trailing p1 b. zno",
     "role": "trailing",
     "source": "config5.json5 trailing batch b."
   },
   "symbols": [
     "DE40",
-    "US30",
-    "USTEC",
-    "BTCUSD"
+    "US30"
   ],
-  "strength_threshold": 60,
+  "strength_threshold": 100,
   "poll_interval_ms": 100,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
@@ -134,7 +132,7 @@
     "audit_snapshot_sec": 0
   },
   "chop_quality_filter": {
-    "enabled": true,
+    "enabled": false,
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1600,
