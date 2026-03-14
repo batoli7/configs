@@ -1,7 +1,7 @@
 {
   "__meta": {
     "batch_tag": "2026-03-11-trailingmix-b",
-    "notes": "config5.json5 trailing p1 b. pbc",
+    "notes": "config5.json5 trailing p1 b. e28",
     "role": "trailing",
     "source": "config5.json5 trailing batch b."
   },
@@ -9,7 +9,7 @@
     "DE40",
     "US30"
   ],
-  "strength_threshold": 70,
+  "strength_threshold": 40,
   "poll_interval_ms": 100,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
@@ -46,7 +46,7 @@
     "max_slippage_units": 9999.0
   },
   "sizing_governor": {
-    "enabled": false,
+    "enabled": true,
     "per_symbol": true,
     "small_fraction": 0.1,
     "min_fraction": 0.05,
