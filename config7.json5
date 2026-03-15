@@ -1,9 +1,7 @@
 {
   "__meta": {
-    "batch_tag": "2026-03-11-trailingmix-b",
-    "notes": "config5.json5 trailing p1 b. yvc",
-    "role": "trailing",
-    "source": "config5.json5 trailing batch b."
+    "notes": "config5.json5 trailing p1 b. 826",
+    "role": "trailing"
   },
   "symbols": [
     "DE40",
@@ -83,7 +81,7 @@
   "queue_debounce_ms": 200,
   "cooldown_sec": 10,
   "pos_slot_ttl_sec": 8.0,
-  "max_pos_per_symbol": 2,
+  "max_pos_per_symbol": 10,
   "risk_per_trade_usd": 100.0,
   "atr_period": 5,
   "sl_mul": 1.0,
@@ -105,9 +103,9 @@
       "tp_mul": 1.2
     },
     "BTCUSD": {
-      "atr_period": 8,
-      "sl_mul": 1.4,
-      "tp_mul": 1.0
+      "atr_period": 10,
+      "sl_mul": 1.6,
+      "tp_mul": 1.2
     }
   },
   "cat_sl_factor": 3.0,
@@ -122,7 +120,7 @@
   "trailing_offset_max_atr": 2.2,
   "trailing_backoff_atr": 0.18,
   "trailing_sl_update_cooldown_sec": 3,
-  "enable_reversals": true,
+  "enable_reversals": false,
   "max_reversals_per_min": 2,
   "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw",
   "decisions_db": "C:/Tradingsystem/data/decisions.db",
