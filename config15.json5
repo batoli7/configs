@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config15.json5 Trailing 20k"
+    "notes": "config15.json5 Trailing nu6"
   },
   "symbols": [
     "DE40",
@@ -133,7 +133,7 @@
     "enabled": true,
     "log_only": false,
     "debug_log": true,
-    "episode_reset_ms": 1600,
+    "episode_reset_ms": 1,
     "window_ms": 1200,
     "min_points": 4,
     "tiny_move_units": 0.05,
