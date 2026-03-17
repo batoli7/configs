@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config10.json5 Trailing kdp"
+    "notes": "config10.json5 Trailing qsq"
   },
   "symbols": [
     "DE40",
@@ -79,8 +79,8 @@
   "order_workers": 4,
   "guardian_poll_ms": 200,
   "queue_debounce_ms": 200,
-  "cooldown_sec": 10,
-  "pos_slot_ttl_sec": 8.0,
+  "cooldown_sec": 2,
+  "pos_slot_ttl_sec": 2.0,
   "max_pos_per_symbol": 2,
   "risk_per_trade_usd": 100.0,
   "atr_period": 5,
@@ -130,16 +130,16 @@
     "audit_snapshot_sec": 0
   },
   "chop_quality_filter": {
-    "enabled": true,
+    "enabled": false,
     "log_only": false,
     "debug_log": true,
-    "episode_reset_ms": 1,
+    "episode_reset_ms": 1200,
     "window_ms": 1200,
     "min_points": 4,
     "tiny_move_units": 0.05,
-    "hard_veto_efficiency_below": 0.32,
-    "hard_veto_flip_count_at_or_above": 3,
-    "hard_veto_backfill_at_or_above": 0.38,
+    "hard_veto_efficiency_below": 0.28,
+    "hard_veto_flip_count_at_or_above": 4,
+    "hard_veto_backfill_at_or_above": 0.45,
     "pass_score": 55.0,
     "efficiency_good_above": 0.68,
     "efficiency_bad_below": 0.3,
