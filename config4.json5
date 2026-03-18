@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config4.json5 Trailing a89"
+    "notes": "config4.json5 Trailing a8o"
   },
   "symbols": [
     "DE40",
@@ -36,7 +36,7 @@
     "max_move_units": 9999.0,
     "max_move_atr_frac": 9000000000.0,
     "max_spread_mult": 2.2,
-    "retrace_frac": 0.3,
+    "retrace_frac": 0.2,
     "retrace_window_s": 10,
     "min_net_ticks": 0,
     "min_mfe_ticks": 0,

@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config13.json5 Trailing pf1"
+    "notes": "config13.json5 Trailing 7xi"
   },
   "symbols": [
     "DE40",
@@ -36,7 +36,7 @@
     "max_move_units": 9999.0,
     "max_move_atr_frac": 9000000000.0,
     "max_spread_mult": 2.2,
-    "retrace_frac": 0.3,
+    "retrace_frac": 0.2,
     "retrace_window_s": 10,
     "min_net_ticks": 0,
     "min_mfe_ticks": 0,
@@ -79,8 +79,8 @@
   "order_workers": 4,
   "guardian_poll_ms": 200,
   "queue_debounce_ms": 200,
-  "cooldown_sec": 5,
-  "pos_slot_ttl_sec": 5.0,
+  "cooldown_sec": 4,
+  "pos_slot_ttl_sec": 2.0,
   "max_pos_per_symbol": 2,
   "risk_per_trade_usd": 100.0,
   "atr_period": 5,
@@ -121,7 +121,7 @@
   "trailing_backoff_atr": 0.18,
   "trailing_sl_update_cooldown_sec": 3,
   "enable_reversals": true,
-  "max_reversals_per_min": 2,
+  "max_reversals_per_min": 10,
   "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw",
   "decisions_db": "C:/Tradingsystem/data/decisions.db",
   "burst_entry": {

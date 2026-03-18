@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config5.json5 Trailing mv1"
+    "notes": "config5.json5 Trailing i7i"
   },
   "symbols": [
     "DE40",
@@ -79,7 +79,7 @@
   "order_workers": 4,
   "guardian_poll_ms": 200,
   "queue_debounce_ms": 200,
-  "cooldown_sec": 5,
+  "cooldown_sec": 4,
   "pos_slot_ttl_sec": 2.0,
   "max_pos_per_symbol": 2,
   "risk_per_trade_usd": 100.0,

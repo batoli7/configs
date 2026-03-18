@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config11.json5 Trailing b53"
+    "notes": "config11.json5 Trailing c2v"
   },
   "symbols": [
     "DE40",
@@ -24,7 +24,7 @@
   ],
   "burst_guardian": {
     "enabled": true,
-    "timeout_s": 4,
+    "timeout_s": 3,
     "min_mfe_units": 0.0,
     "min_net_units": 0.0,
     "pre_window_ms": 900,
@@ -79,8 +79,8 @@
   "order_workers": 4,
   "guardian_poll_ms": 200,
   "queue_debounce_ms": 200,
-  "cooldown_sec": 3,
-  "pos_slot_ttl_sec": 3.0,
+  "cooldown_sec": 4,
+  "pos_slot_ttl_sec": 2.0,
   "max_pos_per_symbol": 2,
   "risk_per_trade_usd": 100.0,
   "atr_period": 5,
@@ -121,7 +121,7 @@
   "trailing_backoff_atr": 0.18,
   "trailing_sl_update_cooldown_sec": 3,
   "enable_reversals": true,
-  "max_reversals_per_min": 2,
+  "max_reversals_per_min": 10,
   "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw",
   "decisions_db": "C:/Tradingsystem/data/decisions.db",
   "burst_entry": {

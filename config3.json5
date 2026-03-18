@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config3.json5 Trailing d1q"
+    "notes": "config3.json5 Trailing t7t"
   },
   "symbols": [
     "DE40",
@@ -24,7 +24,7 @@
   ],
   "burst_guardian": {
     "enabled": true,
-    "timeout_s": 4,
+    "timeout_s": 3,
     "min_mfe_units": 0.0,
     "min_net_units": 0.0,
     "pre_window_ms": 900,
@@ -36,7 +36,7 @@
     "max_move_units": 9999.0,
     "max_move_atr_frac": 9000000000.0,
     "max_spread_mult": 2.2,
-    "retrace_frac": 0.3,
+    "retrace_frac": 0.4,
     "retrace_window_s": 10,
     "min_net_ticks": 0,
     "min_mfe_ticks": 0,
@@ -79,7 +79,7 @@
   "order_workers": 4,
   "guardian_poll_ms": 200,
   "queue_debounce_ms": 200,
-  "cooldown_sec": 3,
+  "cooldown_sec": 4,
   "pos_slot_ttl_sec": 2.0,
   "max_pos_per_symbol": 2,
   "risk_per_trade_usd": 100.0,
