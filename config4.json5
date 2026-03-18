@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config4.json5 Trailing a8o"
+    "notes": "config4.json5 Trailing vx8"
   },
   "symbols": [
     "DE40",
@@ -24,7 +24,7 @@
   ],
   "burst_guardian": {
     "enabled": true,
-    "timeout_s": 4,
+    "timeout_s": 5,
     "min_mfe_units": 0.0,
     "min_net_units": 0.0,
     "pre_window_ms": 900,
@@ -35,12 +35,12 @@
     "max_move_ticks": 25,
     "max_move_units": 9999.0,
     "max_move_atr_frac": 9000000000.0,
-    "max_spread_mult": 2.2,
-    "retrace_frac": 0.2,
+    "max_spread_mult": 1.8,
+    "retrace_frac": 0.3,
     "retrace_window_s": 10,
     "min_net_ticks": 0,
     "min_mfe_ticks": 0,
-    "max_slippage_ticks": 25,
+    "max_slippage_ticks": 15,
     "max_slippage_units": 9999.0
   },
   "sizing_governor": {

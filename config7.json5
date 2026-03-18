@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config7.json5 Trailing 1bi"
+    "notes": "config7.json5 Trailing f1t"
   },
   "symbols": [
     "DE40",
@@ -31,16 +31,16 @@
     "pre_max_move_ticks": 20,
     "pre_max_move_units": 9999.0,
     "pre_max_move_atr_frac": 9000000000.0,
-    "max_lag_ms": 2500,
+    "max_lag_ms": 4000,
     "max_move_ticks": 25,
     "max_move_units": 9999.0,
     "max_move_atr_frac": 9000000000.0,
-    "max_spread_mult": 2.2,
-    "retrace_frac": 0.2,
+    "max_spread_mult": 1.8,
+    "retrace_frac": 0.3,
     "retrace_window_s": 10,
     "min_net_ticks": 0,
     "min_mfe_ticks": 0,
-    "max_slippage_ticks": 25,
+    "max_slippage_ticks": 15,
     "max_slippage_units": 9999.0
   },
   "sizing_governor": {

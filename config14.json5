@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config14.json5 Trailing gs6"
+    "notes": "config14.json5 Trailing tzd"
   },
   "symbols": [
     "DE40",
@@ -24,7 +24,7 @@
   ],
   "burst_guardian": {
     "enabled": true,
-    "timeout_s": 4,
+    "timeout_s": 5,
     "min_mfe_units": 0.0,
     "min_net_units": 0.0,
     "pre_window_ms": 900,
