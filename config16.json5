@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config16.json5 Trailing qw8"
+    "notes": "config16.json5 Trailing 9ke"
   },
   "symbols": [
     "DE40",
@@ -137,9 +137,9 @@
     "window_ms": 1200,
     "min_points": 4,
     "tiny_move_units": 0.05,
-    "hard_veto_efficiency_below": 0.32,
+    "hard_veto_efficiency_below": 0.3,
     "hard_veto_flip_count_at_or_above": 4,
-    "hard_veto_backfill_at_or_above": 0.38,
+    "hard_veto_backfill_at_or_above": 0.42,
     "pass_score": 50.0,
     "efficiency_good_above": 0.68,
     "efficiency_bad_below": 0.3,

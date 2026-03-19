@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config15.json5 Trailing 7q1"
+    "notes": "config15.json5 Trailing 38l"
   },
   "symbols": [
     "DE40",
@@ -140,7 +140,7 @@
     "hard_veto_efficiency_below": 0.28,
     "hard_veto_flip_count_at_or_above": 4,
     "hard_veto_backfill_at_or_above": 0.45,
-    "pass_score": 60.0,
+    "pass_score": 58.0,
     "efficiency_good_above": 0.68,
     "efficiency_bad_below": 0.3,
     "net_disp_good_units": 1.2,
