@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config2.json5 Trailing ddg"
+    "notes": "config2.json5 Trailing 6vp"
   },
   "symbols": [
     "DE40",
@@ -151,10 +151,14 @@
     },
     "net_disp_gate": {
       "enabled": true,
+      "mode": "atr",
+      "min_atr_frac": 0.12,
       "min_units": 0.2
     },
     "gross_path_gate": {
       "enabled": true,
+      "mode": "atr",
+      "min_atr_frac": 0.24,
       "min_units": 0.4
     }
   },
