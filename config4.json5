@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config4.json5 Trailing tbc"
+    "notes": "config4.json5 Trailing 2zo"
   },
   "symbols": [
     "DE40",
@@ -142,11 +142,11 @@
       "min_efficiency": 0.26
     },
     "flip_count_gate": {
-      "enabled": false,
+      "enabled": true,
       "max_flips": 4
     },
     "backfill_gate": {
-      "enabled": true,
+      "enabled": false,
       "max_backfill": 0.48
     },
     "net_disp_gate": {

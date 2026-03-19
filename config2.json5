@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config2.json5 Trailing qbw"
+    "notes": "config2.json5 Trailing 605"
   },
   "symbols": [
     "DE40",
@@ -138,12 +138,12 @@
     "min_points": 4,
     "tiny_move_units": 0.05,
     "efficiency_gate": {
-      "enabled": true,
+      "enabled": false,
       "min_efficiency": 0.26
     },
     "flip_count_gate": {
-      "enabled": false,
-      "max_flips": 4
+      "enabled": true,
+      "max_flips": 2
     },
     "backfill_gate": {
       "enabled": false,

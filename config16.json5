@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config16.json5 Trailing l0g"
+    "notes": "config16.json5 Trailing x3x"
   },
   "symbols": [
     "DE40",
@@ -134,7 +134,7 @@
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
-    "window_ms": 1200,
+    "window_ms": 20000,
     "min_points": 4,
     "tiny_move_units": 0.05,
     "efficiency_gate": {
@@ -143,7 +143,7 @@
     },
     "flip_count_gate": {
       "enabled": true,
-      "max_flips": 4
+      "max_flips": 6
     },
     "backfill_gate": {
       "enabled": false,
@@ -156,7 +156,7 @@
       "min_units": 0.2
     },
     "gross_path_gate": {
-      "enabled": true,
+      "enabled": false,
       "mode": "atr",
       "min_atr_frac": 0.24,
       "min_units": 0.4

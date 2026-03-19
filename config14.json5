@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config14.json5 Trailing oo6"
+    "notes": "config14.json5 Trailing myz"
   },
   "symbols": [
     "DE40",
@@ -134,7 +134,7 @@
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
-    "window_ms": 1200,
+    "window_ms": 10000,
     "min_points": 4,
     "tiny_move_units": 0.05,
     "efficiency_gate": {
@@ -142,7 +142,7 @@
       "min_efficiency": 0.26
     },
     "flip_count_gate": {
-      "enabled": false,
+      "enabled": true,
       "max_flips": 4
     },
     "backfill_gate": {
@@ -150,7 +150,7 @@
       "max_backfill": 0.48
     },
     "net_disp_gate": {
-      "enabled": true,
+      "enabled": false,
       "mode": "atr",
       "min_atr_frac": 0.12,
       "min_units": 0.2

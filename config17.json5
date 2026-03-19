@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config17.json5 Trailing 9h9"
+    "notes": "config17.json5 Trailing 6f9"
   },
   "symbols": [
     "DE40",
@@ -134,23 +134,23 @@
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
-    "window_ms": 1200,
+    "window_ms": 20000,
     "min_points": 4,
     "tiny_move_units": 0.05,
     "efficiency_gate": {
-      "enabled": true,
+      "enabled": false,
       "min_efficiency": 0.26
     },
     "flip_count_gate": {
-      "enabled": false,
-      "max_flips": 4
+      "enabled": true,
+      "max_flips": 5
     },
     "backfill_gate": {
-      "enabled": true,
+      "enabled": false,
       "max_backfill": 0.48
     },
     "net_disp_gate": {
-      "enabled": true,
+      "enabled": false,
       "mode": "atr",
       "min_atr_frac": 0.12,
       "min_units": 0.2

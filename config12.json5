@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config12.json5 Trailing b3g"
+    "notes": "config12.json5 Trailing ffa"
   },
   "symbols": [
     "DE40",
@@ -134,7 +134,7 @@
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
-    "window_ms": 1200,
+    "window_ms": 5000,
     "min_points": 4,
     "tiny_move_units": 0.05,
     "efficiency_gate": {
@@ -143,7 +143,7 @@
     },
     "flip_count_gate": {
       "enabled": true,
-      "max_flips": 4
+      "max_flips": 5
     },
     "backfill_gate": {
       "enabled": false,
