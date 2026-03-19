@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config9.json5 Trailing 81s"
+    "notes": "config9.json5 Trailing vko"
   },
   "symbols": [
     "DE40",
@@ -134,7 +134,7 @@
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
-    "window_ms": 5000,
+    "window_ms": 3500,
     "min_points": 4,
     "tiny_move_units": 0.05,
     "efficiency_gate": {
