@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config2.json5 Trailing fq7"
+    "notes": "config2.json5 Trailing ddg"
   },
   "symbols": [
     "DE40",
@@ -130,7 +130,7 @@
     "audit_snapshot_sec": 0
   },
   "chop_quality_filter": {
-    "enabled": false,
+    "enabled": true,
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
