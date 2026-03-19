@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config15.json5 Trailing 686"
+    "notes": "config15.json5 Trailing tfh"
   },
   "symbols": [
     "DE40",
@@ -137,23 +137,30 @@
     "window_ms": 1200,
     "min_points": 4,
     "tiny_move_units": 0.05,
-    "hard_veto_efficiency_below": 0.28,
-    "hard_veto_flip_count_at_or_above": 4,
-    "hard_veto_backfill_at_or_above": 0.45,
-    "pass_score": 58.0,
-    "efficiency_good_above": 0.68,
-    "efficiency_bad_below": 0.3,
-    "net_disp_good_units": 1.2,
-    "net_disp_bad_units": 0.2,
-    "gross_path_good_units": 2.0,
-    "gross_path_bad_units": 0.4,
-    "backfill_good_below": 0.18,
-    "backfill_bad_above": 0.55,
-    "w_efficiency": 28.0,
-    "w_flip_count": 14.0,
-    "w_backfill": 18.0,
-    "w_net_disp": 20.0,
-    "w_gross_path": 20.0
+    "efficiency_gate": {
+      "enabled": false,
+      "min_efficiency": 0.26
+    },
+    "flip_count_gate": {
+      "enabled": false,
+      "max_flips": 4
+    },
+    "backfill_gate": {
+      "enabled": false,
+      "max_backfill": 0.48
+    },
+    "net_disp_gate": {
+      "enabled": false,
+      "mode": "atr",
+      "min_atr_frac": 0.12,
+      "min_units": 0.2
+    },
+    "gross_path_gate": {
+      "enabled": true,
+      "mode": "atr",
+      "min_atr_frac": 0.24,
+      "min_units": 0.4
+    }
   },
   "alpha_filter": {
     "enabled": false
