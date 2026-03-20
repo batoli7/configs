@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config9.json5 Trailing q2f"
+    "notes": "config9.json5 Trailing 991"
   },
   "symbols": [
     "DE40",
@@ -24,7 +24,7 @@
   ],
   "burst_guardian": {
     "enabled": true,
-    "timeout_s": 4,
+    "timeout_s": 600,
     "min_mfe_units": 0.25,
     "min_net_units": 0.2,
     "pre_window_ms": 700,
