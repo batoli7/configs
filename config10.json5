@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config10.json5 Trailing pqu"
+    "notes": "config10.json5 Trailing 5pi"
   },
   "symbols": [
     "DE40",
@@ -134,7 +134,7 @@
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
-    "window_ms": 4500,
+    "window_ms": 2000,
     "min_points": 4,
     "tiny_move_units": 0.05,
     "efficiency_gate": {
