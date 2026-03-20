@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config7.json5 Trailing mfp"
+    "notes": "config7.json5 Trailing qr9"
   },
   "symbols": [
     "DE40",
@@ -138,8 +138,8 @@
     "min_points": 4,
     "tiny_move_units": 0.05,
     "alive_gate": {
-      "enabled": false,
-      "window_ms": 3000,
+      "enabled": true,
+      "window_ms": 2500,
       "min_points": 4
     },
     "efficiency_gate": {

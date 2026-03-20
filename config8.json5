@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config8.json5 Trailing ici"
+    "notes": "config8.json5 Trailing knn"
   },
   "symbols": [
     "DE40",
@@ -138,7 +138,7 @@
     "min_points": 4,
     "tiny_move_units": 0.05,
     "alive_gate": {
-      "enabled": false,
+      "enabled": true,
       "window_ms": 3000,
       "min_points": 4
     },
@@ -148,7 +148,7 @@
     },
     "flip_count_gate": {
       "enabled": true,
-      "max_flips": 4
+      "max_flips": 3
     },
     "backfill_gate": {
       "enabled": false,
