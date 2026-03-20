@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config6.json5 Trailing zqp"
+    "notes": "config6.json5 Trailing o9o"
   },
   "symbols": [
     "DE40",
@@ -31,7 +31,7 @@
     "pre_max_move_ticks": 25,
     "pre_max_move_units": 9999.0,
     "pre_max_move_atr_frac": 9000000000.0,
-    "max_lag_ms": 300,
+    "max_lag_ms": 200,
     "max_move_ticks": 20,
     "max_move_units": 9999.0,
     "max_move_atr_frac": 9000000000.0,
@@ -139,8 +139,8 @@
     "tiny_move_units": 0.05,
     "alive_gate": {
       "enabled": true,
-      "window_ms": 2500,
-      "min_points": 7
+      "window_ms": 5000,
+      "min_points": 12
     },
     "efficiency_gate": {
       "enabled": false,
