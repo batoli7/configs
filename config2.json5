@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config2.json5 Trailing 4ax"
+    "notes": "config2.json5 Trailing xmi"
   },
   "symbols": [
     "DE40",
@@ -130,7 +130,7 @@
     "audit_snapshot_sec": 0
   },
   "chop_quality_filter": {
-    "enabled": true,
+    "enabled": false,
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
