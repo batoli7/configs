@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config5.json5 Trailing ry8"
+    "notes": "config5.json5 Trailing emb"
   },
   "symbols": [
     "DE40",
@@ -31,7 +31,7 @@
     "pre_max_move_ticks": 25,
     "pre_max_move_units": 9999.0,
     "pre_max_move_atr_frac": 9000000000.0,
-    "max_lag_ms": 500,
+    "max_lag_ms": 300,
     "max_move_ticks": 20,
     "max_move_units": 9999.0,
     "max_move_atr_frac": 9000000000.0,
