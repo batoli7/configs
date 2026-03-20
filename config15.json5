@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config15.json5 Trailing n2j"
+    "notes": "config15.json5 Trailing q49"
   },
   "symbols": [
     "DE40",
@@ -134,8 +134,8 @@
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
-    "window_ms": 6000,
-    "min_points": 4,
+    "window_ms": 2500,
+    "min_points": 3,
     "tiny_move_units": 0.05,
     "efficiency_gate": {
       "enabled": false,

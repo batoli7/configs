@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config3.json5 Trailing s1m"
+    "notes": "config3.json5 Trailing w9m"
   },
   "symbols": [
     "DE40",
@@ -135,7 +135,7 @@
     "debug_log": true,
     "episode_reset_ms": 1,
     "window_ms": 500,
-    "min_points": 4,
+    "min_points": 3,
     "tiny_move_units": 0.05,
     "efficiency_gate": {
       "enabled": false,
