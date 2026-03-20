@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config7.json5 Trailing lze"
+    "notes": "config7.json5 Trailing py0"
   },
   "symbols": [
     "DE40",
@@ -139,8 +139,8 @@
     "tiny_move_units": 0.05,
     "alive_gate": {
       "enabled": true,
-      "window_ms": 3500,
-      "min_points": 3
+      "window_ms": 3000,
+      "min_points": 4
     },
     "efficiency_gate": {
       "enabled": false,

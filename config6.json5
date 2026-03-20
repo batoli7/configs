@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config6.json5 Trailing lxr"
+    "notes": "config6.json5 Trailing zqp"
   },
   "symbols": [
     "DE40",
@@ -140,7 +140,7 @@
     "alive_gate": {
       "enabled": true,
       "window_ms": 2500,
-      "min_points": 6
+      "min_points": 7
     },
     "efficiency_gate": {
       "enabled": false,
