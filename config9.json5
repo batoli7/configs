@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config9.json5 Trailing n2q"
+    "notes": "config9.json5 Trailing dsc"
   },
   "symbols": [
     "DE40",
@@ -135,7 +135,7 @@
     "debug_log": true,
     "episode_reset_ms": 1,
     "window_ms": 1100,
-    "min_points": 3,
+    "min_points": 4,
     "tiny_move_units": 0.05,
     "efficiency_gate": {
       "enabled": false,
@@ -143,7 +143,7 @@
     },
     "flip_count_gate": {
       "enabled": true,
-      "max_flips": 4
+      "max_flips": 3
     },
     "backfill_gate": {
       "enabled": false,
