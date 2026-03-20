@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config2.json5 Trailing llb"
+    "notes": "config2.json5 Trailing kbl"
   },
   "symbols": [
     "DE40",
@@ -130,19 +130,24 @@
     "audit_snapshot_sec": 0
   },
   "chop_quality_filter": {
-    "enabled": false,
+    "enabled": true,
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
     "window_ms": 1200,
     "min_points": 4,
     "tiny_move_units": 0.05,
+    "alive_gate": {
+      "enabled": true,
+      "window_ms": 3000,
+      "min_points": 4
+    },
     "efficiency_gate": {
       "enabled": false,
       "min_efficiency": 0.26
     },
     "flip_count_gate": {
-      "enabled": true,
+      "enabled": false,
       "max_flips": 4
     },
     "backfill_gate": {

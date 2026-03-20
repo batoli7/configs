@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config1.json5 Trailing ddv"
+    "notes": "config1.json5 Trailing iy4"
   },
   "symbols": [
     "DE40",
@@ -138,7 +138,7 @@
     "min_points": 4,
     "tiny_move_units": 0.05,
     "alive_gate": {
-      "enabled": true,
+      "enabled": false,
       "window_ms": 3000,
       "min_points": 4
     },
