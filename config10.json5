@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config10.json5 Trailing ovg"
+    "notes": "config10.json5 Trailing toy"
   },
   "symbols": [
     "DE40",
@@ -139,7 +139,7 @@
     "tiny_move_units": 0.05,
     "alive_gate": {
       "enabled": true,
-      "window_ms": 3000,
+      "window_ms": 3500,
       "min_points": 6
     },
     "efficiency_gate": {
