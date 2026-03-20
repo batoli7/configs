@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config5.json5 Trailing knf"
+    "notes": "config5.json5 Trailing xe5"
   },
   "symbols": [
     "DE40",
@@ -139,8 +139,8 @@
     "tiny_move_units": 0.05,
     "alive_gate": {
       "enabled": true,
-      "window_ms": 1500,
-      "min_points": 4
+      "window_ms": 2500,
+      "min_points": 5
     },
     "efficiency_gate": {
       "enabled": false,

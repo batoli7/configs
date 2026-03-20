@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config12.json5 Trailing uqp"
+    "notes": "config12.json5 Trailing 55x"
   },
   "symbols": [
     "DE40",
@@ -139,7 +139,7 @@
     "tiny_move_units": 0.05,
     "alive_gate": {
       "enabled": true,
-      "window_ms": 5000,
+      "window_ms": 3500,
       "min_points": 4
     },
     "efficiency_gate": {

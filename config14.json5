@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config14.json5 Trailing r3c"
+    "notes": "config14.json5 Trailing by4"
   },
   "symbols": [
     "DE40",
@@ -139,8 +139,8 @@
     "tiny_move_units": 0.05,
     "alive_gate": {
       "enabled": true,
-      "window_ms": 6000,
-      "min_points": 4
+      "window_ms": 3500,
+      "min_points": 6
     },
     "efficiency_gate": {
       "enabled": false,
