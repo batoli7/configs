@@ -1,12 +1,12 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config6.json5 Trailing uk9"
+    "notes": "config6.json5 Trailing ad0"
   },
   "symbols": [
     "BTCUSD"
   ],
-  "strength_threshold": 1,
+  "strength_threshold": 60,
   "poll_interval_ms": 100,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
