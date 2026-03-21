@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config2.json5 Trailing 5k1"
+    "notes": "config2.json5 Trailing ioi"
   },
   "symbols": [
     "BTCUSD"
@@ -139,8 +139,8 @@
     "alive_gate": {
       "enabled": false,
       "mode": "fixed",
-      "window_ms": 3000,
-      "min_points": 4,
+      "window_ms": 0,
+      "min_points": 0,
       "baseline_window_s": 0,
       "required_frac_of_baseline": 0.0,
       "min_points_floor": 0,

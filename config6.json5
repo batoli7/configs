@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config6.json5 Trailing ad0"
+    "notes": "config6.json5 Trailing l04"
   },
   "symbols": [
     "BTCUSD"
@@ -138,13 +138,13 @@
     "tiny_move_units": 0.05,
     "alive_gate": {
       "enabled": true,
-      "mode": "fixed",
-      "window_ms": 5000,
-      "min_points": 5,
-      "baseline_window_s": 0,
-      "required_frac_of_baseline": 0.0,
-      "min_points_floor": 0,
-      "min_baseline_points": 0
+      "mode": "dynamic",
+      "window_ms": 3000,
+      "min_points": 4,
+      "baseline_window_s": 600,
+      "required_frac_of_baseline": 0.5,
+      "min_points_floor": 4,
+      "min_baseline_points": 6
     },
     "efficiency_gate": {
       "enabled": false,
