@@ -1,11 +1,10 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config7.json5 Trailing qkp"
+    "notes": "config7.json5 Trailing sep"
   },
   "symbols": [
-    "DE40",
-    "US30"
+    "BTCUSD"
   ],
   "strength_threshold": 1,
   "poll_interval_ms": 100,
@@ -139,8 +138,13 @@
     "tiny_move_units": 0.05,
     "alive_gate": {
       "enabled": true,
-      "window_ms": 5000,
-      "min_points": 14
+      "mode": "fixed",
+      "window_ms": 2000,
+      "min_points": 4,
+      "baseline_window_s": 0,
+      "required_frac_of_baseline": 0.0,
+      "min_points_floor": 0,
+      "min_baseline_points": 0
     },
     "efficiency_gate": {
       "enabled": false,

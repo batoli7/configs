@@ -1,11 +1,10 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config17.json5 Trailing sqd"
+    "notes": "config17.json5 Trailing gp0"
   },
   "symbols": [
-    "DE40",
-    "US30"
+    "BTCUSD"
   ],
   "strength_threshold": 1,
   "poll_interval_ms": 100,
@@ -139,8 +138,13 @@
     "tiny_move_units": 0.05,
     "alive_gate": {
       "enabled": true,
-      "window_ms": 13000,
-      "min_points": 40
+      "mode": "dynamic",
+      "window_ms": 6000,
+      "min_points": 6,
+      "baseline_window_s": 600,
+      "required_frac_of_baseline": 0.5,
+      "min_points_floor": 3,
+      "min_baseline_points": 6
     },
     "efficiency_gate": {
       "enabled": false,
