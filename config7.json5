@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config7.json5 Trailing 1v3"
+    "notes": "config7.json5 Trailing c73"
   },
   "symbols": [
     "BTCUSD"
@@ -151,7 +151,7 @@
       "min_efficiency": 0.26
     },
     "flip_count_gate": {
-      "enabled": true,
+      "enabled": false,
       "max_flips": 3
     },
     "backfill_gate": {

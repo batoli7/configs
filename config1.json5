@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config1.json5 Trailing ry7"
+    "notes": "config1.json5 Trailing qps"
   },
   "symbols": [
     "BTCUSD"
@@ -151,7 +151,7 @@
       "min_efficiency": 0.26
     },
     "flip_count_gate": {
-      "enabled": true,
+      "enabled": false,
       "max_flips": 3
     },
     "backfill_gate": {
