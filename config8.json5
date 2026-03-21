@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config8.json5 Trailing uay"
+    "notes": "config8.json5 Trailing zwe"
   },
   "symbols": [
     "BTCUSD"
@@ -142,8 +142,8 @@
       "window_ms": 3000,
       "min_points": 6,
       "baseline_window_s": 600,
-      "required_frac_of_baseline": 0.55,
-      "min_points_floor": 3,
+      "required_frac_of_baseline": 1.02,
+      "min_points_floor": 5,
       "min_baseline_points": 6
     },
     "efficiency_gate": {
