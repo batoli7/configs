@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config1.json5 Trailing edh"
+    "notes": "config1.json5 Trailing 7gv"
   },
   "symbols": [
     "BTCUSD"
@@ -147,7 +147,7 @@
     "min_points": 4,
     "tiny_move_units": 0.05,
     "alive_gate": {
-      "enabled": false,
+      "enabled": true,
       "mode": "fixed",
       "window_ms": 3000,
       "min_points": 4,
@@ -161,7 +161,7 @@
       "min_efficiency": 0.26
     },
     "flip_count_gate": {
-      "enabled": false,
+      "enabled": true,
       "max_flips": 3
     },
     "backfill_gate": {
