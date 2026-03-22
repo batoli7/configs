@@ -1,10 +1,10 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config1.json5 Trailing quy"
+    "notes": "config1.json5 Trailing edh"
   },
   "symbols": [
-    "DE40"
+    "BTCUSD"
   ],
   "strength_threshold": 60,
   "poll_interval_ms": 100,
@@ -131,7 +131,7 @@
   "probe_mode": {
     "enabled": true,
     "symbols": [
-      "DE40"
+      "BTCUSD"
     ],
     "interval_s": 30,
     "side_mode": "buy",
