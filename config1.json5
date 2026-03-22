@@ -1,10 +1,10 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config1.json5 Trailing lur"
+    "notes": "config1.json5 Trailing znl"
   },
   "symbols": [
-    "BTCUSD"
+    "DE40"
   ],
   "strength_threshold": 60,
   "poll_interval_ms": 100,
