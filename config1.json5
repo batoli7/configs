@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config1.json5 Trailing bbl"
+    "notes": "config1.json5 Trailing lur"
   },
   "symbols": [
     "BTCUSD"
@@ -127,6 +127,16 @@
     "enabled": false,
     "audit": false,
     "audit_snapshot_sec": 0
+  },
+  "probe_mode": {
+    "enabled": true,
+    "symbols": [
+      "DE40"
+    ],
+    "interval_s": 30,
+    "side_mode": "buy",
+    "mark_only": true,
+    "event_csv_path": "C:\\Users\\Administrator\\AppData\\Roaming\\MetaQuotes\\Terminal\\17D15AF4F4EC4054E22D916100D19265\\MQL5\\Files\\\\MB\\ProbeEvents.csv"
   },
   "chop_quality_filter": {
     "enabled": false,
