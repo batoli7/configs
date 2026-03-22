@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config1.json5 Trailing 7gv"
+    "notes": "config1.json5 Trailing ova"
   },
   "symbols": [
     "BTCUSD"
@@ -148,13 +148,13 @@
     "tiny_move_units": 0.05,
     "alive_gate": {
       "enabled": true,
-      "mode": "fixed",
+      "mode": "dynamic",
       "window_ms": 3000,
-      "min_points": 4,
-      "baseline_window_s": 0,
-      "required_frac_of_baseline": 0.0,
-      "min_points_floor": 0,
-      "min_baseline_points": 0
+      "min_points": 6,
+      "baseline_window_s": 600,
+      "required_frac_of_baseline": 1.2,
+      "min_points_floor": 6,
+      "min_baseline_points": 6
     },
     "efficiency_gate": {
       "enabled": false,
@@ -162,7 +162,7 @@
     },
     "flip_count_gate": {
       "enabled": true,
-      "max_flips": 3
+      "max_flips": 2
     },
     "backfill_gate": {
       "enabled": false,
