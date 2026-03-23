@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config1.json5 Trailing vto"
+    "notes": "config1.json5 Trailing jba"
   },
   "symbols": [
     "DE40",
@@ -135,7 +135,7 @@
       "DE40",
       "US30"
     ],
-    "interval_s": 30,
+    "interval_s": 5,
     "side_mode": "buy",
     "mark_only": true,
     "event_csv_path": "C:\\Users\\Administrator\\AppData\\Roaming\\MetaQuotes\\Terminal\\17D15AF4F4EC4054E22D916100D19265\\MQL5\\Files\\\\MB\\ProbeEvents.csv"
