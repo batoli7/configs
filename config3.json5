@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config3.json5 Trailing qnj"
+    "notes": "config3.json5 Trailing qpk"
   },
   "symbols": [
     "DE40"
@@ -143,14 +143,14 @@
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
-    "window_ms": 3500,
+    "window_ms": 1200,
     "min_points": 4,
     "tiny_move_units": 0.05,
     "alive_gate": {
-      "enabled": true,
+      "enabled": false,
       "mode": "fixed",
-      "window_ms": 2000,
-      "min_points": 5,
+      "window_ms": 0,
+      "min_points": 0,
       "baseline_window_s": 0,
       "required_frac_of_baseline": 0.0,
       "min_points_floor": 0,
@@ -161,7 +161,7 @@
       "min_efficiency": 0.26
     },
     "flip_count_gate": {
-      "enabled": false,
+      "enabled": true,
       "max_flips": 3
     },
     "backfill_gate": {

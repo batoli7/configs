@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config12.json5 Trailing dpq"
+    "notes": "config12.json5 Trailing b6j"
   },
   "symbols": [
     "DE40"
@@ -147,22 +147,22 @@
     "min_points": 4,
     "tiny_move_units": 0.05,
     "alive_gate": {
-      "enabled": true,
-      "mode": "dynamic",
-      "window_ms": 3000,
-      "min_points": 6,
-      "baseline_window_s": 600,
-      "required_frac_of_baseline": 0.5,
-      "min_points_floor": 4,
-      "min_baseline_points": 6
+      "enabled": false,
+      "mode": "fixed",
+      "window_ms": 0,
+      "min_points": 0,
+      "baseline_window_s": 0,
+      "required_frac_of_baseline": 0.0,
+      "min_points_floor": 0,
+      "min_baseline_points": 0
     },
     "efficiency_gate": {
       "enabled": false,
       "min_efficiency": 0.26
     },
     "flip_count_gate": {
-      "enabled": false,
-      "max_flips": 3
+      "enabled": true,
+      "max_flips": 4
     },
     "backfill_gate": {
       "enabled": false,
