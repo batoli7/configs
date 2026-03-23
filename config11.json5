@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config11.json5 Trailing 5fa"
+    "notes": "config11.json5 Trailing jqf"
   },
   "symbols": [
     "DE40",
@@ -164,7 +164,7 @@
     },
     "flip_count_gate": {
       "enabled": true,
-      "max_flips": 5
+      "max_flips": 6
     },
     "backfill_gate": {
       "enabled": false,

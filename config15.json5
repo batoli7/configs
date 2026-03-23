@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config15.json5 Trailing p7p"
+    "notes": "config15.json5 Trailing j8a"
   },
   "symbols": [
     "DE40",
@@ -164,7 +164,7 @@
     },
     "flip_count_gate": {
       "enabled": true,
-      "max_flips": 6
+      "max_flips": 7
     },
     "backfill_gate": {
       "enabled": false,
