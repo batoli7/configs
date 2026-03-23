@@ -1,10 +1,10 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config2.json5 Trailing 8by"
+    "notes": "config2.json5 Trailing c1v"
   },
   "symbols": [
-    "BTCUSD"
+    "DE40"
   ],
   "strength_threshold": 60,
   "poll_interval_ms": 100,
@@ -128,8 +128,18 @@
     "audit": false,
     "audit_snapshot_sec": 0
   },
-  "chop_quality_filter": {
+  "probe_mode": {
     "enabled": true,
+    "symbols": [
+      "DE40"
+    ],
+    "interval_s": 30,
+    "side_mode": "buy",
+    "mark_only": true,
+    "event_csv_path": "C:\\Users\\Administrator\\AppData\\Roaming\\MetaQuotes\\Terminal\\17D15AF4F4EC4054E22D916100D19265\\MQL5\\Files\\\\MB\\ProbeEvents.csv"
+  },
+  "chop_quality_filter": {
+    "enabled": false,
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
@@ -139,8 +149,8 @@
     "alive_gate": {
       "enabled": false,
       "mode": "fixed",
-      "window_ms": 4000,
-      "min_points": 5,
+      "window_ms": 0,
+      "min_points": 0,
       "baseline_window_s": 0,
       "required_frac_of_baseline": 0.0,
       "min_points_floor": 0,

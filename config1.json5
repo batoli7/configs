@@ -1,10 +1,10 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config1.json5 Trailing ova"
+    "notes": "config1.json5 Trailing 8x7"
   },
   "symbols": [
-    "BTCUSD"
+    "DE40"
   ],
   "strength_threshold": 60,
   "poll_interval_ms": 100,
@@ -131,7 +131,7 @@
   "probe_mode": {
     "enabled": true,
     "symbols": [
-      "BTCUSD"
+      "DE40"
     ],
     "interval_s": 30,
     "side_mode": "buy",
@@ -147,22 +147,22 @@
     "min_points": 4,
     "tiny_move_units": 0.05,
     "alive_gate": {
-      "enabled": true,
-      "mode": "dynamic",
-      "window_ms": 3000,
-      "min_points": 6,
-      "baseline_window_s": 600,
-      "required_frac_of_baseline": 1.2,
-      "min_points_floor": 6,
-      "min_baseline_points": 6
+      "enabled": false,
+      "mode": "fixed",
+      "window_ms": 0,
+      "min_points": 0,
+      "baseline_window_s": 0,
+      "required_frac_of_baseline": 0.0,
+      "min_points_floor": 0,
+      "min_baseline_points": 0
     },
     "efficiency_gate": {
       "enabled": false,
       "min_efficiency": 0.26
     },
     "flip_count_gate": {
-      "enabled": true,
-      "max_flips": 2
+      "enabled": false,
+      "max_flips": 3
     },
     "backfill_gate": {
       "enabled": false,
