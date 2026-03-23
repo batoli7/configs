@@ -1,12 +1,13 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config9.json5 Trailing 7w2"
+    "notes": "config9.json5 Trailing buz"
   },
   "symbols": [
-    "DE40"
+    "DE40",
+    "US30"
   ],
-  "strength_threshold": 60,
+  "strength_threshold": 1,
   "poll_interval_ms": 100,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
@@ -30,7 +31,7 @@
     "pre_max_move_ticks": 25,
     "pre_max_move_units": 9999.0,
     "pre_max_move_atr_frac": 9000000000.0,
-    "max_lag_ms": 200,
+    "max_lag_ms": 150,
     "max_move_ticks": 20,
     "max_move_units": 9999.0,
     "max_move_atr_frac": 9000000000.0,
@@ -131,7 +132,8 @@
   "probe_mode": {
     "enabled": true,
     "symbols": [
-      "DE40"
+      "DE40",
+      "US30"
     ],
     "interval_s": 30,
     "side_mode": "buy",
@@ -143,7 +145,7 @@
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
-    "window_ms": 2500,
+    "window_ms": 5000,
     "min_points": 4,
     "tiny_move_units": 0.05,
     "alive_gate": {
