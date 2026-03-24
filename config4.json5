@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config4.json5 Trailing cl8"
+    "notes": "config4.json5 Trailing ks9"
   },
   "symbols": [
     "DE40",
@@ -147,7 +147,7 @@
     "episode_reset_ms": 1,
     "window_ms": 5000,
     "min_points": 4,
-    "tiny_move_units": 0.5,
+    "tiny_move_units": 0.6,
     "alive_gate": {
       "enabled": false,
       "mode": "fixed",

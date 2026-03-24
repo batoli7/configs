@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config9.json5 Trailing qu1"
+    "notes": "config9.json5 Trailing vxq"
   },
   "symbols": [
     "DE40",
@@ -147,7 +147,7 @@
     "episode_reset_ms": 1,
     "window_ms": 5000,
     "min_points": 4,
-    "tiny_move_units": 1.7,
+    "tiny_move_units": 1.1,
     "alive_gate": {
       "enabled": false,
       "mode": "fixed",

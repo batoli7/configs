@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config11.json5 Trailing xbv"
+    "notes": "config11.json5 Trailing yu0"
   },
   "symbols": [
     "DE40",
@@ -147,7 +147,7 @@
     "episode_reset_ms": 1,
     "window_ms": 7000,
     "min_points": 4,
-    "tiny_move_units": 0.3,
+    "tiny_move_units": 0.5,
     "alive_gate": {
       "enabled": false,
       "mode": "fixed",

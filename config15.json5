@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config15.json5 Trailing c6e"
+    "notes": "config15.json5 Trailing ahf"
   },
   "symbols": [
     "DE40",
@@ -147,7 +147,7 @@
     "episode_reset_ms": 1,
     "window_ms": 7000,
     "min_points": 4,
-    "tiny_move_units": 1.3,
+    "tiny_move_units": 0.9,
     "alive_gate": {
       "enabled": false,
       "mode": "fixed",
