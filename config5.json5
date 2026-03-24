@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config5.json5 Trailing 442"
+    "notes": "config5.json5 Trailing p4d"
   },
   "symbols": [
     "DE40",
@@ -57,7 +57,7 @@
   "use_price_units": true,
   "price_unit_overrides": {
     "USTEC": 1.0,
-    "US30": 1.0,
+    "US30": 2.0,
     "US500": 1.0,
     "DE40": 1.0,
     "US2000": 1.0,
@@ -145,9 +145,9 @@
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
-    "window_ms": 5000,
+    "window_ms": 3500,
     "min_points": 4,
-    "tiny_move_units": 0.7,
+    "tiny_move_units": 0.5,
     "alive_gate": {
       "enabled": false,
       "mode": "fixed",
