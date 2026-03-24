@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config8.json5 Trailing pau"
+    "notes": "config8.json5 Trailing tk1"
   },
   "symbols": [
     "DE40",
@@ -145,9 +145,9 @@
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
-    "window_ms": 5000,
+    "window_ms": 3500,
     "min_points": 4,
-    "tiny_move_units": 0.07,
+    "tiny_move_units": 1.5,
     "alive_gate": {
       "enabled": false,
       "mode": "fixed",
@@ -164,7 +164,7 @@
     },
     "flip_count_gate": {
       "enabled": true,
-      "max_flips": 4
+      "max_flips": 3
     },
     "backfill_gate": {
       "enabled": false,

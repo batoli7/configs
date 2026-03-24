@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config2.json5 Trailing 18l"
+    "notes": "config2.json5 Trailing e8d"
   },
   "symbols": [
     "DE40",
@@ -57,7 +57,7 @@
   "use_price_units": true,
   "price_unit_overrides": {
     "USTEC": 1.0,
-    "US30": 1.0,
+    "US30": 2.0,
     "US500": 1.0,
     "DE40": 1.0,
     "US2000": 1.0,
