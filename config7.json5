@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config7.json5 Trailing 06w"
+    "notes": "config7.json5 Trailing u0o"
   },
   "symbols": [
     "DE40",
@@ -82,7 +82,7 @@
   "queue_debounce_ms": 200,
   "cooldown_sec": 4,
   "pos_slot_ttl_sec": 2.0,
-  "max_pos_per_symbol": 2,
+  "max_pos_per_symbol": 10,
   "risk_per_trade_usd": 100.0,
   "atr_period": 5,
   "sl_mul": 1.0,
@@ -90,13 +90,13 @@
   "per_symbol_trade_params": {
     "DE40": {
       "atr_period": 5,
-      "sl_mul": 1.1,
-      "tp_mul": 0.8
+      "sl_mul": 0.1,
+      "tp_mul": 0.5
     },
     "US30": {
       "atr_period": 8,
-      "sl_mul": 1.4,
-      "tp_mul": 1.1
+      "sl_mul": 0.1,
+      "tp_mul": 0.5
     },
     "USTEC": {
       "atr_period": 10,
