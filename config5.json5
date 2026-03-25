@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config5.json5 Trailing 14x"
+    "notes": "config5.json5 Trailing u05"
   },
   "symbols": [
     "DE40",
@@ -46,8 +46,8 @@
   "sizing_governor": {
     "enabled": false,
     "per_symbol": true,
-    "small_fraction": 0.15,
-    "min_fraction": 0.05,
+    "small_fraction": 0.01,
+    "min_fraction": 0.01,
     "max_fraction": 1.0,
     "be_counts_as": "win",
     "be_pnl_usd_tolerance": 2.0,
