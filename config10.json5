@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config10.json5 Trailing 6z3"
+    "notes": "config10.json5 Trailing vmz"
   },
   "symbols": [
     "DE40",
@@ -161,7 +161,7 @@
     },
     "efficiency_gate": {
       "enabled": true,
-      "min_efficiency": 0.28
+      "min_efficiency": 0.3
     },
     "flip_count_gate": {
       "enabled": true,

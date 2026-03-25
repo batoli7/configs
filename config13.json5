@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config13.json5 Trailing 2tw"
+    "notes": "config13.json5 Trailing 5ry"
   },
   "symbols": [
     "DE40",
@@ -161,7 +161,7 @@
     },
     "efficiency_gate": {
       "enabled": true,
-      "min_efficiency": 0.26
+      "min_efficiency": 0.28
     },
     "flip_count_gate": {
       "enabled": true,
