@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config6.json5 Trailing jz2"
+    "notes": "config6.json5 Trailing tcf"
   },
   "symbols": [
     "DE40",
@@ -46,13 +46,14 @@
   "sizing_governor": {
     "enabled": false,
     "per_symbol": true,
-    "small_fraction": 0.1,
+    "small_fraction": 0.15,
     "min_fraction": 0.05,
     "max_fraction": 1.0,
     "be_counts_as": "win",
     "be_pnl_usd_tolerance": 2.0,
     "floor_policy": "min_volume",
-    "state_path": "C:/Tradingsystem/data/governor_state.json"
+    "loss_streak_for_small": 1,
+    "win_streak_for_full": 1
   },
   "use_price_units": true,
   "price_unit_overrides": {
@@ -145,7 +146,7 @@
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
-    "window_ms": 5000,
+    "window_ms": 3500,
     "min_points": 4,
     "tiny_move_units": 0.5,
     "alive_gate": {
@@ -159,12 +160,12 @@
       "min_baseline_points": 0
     },
     "efficiency_gate": {
-      "enabled": false,
-      "min_efficiency": 0.26
+      "enabled": true,
+      "min_efficiency": 0.28
     },
     "flip_count_gate": {
       "enabled": true,
-      "max_flips": 5
+      "max_flips": 4
     },
     "backfill_gate": {
       "enabled": false,
