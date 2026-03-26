@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config4.json5 Trailing 5sk"
+    "notes": "config4.json5 Trailing t0i"
   },
   "symbols": [
     "DE40",
@@ -193,7 +193,7 @@
     "block_short_above": 0.0
   },
   "sweep_exit": {
-    "enabled": false,
+    "enabled": true,
     "exit_long_below": 0.0,
     "exit_short_above": 0.0
   }

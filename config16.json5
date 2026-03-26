@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config16.json5 Trailing tg4"
+    "notes": "config16.json5 Trailing ynf"
   },
   "symbols": [
     "DE40",
@@ -188,9 +188,9 @@
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": true,
-    "block_long_below": 20.0,
-    "block_short_above": 20.0
+    "enabled": false,
+    "block_long_below": 0.0,
+    "block_short_above": 0.0
   },
   "sweep_exit": {
     "enabled": true,

@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config6.json5 Trailing o2f"
+    "notes": "config6.json5 Trailing kxp"
   },
   "symbols": [
     "DE40",
@@ -189,12 +189,12 @@
   },
   "sweep_filter": {
     "enabled": true,
-    "block_long_below": 20.0,
-    "block_short_above": 20.0
+    "block_long_below": -10.0,
+    "block_short_above": -10.0
   },
   "sweep_exit": {
     "enabled": false,
-    "exit_long_below": 100.0,
-    "exit_short_above": 100.0
+    "exit_long_below": 0.0,
+    "exit_short_above": 0.0
   }
 }

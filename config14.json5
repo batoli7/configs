@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config14.json5 Trailing mew"
+    "notes": "config14.json5 Trailing k8x"
   },
   "symbols": [
     "DE40",
@@ -188,7 +188,7 @@
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": true,
+    "enabled": false,
     "block_long_below": 0.0,
     "block_short_above": 0.0
   },

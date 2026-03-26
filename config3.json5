@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config3.json5 Trailing lsi"
+    "notes": "config3.json5 Trailing 0lf"
   },
   "symbols": [
     "DE40",
@@ -189,11 +189,11 @@
   },
   "sweep_filter": {
     "enabled": true,
-    "block_long_below": -10.0,
-    "block_short_above": -10.0
+    "block_long_below": 0.0,
+    "block_short_above": 0.0
   },
   "sweep_exit": {
-    "enabled": false,
+    "enabled": true,
     "exit_long_below": 0.0,
     "exit_short_above": 0.0
   }

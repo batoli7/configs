@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config17.json5 Trailing 6tx"
+    "notes": "config17.json5 Trailing a7o"
   },
   "symbols": [
     "DE40",
@@ -188,9 +188,9 @@
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": true,
-    "block_long_below": 30.0,
-    "block_short_above": 30.0
+    "enabled": false,
+    "block_long_below": 0.0,
+    "block_short_above": 0.0
   },
   "sweep_exit": {
     "enabled": true,

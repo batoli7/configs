@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config11.json5 Trailing nf6"
+    "notes": "config11.json5 Trailing p1j"
   },
   "symbols": [
     "DE40",
@@ -189,12 +189,12 @@
   },
   "sweep_filter": {
     "enabled": true,
-    "block_long_below": -30.0,
-    "block_short_above": -30.0
+    "block_long_below": 40.0,
+    "block_short_above": 40.0
   },
   "sweep_exit": {
-    "enabled": true,
-    "exit_long_below": -30.0,
-    "exit_short_above": -30.0
+    "enabled": false,
+    "exit_long_below": 0.0,
+    "exit_short_above": 0.0
   }
 }

@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config9.json5 Trailing cxj"
+    "notes": "config9.json5 Trailing nz4"
   },
   "symbols": [
     "DE40",
@@ -188,13 +188,13 @@
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": false,
-    "block_long_below": 0.0,
-    "block_short_above": 0.0
+    "enabled": true,
+    "block_long_below": 20.0,
+    "block_short_above": 20.0
   },
   "sweep_exit": {
-    "enabled": true,
-    "exit_long_below": 10.0,
-    "exit_short_above": 10.0
+    "enabled": false,
+    "exit_long_below": 0.0,
+    "exit_short_above": 0.0
   }
 }
