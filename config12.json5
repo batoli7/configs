@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config12.json5 Trailing ntb"
+    "notes": "config12.json5 Trailing 2a4"
   },
   "symbols": [
     "DE40",
@@ -131,7 +131,7 @@
     "audit_snapshot_sec": 0
   },
   "probe_mode": {
-    "enabled": true,
+    "enabled": false,
     "symbols": [
       "DE40",
       "US30"
@@ -142,7 +142,7 @@
     "event_csv_path": "C:\\Users\\Administrator\\AppData\\Roaming\\MetaQuotes\\Terminal\\17D15AF4F4EC4054E22D916100D19265\\MQL5\\Files\\\\MB\\ProbeEvents.csv"
   },
   "chop_quality_filter": {
-    "enabled": true,
+    "enabled": false,
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
