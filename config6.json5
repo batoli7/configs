@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config6.json5 Trailing rxv"
+    "notes": "config6.json5 Trailing o2f"
   },
   "symbols": [
     "DE40",
@@ -146,7 +146,7 @@
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
-    "window_ms": 3500,
+    "window_ms": 7000,
     "min_points": 4,
     "tiny_move_units": 0.5,
     "alive_gate": {
@@ -160,12 +160,12 @@
       "min_baseline_points": 0
     },
     "efficiency_gate": {
-      "enabled": true,
+      "enabled": false,
       "min_efficiency": 0.3
     },
     "flip_count_gate": {
-      "enabled": true,
-      "max_flips": 4
+      "enabled": false,
+      "max_flips": 6
     },
     "backfill_gate": {
       "enabled": false,
@@ -189,12 +189,12 @@
   },
   "sweep_filter": {
     "enabled": true,
-    "block_long_below": 0.0,
-    "block_short_above": 0.0
+    "block_long_below": 20.0,
+    "block_short_above": 20.0
   },
   "sweep_exit": {
-    "enabled": true,
-    "exit_long_below": 0.0,
-    "exit_short_above": 0.0
+    "enabled": false,
+    "exit_long_below": 100.0,
+    "exit_short_above": 100.0
   }
 }

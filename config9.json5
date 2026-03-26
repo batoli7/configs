@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config9.json5 Trailing krk"
+    "notes": "config9.json5 Trailing cxj"
   },
   "symbols": [
     "DE40",
@@ -44,7 +44,7 @@
     "max_slippage_units": 9999.0
   },
   "sizing_governor": {
-    "enabled": true,
+    "enabled": false,
     "per_symbol": true,
     "small_fraction": 0.01,
     "min_fraction": 0.01,
@@ -146,7 +146,7 @@
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
-    "window_ms": 3500,
+    "window_ms": 7000,
     "min_points": 4,
     "tiny_move_units": 0.5,
     "alive_gate": {
@@ -160,12 +160,12 @@
       "min_baseline_points": 0
     },
     "efficiency_gate": {
-      "enabled": true,
+      "enabled": false,
       "min_efficiency": 0.28
     },
     "flip_count_gate": {
-      "enabled": true,
-      "max_flips": 4
+      "enabled": false,
+      "max_flips": 6
     },
     "backfill_gate": {
       "enabled": false,
@@ -188,13 +188,13 @@
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": true,
+    "enabled": false,
     "block_long_below": 0.0,
     "block_short_above": 0.0
   },
   "sweep_exit": {
     "enabled": true,
-    "exit_long_below": 0.0,
-    "exit_short_above": 0.0
+    "exit_long_below": 10.0,
+    "exit_short_above": 10.0
   }
 }

@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config15.json5 Trailing xr4"
+    "notes": "config15.json5 Trailing 3vn"
   },
   "symbols": [
     "DE40",
@@ -44,7 +44,7 @@
     "max_slippage_units": 9999.0
   },
   "sizing_governor": {
-    "enabled": true,
+    "enabled": false,
     "per_symbol": true,
     "small_fraction": 0.01,
     "min_fraction": 0.01,
@@ -160,11 +160,11 @@
       "min_baseline_points": 0
     },
     "efficiency_gate": {
-      "enabled": true,
+      "enabled": false,
       "min_efficiency": 0.24
     },
     "flip_count_gate": {
-      "enabled": true,
+      "enabled": false,
       "max_flips": 6
     },
     "backfill_gate": {
@@ -189,12 +189,12 @@
   },
   "sweep_filter": {
     "enabled": true,
-    "block_long_below": 0.0,
-    "block_short_above": 0.0
+    "block_long_below": 10.0,
+    "block_short_above": 10.0
   },
   "sweep_exit": {
     "enabled": true,
-    "exit_long_below": 0.0,
-    "exit_short_above": 0.0
+    "exit_long_below": 10.0,
+    "exit_short_above": 10.0
   }
 }
