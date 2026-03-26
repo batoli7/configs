@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config8.json5 Trailing hq7"
+    "notes": "config8.json5 Trailing 8yp"
   },
   "symbols": [
     "DE40",
@@ -186,5 +186,15 @@
   },
   "alpha_filter": {
     "enabled": false
+  },
+  "sweep_filter": {
+    "enabled": true,
+    "block_long_below": 0.0,
+    "block_short_above": 0.0
+  },
+  "sweep_exit": {
+    "enabled": true,
+    "exit_long_below": 0.0,
+    "exit_short_above": 0.0
   }
 }
