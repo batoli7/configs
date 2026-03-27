@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config2.json5 Trailing x0s"
+    "notes": "config2.json5 Trailing ex7"
   },
   "symbols": [
     "GER40",
@@ -60,7 +60,7 @@
     "USTEC": 1.0,
     "US30": 1.0,
     "US500": 1.0,
-    "DE40": 1.0,
+    "GER40": 1.0,
     "US2000": 1.0,
     "AAPL.NAS": 0.01,
     "MSFT.NAS": 0.01,
@@ -88,7 +88,7 @@
   "sl_mul": 1.0,
   "tp_mul": 0.7,
   "per_symbol_trade_params": {
-    "DE40": {
+    "GER40": {
       "atr_period": 5,
       "sl_mul": 1.1,
       "tp_mul": 0.8
@@ -188,7 +188,7 @@
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": false,
+    "enabled": true,
     "block_long_below": 0.0,
     "block_short_above": 0.0
   },

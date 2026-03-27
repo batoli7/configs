@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config12.json5 Trailing r7x"
+    "notes": "config12.json5 Trailing tcx"
   },
   "symbols": [
     "GER40",
@@ -60,7 +60,7 @@
     "USTEC": 1.0,
     "US30": 1.0,
     "US500": 1.0,
-    "DE40": 1.0,
+    "GER40": 1.0,
     "US2000": 1.0,
     "AAPL.NAS": 0.01,
     "MSFT.NAS": 0.01,
@@ -88,10 +88,10 @@
   "sl_mul": 1.0,
   "tp_mul": 0.7,
   "per_symbol_trade_params": {
-    "DE40": {
+    "GER40": {
       "atr_period": 5,
-      "sl_mul": 1.1,
-      "tp_mul": 0.8
+      "sl_mul": 1.0,
+      "tp_mul": 0.6
     },
     "US30": {
       "atr_period": 8,
@@ -115,12 +115,12 @@
   "breakeven_offset_atr": 0.08,
   "enable_trailing_sl": true,
   "enable_dynamic_trailing": true,
-  "trailing_step_trigger_atr": 1.1,
-  "trailing_offset_base_atr": 0.9,
-  "trailing_offset_step_atr": 0.22,
-  "trailing_offset_max_atr": 2.2,
-  "trailing_backoff_atr": 0.18,
-  "trailing_sl_update_cooldown_sec": 3,
+  "trailing_step_trigger_atr": 0.8,
+  "trailing_offset_base_atr": 0.5,
+  "trailing_offset_step_atr": 0.18,
+  "trailing_offset_max_atr": 1.5,
+  "trailing_backoff_atr": 0.14,
+  "trailing_sl_update_cooldown_sec": 2,
   "enable_reversals": true,
   "max_reversals_per_min": 10,
   "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw",
@@ -188,7 +188,7 @@
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": false,
+    "enabled": true,
     "block_long_below": 0.0,
     "block_short_above": 0.0
   },
