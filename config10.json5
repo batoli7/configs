@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config10.json5 Trailing lzr"
+    "notes": "config10.json5 Trailing kdw"
   },
   "symbols": [
     "GER40",
@@ -189,12 +189,12 @@
   },
   "sweep_filter": {
     "enabled": true,
-    "block_long_below": 30.0,
-    "block_short_above": 30.0
+    "block_long_below": 20.0,
+    "block_short_above": 20.0
   },
   "sweep_exit": {
-    "enabled": false,
-    "exit_long_below": 0.0,
-    "exit_short_above": 0.0
+    "enabled": true,
+    "exit_long_below": 40.0,
+    "exit_short_above": 40.0
   }
 }

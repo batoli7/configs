@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config18.json5 Trailing b8l"
+    "notes": "config18.json5 Trailing gxu"
   },
   "symbols": [
     "GER40",
@@ -11,7 +11,7 @@
   "poll_interval_ms": 100,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
-    "login": 7389356,
+    "login": 7389380,
     "password": "Profit1234!",
     "server": "FirstPrudentialMarkets-Demo"
   },
@@ -188,13 +188,13 @@
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": false,
-    "block_long_below": 0.0,
-    "block_short_above": 0.0
+    "enabled": true,
+    "block_long_below": 10.0,
+    "block_short_above": 10.0
   },
   "sweep_exit": {
-    "enabled": true,
-    "exit_long_below": 40.0,
-    "exit_short_above": 40.0
+    "enabled": false,
+    "exit_long_below": 0.0,
+    "exit_short_above": 0.0
   }
 }

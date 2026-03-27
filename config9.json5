@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config9.json5 Trailing rex"
+    "notes": "config9.json5 Trailing now"
   },
   "symbols": [
     "GER40",
@@ -193,8 +193,8 @@
     "block_short_above": 20.0
   },
   "sweep_exit": {
-    "enabled": false,
-    "exit_long_below": 0.0,
-    "exit_short_above": 0.0
+    "enabled": true,
+    "exit_long_below": 30.0,
+    "exit_short_above": 30.0
   }
 }

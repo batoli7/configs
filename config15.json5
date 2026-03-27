@@ -1,18 +1,18 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config15.json5 Trailing ad2"
+    "notes": "config15.json5 Trailing exs"
   },
   "symbols": [
-    "DE40",
+    "GER40",
     "US30"
   ],
   "strength_threshold": 1,
   "poll_interval_ms": 100,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
-    "login": 52443418,
-    "password": "M!IfT8sMwX8nT2",
+    "login": 7389376,
+    "password": "Profit1234!",
     "server": "ICMarketsEU-Demo"
   },
   "enable_time_filtering": true,
@@ -133,7 +133,7 @@
   "probe_mode": {
     "enabled": false,
     "symbols": [
-      "DE40",
+      "GER40",
       "US30"
     ],
     "interval_s": 5,
@@ -188,13 +188,13 @@
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": false,
+    "enabled": true,
     "block_long_below": 0.0,
     "block_short_above": 0.0
   },
   "sweep_exit": {
-    "enabled": true,
-    "exit_long_below": 10.0,
-    "exit_short_above": 10.0
+    "enabled": false,
+    "exit_long_below": 0.0,
+    "exit_short_above": 0.0
   }
 }
