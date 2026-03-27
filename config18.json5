@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config18.json5 Trailing jwr"
+    "notes": "config18.json5 Trailing fxd"
   },
   "symbols": [
     "DE40",
@@ -11,9 +11,9 @@
   "poll_interval_ms": 100,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
-    "login": 52443423,
-    "password": "Qf35@hEcfHljSB",
-    "server": "ICMarketsEU-Demo"
+    "login": 7389356,
+    "password": "Profit1234!",
+    "server": "FirstPrudentialMarkets-Demo"
   },
   "enable_time_filtering": true,
   "trading_hours": [
