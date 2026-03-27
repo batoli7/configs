@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config5.json5 Trailing ysh"
+    "notes": "config5.json5 Trailing 1cz"
   },
   "symbols": [
     "DE40",
@@ -11,9 +11,9 @@
   "poll_interval_ms": 100,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
-    "login": 52443405,
-    "password": "QhIE$M1XBD@ECc",
-    "server": "ICMarketsEU-Demo"
+    "login": 62115529,
+    "password": "Jahej1234!",
+    "server": "PepperstoneUK-Demo"
   },
   "enable_time_filtering": true,
   "trading_hours": [
