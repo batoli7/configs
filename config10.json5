@@ -1,10 +1,10 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config10.json5 Trailing imu"
+    "notes": "config10.json5 Trailing lzr"
   },
   "symbols": [
-    "DE40",
+    "GER40",
     "US30"
   ],
   "strength_threshold": 1,
@@ -133,7 +133,7 @@
   "probe_mode": {
     "enabled": false,
     "symbols": [
-      "DE40",
+      "GER40",
       "US30"
     ],
     "interval_s": 5,
