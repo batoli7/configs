@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config12.json5 Trailing evb"
+    "notes": "config12.json5 Trailing 957"
   },
   "symbols": [
     "GER40",
@@ -13,7 +13,7 @@
   "mt5_login": {
     "login": 7389362,
     "password": "Profit1234!",
-    "server": "ICMarketsEU-Demo"
+    "server": "FirstPrudentialMarkets-Demo"
   },
   "enable_time_filtering": true,
   "trading_hours": [

@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config16.json5 Trailing udi"
+    "notes": "config16.json5 Trailing kdi"
   },
   "symbols": [
     "GER40",
@@ -13,7 +13,7 @@
   "mt5_login": {
     "login": 7389377,
     "password": "Profit1234!",
-    "server": "ICMarketsEU-Demo"
+    "server": "FirstPrudentialMarkets-Demo"
   },
   "enable_time_filtering": true,
   "trading_hours": [
