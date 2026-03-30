@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config7.json5 Trailing mjv"
+    "notes": "config7.json5 Trailing l3s"
   },
   "symbols": [
     "GER40",
@@ -199,6 +199,6 @@
   },
   "chop_filter": {
     "enabled": true,
-    "max_chop": 0.23
+    "max_chop": 0.26
   }
 }
