@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config17.json5 Trailing x18"
+    "notes": "config17.json5 Trailing ldr"
   },
   "symbols": [
     "GER40",
@@ -189,8 +189,8 @@
   },
   "sweep_filter": {
     "enabled": true,
-    "block_long_below": 30.0,
-    "block_short_above": 30.0
+    "block_long_below": 40.0,
+    "block_short_above": 40.0
   },
   "sweep_exit": {
     "enabled": false,
