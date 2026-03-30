@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config1.json5 Trailing icn"
+    "notes": "config1.json5 Trailing 72m"
   },
   "symbols": [
     "GER40",
@@ -196,5 +196,9 @@
     "enabled": false,
     "exit_long_below": 0.0,
     "exit_short_above": 0.0
+  },
+  "chop_filter": {
+    "enabled": true,
+    "max_chop": 0.4
   }
 }
