@@ -1,13 +1,13 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config3.json5 Trailing oo2"
+    "notes": "config3.json5 Trailing aeb"
   },
   "symbols": [
     "GER40",
     "US30"
   ],
-  "strength_threshold": 1,
+  "strength_threshold": 50,
   "poll_interval_ms": 100,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
