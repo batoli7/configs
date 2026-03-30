@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config12.json5 Trailing vrh"
+    "notes": "config12.json5 Trailing 8p7"
   },
   "symbols": [
     "GER40",
@@ -189,8 +189,8 @@
   },
   "sweep_filter": {
     "enabled": true,
-    "block_long_below": 10.0,
-    "block_short_above": 10.0
+    "block_long_below": 90.0,
+    "block_short_above": 90.0
   },
   "sweep_exit": {
     "enabled": false,
@@ -198,7 +198,7 @@
     "exit_short_above": 0.0
   },
   "chop_filter": {
-    "enabled": false,
-    "max_chop": 0.0
+    "enabled": true,
+    "max_chop": 0.25
   }
 }
