@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config8.json5 Trailing 8ao"
+    "notes": "config8.json5 Trailing ax0"
   },
   "symbols": [
     "GER40",
@@ -199,6 +199,6 @@
   },
   "chop_filter": {
     "enabled": true,
-    "max_chop": 0.3
+    "max_chop": 0.25
   }
 }

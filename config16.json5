@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config16.json5 Trailing i8c"
+    "notes": "config16.json5 Trailing c0x"
   },
   "symbols": [
     "GER40",
@@ -190,7 +190,7 @@
   "sweep_filter": {
     "enabled": true,
     "block_long_below": 20.0,
-    "block_short_above": 0.0
+    "block_short_above": 20.0
   },
   "sweep_exit": {
     "enabled": false,
