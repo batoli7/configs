@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config16.json5 Trailing th2"
+    "notes": "config16.json5 Trailing i8c"
   },
   "symbols": [
     "GER40",
@@ -90,13 +90,13 @@
   "per_symbol_trade_params": {
     "GER40": {
       "atr_period": 5,
-      "sl_mul": 0.7,
+      "sl_mul": 0.8,
       "tp_mul": 0.5
     },
     "US30": {
       "atr_period": 8,
-      "sl_mul": 1.1,
-      "tp_mul": 0.8
+      "sl_mul": 1.4,
+      "tp_mul": 1.1
     },
     "USTEC": {
       "atr_period": 10,
@@ -189,12 +189,16 @@
   },
   "sweep_filter": {
     "enabled": true,
-    "block_long_below": 0.0,
+    "block_long_below": 20.0,
     "block_short_above": 0.0
   },
   "sweep_exit": {
     "enabled": false,
     "exit_long_below": 0.0,
     "exit_short_above": 0.0
+  },
+  "chop_filter": {
+    "enabled": false,
+    "max_chop": 0.0
   }
 }

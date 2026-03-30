@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config1.json5 Trailing 72m"
+    "notes": "config1.json5 Trailing inf"
   },
   "symbols": [
     "GER40",
@@ -90,8 +90,8 @@
   "per_symbol_trade_params": {
     "GER40": {
       "atr_period": 5,
-      "sl_mul": 1.1,
-      "tp_mul": 0.8
+      "sl_mul": 0.8,
+      "tp_mul": 0.5
     },
     "US30": {
       "atr_period": 8,
@@ -115,12 +115,12 @@
   "breakeven_offset_atr": 0.08,
   "enable_trailing_sl": true,
   "enable_dynamic_trailing": true,
-  "trailing_step_trigger_atr": 1.1,
-  "trailing_offset_base_atr": 0.9,
-  "trailing_offset_step_atr": 0.22,
-  "trailing_offset_max_atr": 2.2,
-  "trailing_backoff_atr": 0.18,
-  "trailing_sl_update_cooldown_sec": 3,
+  "trailing_step_trigger_atr": 0.6,
+  "trailing_offset_base_atr": 0.4,
+  "trailing_offset_step_atr": 0.14,
+  "trailing_offset_max_atr": 1.1,
+  "trailing_backoff_atr": 0.1,
+  "trailing_sl_update_cooldown_sec": 2,
   "enable_reversals": true,
   "max_reversals_per_min": 10,
   "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw",
@@ -188,7 +188,7 @@
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": true,
+    "enabled": false,
     "block_long_below": 0.0,
     "block_short_above": 0.0
   },
@@ -198,7 +198,7 @@
     "exit_short_above": 0.0
   },
   "chop_filter": {
-    "enabled": true,
-    "max_chop": 0.4
+    "enabled": false,
+    "max_chop": 0.0
   }
 }
