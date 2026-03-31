@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config10.json5 Trailing cej"
+    "notes": "config10.json5 Trailing hhz"
   },
   "symbols": [
     "GER40",
@@ -121,8 +121,8 @@
   "trailing_offset_max_atr": 1.1,
   "trailing_backoff_atr": 0.1,
   "trailing_sl_update_cooldown_sec": 2,
-  "enable_reversals": true,
-  "max_reversals_per_min": 10,
+  "enable_reversals": false,
+  "max_reversals_per_min": 0,
   "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw",
   "decisions_db": "C:/Tradingsystem/data/decisions.db",
   "burst_entry": {
@@ -189,7 +189,7 @@
   },
   "sweep_filter": {
     "enabled": false,
-    "block_long_below": 0.0,
+    "block_long_below": 80.0,
     "block_short_above": 0.0
   },
   "sweep_exit": {
@@ -199,6 +199,6 @@
   },
   "chop_filter": {
     "enabled": true,
-    "max_chop": 0.4
+    "max_chop": 0.25
   }
 }
