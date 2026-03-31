@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config13.json5 Trailing pyl"
+    "notes": "config13.json5 Trailing mjm"
   },
   "symbols": [
     "GER40",
@@ -188,9 +188,9 @@
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": false,
+    "enabled": true,
     "block_long_below": 110.0,
-    "block_short_above": 0.0
+    "block_short_above": 110.0
   },
   "sweep_exit": {
     "enabled": false,

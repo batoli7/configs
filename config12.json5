@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config12.json5 Trailing ngd"
+    "notes": "config12.json5 Trailing kyw"
   },
   "symbols": [
     "GER40",
@@ -188,9 +188,9 @@
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": false,
+    "enabled": true,
     "block_long_below": 100.0,
-    "block_short_above": 0.0
+    "block_short_above": 100.0
   },
   "sweep_exit": {
     "enabled": false,

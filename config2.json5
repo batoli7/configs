@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config2.json5 Trailing xca"
+    "notes": "config2.json5 Trailing kga"
   },
   "symbols": [
     "GER40",
@@ -188,7 +188,7 @@
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": false,
+    "enabled": true,
     "block_long_below": 0.0,
     "block_short_above": 0.0
   },

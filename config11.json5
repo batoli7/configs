@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config11.json5 Trailing qbf"
+    "notes": "config11.json5 Trailing vh1"
   },
   "symbols": [
     "GER40",
@@ -188,9 +188,9 @@
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": false,
+    "enabled": true,
     "block_long_below": 90.0,
-    "block_short_above": 0.0
+    "block_short_above": 90.0
   },
   "sweep_exit": {
     "enabled": false,

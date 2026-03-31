@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config7.json5 Trailing dh5"
+    "notes": "config7.json5 Trailing r60"
   },
   "symbols": [
     "GER40",
@@ -188,9 +188,9 @@
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": false,
+    "enabled": true,
     "block_long_below": 50.0,
-    "block_short_above": 0.0
+    "block_short_above": 50.0
   },
   "sweep_exit": {
     "enabled": false,
