@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config2.json5 Trailing g1t"
+    "notes": "config2.json5 Trailing 08n"
   },
   "symbols": [
     "GER40",
@@ -184,11 +184,18 @@
       "min_units": 0.4
     }
   },
+  "direction_permission": {
+    "enabled": false,
+    "window_ms": 3000,
+    "min_points": 4,
+    "min_efficiency": 0.3,
+    "min_net_disp_units": 0.2
+  },
   "alpha_filter": {
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": true,
+    "enabled": false,
     "block_long_below": 0.0,
     "block_short_above": 0.0
   },

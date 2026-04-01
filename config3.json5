@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config3.json5 Trailing hdr"
+    "notes": "config3.json5 Trailing 90b"
   },
   "symbols": [
     "GER40",
@@ -184,11 +184,18 @@
       "min_units": 0.4
     }
   },
+  "direction_permission": {
+    "enabled": true,
+    "window_ms": 2500,
+    "min_points": 4,
+    "min_efficiency": 0.25,
+    "min_net_disp_units": 0.15
+  },
   "alpha_filter": {
     "enabled": false
   },
   "sweep_filter": {
-    "enabled": true,
+    "enabled": false,
     "block_long_below": 10.0,
     "block_short_above": 10.0
   },
