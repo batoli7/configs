@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config7.json5 Trailing gc4"
+    "notes": "config7.json5 Trailing 4og"
   },
   "symbols": [
     "GER40",
@@ -186,7 +186,7 @@
   },
   "direction_permission": {
     "enabled": true,
-    "window_ms": 3000,
+    "window_ms": 5000,
     "min_points": 4,
     "min_efficiency": 0.3,
     "min_net_disp_units": 0.2

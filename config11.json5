@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config11.json5 Trailing iti"
+    "notes": "config11.json5 Trailing nnl"
   },
   "symbols": [
     "GER40",
@@ -185,7 +185,7 @@
     }
   },
   "direction_permission": {
-    "enabled": false,
+    "enabled": true,
     "window_ms": 3000,
     "min_points": 4,
     "min_efficiency": 0.3,

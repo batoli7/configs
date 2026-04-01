@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config9.json5 Trailing tta"
+    "notes": "config9.json5 Trailing he5"
   },
   "symbols": [
     "GER40",
@@ -185,8 +185,8 @@
     }
   },
   "direction_permission": {
-    "enabled": true,
-    "window_ms": 3500,
+    "enabled": false,
+    "window_ms": 3000,
     "min_points": 4,
     "min_efficiency": 0.3,
     "min_net_disp_units": 0.2

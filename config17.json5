@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config17.json5 Trailing bjj"
+    "notes": "config17.json5 Trailing 5gh"
   },
   "symbols": [
     "GER40",
@@ -186,10 +186,10 @@
   },
   "direction_permission": {
     "enabled": true,
-    "window_ms": 3500,
+    "window_ms": 7000,
     "min_points": 4,
-    "min_efficiency": 0.35,
-    "min_net_disp_units": 0.2
+    "min_efficiency": 0.4,
+    "min_net_disp_units": 0.5
   },
   "alpha_filter": {
     "enabled": false
