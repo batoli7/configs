@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config9.json5 Trailing g4u"
+    "notes": "config9.json5 Trailing w1r"
   },
   "symbols": [
     "GER40",
@@ -11,8 +11,8 @@
   "poll_interval_ms": 100,
   "mt5_path": "C:\\MT5\\IC1\\terminal64.exe",
   "mt5_login": {
-    "login": 62115533,
-    "password": "Jahej1234!",
+    "login": 7389381,
+    "password": "Profit1234!",
     "server": "PepperstoneUK-Demo"
   },
   "enable_time_filtering": true,
