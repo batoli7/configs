@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config9.json5 Trailing he5"
+    "notes": "config9.json5 Trailing cfq"
   },
   "symbols": [
     "GER40",
@@ -161,7 +161,7 @@
     },
     "efficiency_gate": {
       "enabled": false,
-      "min_efficiency": 0.28
+      "min_efficiency": 0.26
     },
     "flip_count_gate": {
       "enabled": false,
@@ -185,7 +185,7 @@
     }
   },
   "direction_permission": {
-    "enabled": false,
+    "enabled": true,
     "window_ms": 3000,
     "min_points": 4,
     "min_efficiency": 0.3,

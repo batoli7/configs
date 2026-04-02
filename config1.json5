@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config1.json5 Trailing nd0"
+    "notes": "config1.json5 Trailing gxk"
   },
   "symbols": [
     "GER40",
@@ -185,7 +185,7 @@
     }
   },
   "direction_permission": {
-    "enabled": false,
+    "enabled": true,
     "window_ms": 3000,
     "min_points": 4,
     "min_efficiency": 0.3,

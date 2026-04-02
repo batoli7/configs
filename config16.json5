@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config16.json5 Trailing 57n"
+    "notes": "config16.json5 Trailing 1w1"
   },
   "symbols": [
     "GER40",
@@ -142,7 +142,7 @@
     "event_csv_path": "C:\\Users\\Administrator\\AppData\\Roaming\\MetaQuotes\\Terminal\\17D15AF4F4EC4054E22D916100D19265\\MQL5\\Files\\\\MB\\ProbeEvents.csv"
   },
   "chop_quality_filter": {
-    "enabled": false,
+    "enabled": true,
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
@@ -164,7 +164,7 @@
       "min_efficiency": 0.26
     },
     "flip_count_gate": {
-      "enabled": false,
+      "enabled": true,
       "max_flips": 6
     },
     "backfill_gate": {
@@ -186,10 +186,10 @@
   },
   "direction_permission": {
     "enabled": true,
-    "window_ms": 5000,
+    "window_ms": 3000,
     "min_points": 4,
-    "min_efficiency": 0.35,
-    "min_net_disp_units": 0.35
+    "min_efficiency": 0.3,
+    "min_net_disp_units": 0.2
   },
   "alpha_filter": {
     "enabled": false
