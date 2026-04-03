@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config17.json5 Trailing i4c"
+    "notes": "config17.json5 Trailing 9m5"
   },
   "symbols": [
     "GER40",
@@ -19,7 +19,7 @@
   "trading_hours": [
     [
       "08:00",
-      "21:50"
+      "08:00"
     ]
   ],
   "burst_guardian": {
@@ -142,7 +142,7 @@
     "event_csv_path": "C:\\Users\\Administrator\\AppData\\Roaming\\MetaQuotes\\Terminal\\17D15AF4F4EC4054E22D916100D19265\\MQL5\\Files\\\\MB\\ProbeEvents.csv"
   },
   "chop_quality_filter": {
-    "enabled": true,
+    "enabled": false,
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
@@ -186,10 +186,10 @@
   },
   "direction_permission": {
     "enabled": true,
-    "window_ms": 3000,
+    "window_ms": 5000,
     "min_points": 4,
-    "min_efficiency": 0.3,
-    "min_net_disp_units": 0.2
+    "min_efficiency": 0.35,
+    "min_net_disp_units": 0.35
   },
   "alpha_filter": {
     "enabled": false

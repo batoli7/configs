@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config18.json5 Trailing iek"
+    "notes": "config18.json5 Trailing 6q2"
   },
   "symbols": [
     "GER40",
@@ -19,7 +19,7 @@
   "trading_hours": [
     [
       "08:00",
-      "21:50"
+      "08:00"
     ]
   ],
   "burst_guardian": {
@@ -111,16 +111,16 @@
   },
   "cat_sl_factor": 3.0,
   "enable_breakeven_sl": true,
-  "breakeven_trigger_atr": 0.75,
+  "breakeven_trigger_atr": 1.2,
   "breakeven_offset_atr": 0.08,
   "enable_trailing_sl": true,
   "enable_dynamic_trailing": true,
-  "trailing_step_trigger_atr": 0.6,
-  "trailing_offset_base_atr": 0.4,
-  "trailing_offset_step_atr": 0.14,
-  "trailing_offset_max_atr": 1.1,
-  "trailing_backoff_atr": 0.1,
-  "trailing_sl_update_cooldown_sec": 2,
+  "trailing_step_trigger_atr": 1.6,
+  "trailing_offset_base_atr": 1.2,
+  "trailing_offset_step_atr": 0.18,
+  "trailing_offset_max_atr": 2.0,
+  "trailing_backoff_atr": 0.2,
+  "trailing_sl_update_cooldown_sec": 5,
   "enable_reversals": false,
   "max_reversals_per_min": 0,
   "signals_db_ro": "file:C:/Tradingsystem/data/signals.db?mode=rw",
@@ -142,7 +142,7 @@
     "event_csv_path": "C:\\Users\\Administrator\\AppData\\Roaming\\MetaQuotes\\Terminal\\17D15AF4F4EC4054E22D916100D19265\\MQL5\\Files\\\\MB\\ProbeEvents.csv"
   },
   "chop_quality_filter": {
-    "enabled": true,
+    "enabled": false,
     "log_only": false,
     "debug_log": true,
     "episode_reset_ms": 1,
@@ -186,10 +186,10 @@
   },
   "direction_permission": {
     "enabled": true,
-    "window_ms": 3000,
-    "min_points": 4,
-    "min_efficiency": 0.3,
-    "min_net_disp_units": 0.2
+    "window_ms": 7000,
+    "min_points": 5,
+    "min_efficiency": 0.4,
+    "min_net_disp_units": 0.5
   },
   "alpha_filter": {
     "enabled": false

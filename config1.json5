@@ -1,7 +1,7 @@
 {
   "__meta": {
     "role": "Trailing",
-    "notes": "config1.json5 Trailing gxk"
+    "notes": "config1.json5 Trailing 59a"
   },
   "symbols": [
     "GER40",
@@ -19,7 +19,7 @@
   "trading_hours": [
     [
       "08:00",
-      "21:50"
+      "08:00"
     ]
   ],
   "burst_guardian": {
